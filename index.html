@@ -1,68 +1,993 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partnerschaft</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partnerschaft India — Retail Activation & BTL Experts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d1f35;
+    --paper: #f4f7fb;
+    --blue: #1a5fa8;
+    --blue-dark: #0e3d72;
+    --blue-light: #2e7fd4;
+    --red: #c0201a;
+    --cream: #e8f0f8;
+    --muted: #4a5f78;
+    --border: #c5d5e8;
+    --white: #ffffff;
+    /* alias for existing refs */
+    --saffron: #1a5fa8;
+    --saffron-light: #2e7fd4;
+    --gold: #0e3d72;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250,247,242,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw; height: 68px;
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.75rem;
+    text-decoration: none;
+  }
+  .nav-logo-svg { height: 38px; width: auto; }
+  .nav-logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; font-weight: 900;
+    color: var(--ink); letter-spacing: -0.3px;
+    line-height: 1.1;
+  }
+  .nav-logo-text small {
+    display: block; font-family: 'DM Mono', monospace;
+    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--blue); font-weight: 400; margin-top: 1px;
+  }
+
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none; font-size: 0.85rem; font-weight: 500;
+    color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--saffron); }
+
+  .nav-cta {
+    background: var(--saffron); color: var(--white);
+    border: none; padding: 0.55rem 1.4rem; border-radius: 2px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.82rem;
+    font-weight: 600; cursor: pointer; text-decoration: none;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .nav-cta:hover { background: var(--ink); transform: translateY(-1px); }
+
+  .hero-logo-block {
+    display: flex; align-items: center; gap: 1.2rem; margin-bottom: 2rem;
+  }
+  .hero-logo-mark {
+    width: 72px; height: 72px; border-radius: 12px;
+    background: var(--blue); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 32px rgba(26,95,168,0.35);
+    flex-shrink: 0;
+  }
+  .hero-logo-label {
+    display: flex; flex-direction: column;
+  }
+  .hero-logo-name {
+    font-family: 'DM Sans', sans-serif; font-weight: 800;
+    font-size: 1.05rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink);
+  }
+  .hero-logo-sub {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue);
+    margin-top: 2px;
+  }
+  .hero {
+    min-height: 100vh;
+    display: grid; grid-template-columns: 1fr 1fr;
+    align-items: center; padding-top: 68px;
+    position: relative; overflow: hidden;
+  }
+
+  .hero-bg-pattern {
+    position: absolute; inset: 0; z-index: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 79px, var(--border) 79px, var(--border) 80px),
+      repeating-linear-gradient(90deg, transparent, transparent 79px, var(--border) 79px, var(--border) 80px);
+    opacity: 0.3;
+  }
+
+  .hero-left {
+    position: relative; z-index: 1;
+    padding: 5vw 4vw 5vw 8vw;
+  }
+
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace; font-size: 0.72rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--saffron); margin-bottom: 1.4rem;
+    display: flex; align-items: center; gap: 0.7rem;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: inline-block;
+    width: 28px; height: 2px; background: var(--saffron);
+  }
+
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 4.5vw, 5rem);
+    font-weight: 900; line-height: 1.05;
+    color: var(--ink); margin-bottom: 1.6rem;
+  }
+  .hero-headline em {
+    font-style: normal; color: var(--saffron);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 1.05rem; line-height: 1.75;
+    color: var(--muted); max-width: 420px; margin-bottom: 2.5rem;
+  }
+
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .btn-primary {
+    background: var(--saffron); color: var(--white);
+    padding: 0.85rem 2rem; border: 2px solid var(--saffron);
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 600;
+    cursor: pointer; text-decoration: none; letter-spacing: 0.04em;
+    transition: all 0.2s; border-radius: 2px; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--ink); border-color: var(--ink); transform: translateY(-2px); }
+
+  .btn-outline {
+    background: transparent; color: var(--ink);
+    padding: 0.85rem 2rem; border: 2px solid var(--ink);
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 600;
+    cursor: pointer; text-decoration: none; letter-spacing: 0.04em;
+    transition: all 0.2s; border-radius: 2px; display: inline-block;
+  }
+  .btn-outline:hover { background: var(--ink); color: var(--white); transform: translateY(-2px); }
+
+  .hero-right {
+    position: relative; z-index: 1;
+    padding: 5vw 8vw 5vw 4vw;
+    display: flex; flex-direction: column; gap: 1.2rem;
+  }
+
+  .hero-stat-card {
+    background: var(--white); border: 1px solid var(--border);
+    padding: 1.4rem 1.8rem; border-radius: 4px;
+    display: flex; align-items: center; gap: 1.2rem;
+    box-shadow: 4px 4px 0 var(--cream);
+    animation: slideInRight 0.6s ease both;
+  }
+  .hero-stat-card:nth-child(1) { animation-delay: 0.1s; margin-left: 20px; }
+  .hero-stat-card:nth-child(2) { animation-delay: 0.25s; margin-left: -10px; }
+  .hero-stat-card:nth-child(3) { animation-delay: 0.4s; margin-left: 30px; }
+
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .stat-icon {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--cream); display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; flex-shrink: 0;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif; font-size: 1.6rem;
+    font-weight: 700; color: var(--saffron); line-height: 1;
+  }
+  .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+
+  /* ─── TICKER ──────────────────────────────────────── */
+  .ticker-wrap {
+    background: var(--blue-dark); color: var(--white);
+    overflow: hidden; padding: 0.8rem 0;
+    border-top: 3px solid var(--blue-light);
+  }
+  .ticker-inner {
+    display: flex; gap: 4rem;
+    animation: ticker 22s linear infinite;
+    white-space: nowrap;
+  }
+  .ticker-item {
+    font-family: 'DM Mono', monospace; font-size: 0.75rem;
+    letter-spacing: 0.15em; text-transform: uppercase; flex-shrink: 0;
+  }
+  .ticker-item span { color: var(--saffron); margin: 0 1rem; }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ─── SECTION COMMONS ───────────────────────────── */
+  section { padding: 6rem 8vw; }
+
+  .section-tag {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--saffron);
+    margin-bottom: 0.8rem;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 700; color: var(--ink); line-height: 1.15; margin-bottom: 1rem;
+  }
+  .section-sub {
+    font-size: 1rem; color: var(--muted); line-height: 1.75;
+    max-width: 560px;
+  }
+
+  /* ─── ABOUT ──────────────────────────────────────── */
+  #about {
+    background: var(--blue-dark); color: var(--white);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;
+  }
+  #about .section-title { color: var(--white); }
+  #about .section-sub { color: rgba(255,255,255,0.6); }
+
+  .about-pillars {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+  }
+  .pillar {
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 1.5rem; border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+  }
+  .pillar-icon { font-size: 1.6rem; margin-bottom: 0.8rem; }
+  .pillar h4 {
+    font-family: 'Playfair Display', serif; font-size: 1rem;
+    font-weight: 700; color: var(--white); margin-bottom: 0.4rem;
+  }
+  .pillar p { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+  /* ─── SERVICES ──────────────────────────────────── */
+  #services { background: var(--paper); }
+  .services-header { margin-bottom: 3.5rem; }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+  }
+
+  .service-card {
+    border: 1px solid var(--border); background: var(--white);
+    padding: 2.5rem 2rem; border-radius: 4px; position: relative;
+    overflow: hidden; transition: all 0.3s; cursor: default;
+  }
+  .service-card::before {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+    height: 3px; background: var(--saffron);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-num {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    color: var(--saffron); letter-spacing: 0.15em; margin-bottom: 1.2rem;
+  }
+  .service-icon { font-size: 2.4rem; margin-bottom: 1rem; }
+  .service-card h3 {
+    font-family: 'Playfair Display', serif; font-size: 1.3rem;
+    font-weight: 700; margin-bottom: 0.8rem; color: var(--ink);
+  }
+  .service-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+
+  /* ─── HOW WE WORK ────────────────────────────────── */
+  #process {
+    background: var(--cream);
+  }
+  .process-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    margin-top: 3.5rem; border: 1px solid var(--border);
+  }
+  .process-step {
+    padding: 2.5rem 2rem; border-right: 1px solid var(--border);
+    position: relative;
+  }
+  .process-step:last-child { border-right: none; }
+
+  .step-arrow {
+    position: absolute; right: -14px; top: 50%;
+    transform: translateY(-50%); z-index: 1;
+    font-size: 1.2rem; color: var(--saffron);
+    display: none;
+  }
+  .process-step:not(:last-child) .step-arrow { display: block; }
+
+  .step-num {
+    font-family: 'Playfair Display', serif; font-size: 3.5rem;
+    font-weight: 900; color: var(--border); line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .process-step h4 {
+    font-family: 'Playfair Display', serif; font-size: 1.1rem;
+    font-weight: 700; margin-bottom: 0.6rem;
+  }
+  .process-step p { font-size: 0.83rem; color: var(--muted); line-height: 1.65; }
+
+  /* ─── PARTNERS LOGOS BAR ─────────────────────────── */
+  #ecosystem {
+    background: var(--white); padding: 4rem 8vw;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .ecosystem-top {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem;
+  }
+  .sister-links { display: flex; gap: 1.2rem; }
+  .sister-link {
+    border: 1px solid var(--border); padding: 0.6rem 1.2rem;
+    border-radius: 2px; text-decoration: none; font-size: 0.8rem;
+    font-weight: 600; color: var(--ink); letter-spacing: 0.06em;
+    text-transform: uppercase; transition: all 0.2s;
+  }
+  .sister-link:hover { background: var(--saffron); color: var(--white); border-color: var(--saffron); }
+
+  .map-strip {
+    background: var(--cream); border: 1px solid var(--border);
+    padding: 2rem; border-radius: 4px; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .map-pins {
+    display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .map-pin {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); display: flex; align-items: center; gap: 0.3rem;
+  }
+  .map-pin::before {
+    content: '📍'; font-size: 0.75rem;
+  }
+
+  /* ─── ENQUIRY ────────────────────────────────────── */
+  #enquiry {
+    background: var(--blue-dark); color: var(--white);
+  }
+  #enquiry .section-title { color: var(--white); }
+  #enquiry .section-sub { color: rgba(255,255,255,0.55); }
+
+  .enquiry-layout {
+    display: grid; grid-template-columns: 1fr 1.5fr; gap: 6rem;
+    margin-top: 3.5rem; align-items: start;
+  }
+
+  .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+  .contact-block h4 {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--saffron);
+    margin-bottom: 0.5rem;
+  }
+  .contact-block p, .contact-block a {
+    font-size: 1.05rem; color: var(--white); text-decoration: none;
+    line-height: 1.7; transition: color 0.2s;
+  }
+  .contact-block a:hover { color: var(--saffron-light); }
+
+  .enquiry-form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-group label {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--white); padding: 0.85rem 1rem;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    border-radius: 2px; outline: none; resize: vertical;
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--saffron);
+  }
+  .form-group select option { background: #0e3d72; }
+
+  .checkbox-group {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem;
+  }
+  .checkbox-item {
+    display: flex; align-items: center; gap: 0.6rem; cursor: pointer;
+  }
+  .checkbox-item input[type="checkbox"] {
+    width: 16px; height: 16px; accent-color: var(--saffron);
+    flex-shrink: 0;
+  }
+  .checkbox-item span { font-size: 0.83rem; color: rgba(255,255,255,0.7); }
+
+  .form-submit {
+    background: var(--saffron); color: var(--white);
+    border: none; padding: 1rem 2.5rem;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    font-weight: 700; cursor: pointer; letter-spacing: 0.06em;
+    text-transform: uppercase; border-radius: 2px;
+    transition: all 0.2s; align-self: flex-start; margin-top: 0.4rem;
+  }
+  .form-submit:hover { background: var(--saffron-light); transform: translateY(-2px); }
+
+  .form-note {
+    font-size: 0.78rem; color: rgba(255,255,255,0.35); margin-top: 0.2rem;
+  }
+
+  /* ─── SUCCESS MSG ────────────────────────────────── */
+  .success-msg {
+    display: none; background: rgba(26,95,168,0.2);
+    border: 1px solid var(--blue-light); border-radius: 4px;
+    padding: 1.2rem 1.5rem; color: #8bbfee;
+    font-size: 0.92rem; align-items: center; gap: 0.8rem;
+  }
+  .success-msg.show { display: flex; }
+
+  /* ─── FOOTER ─────────────────────────────────────── */
+  footer {
+    background: #071830; color: rgba(255,255,255,0.4);
+    padding: 2.5rem 8vw;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-logo {
+    font-family: 'Playfair Display', serif; font-size: 1.1rem;
+    font-weight: 900; color: var(--white);
+  }
+  .footer-logo span { color: var(--saffron); }
+  footer p { font-size: 0.78rem; }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a {
+    font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--saffron); }
+
+  /* ─── ANIMATIONS ─────────────────────────────────── */
+  .fade-up {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* ─── RESPONSIVE ─────────────────────────────────── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 3rem 6vw 2rem; }
+    .hero-right { padding: 0 6vw 3rem; }
+    #about { grid-template-columns: 1fr; gap: 3rem; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .process-grid { grid-template-columns: 1fr 1fr; }
+    .process-step { border-right: none; border-bottom: 1px solid var(--border); }
+    .enquiry-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 580px) {
+    section { padding: 4rem 6vw; }
+    .services-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr; }
+    .about-pillars { grid-template-columns: 1fr; }
+    .checkbox-group { grid-template-columns: 1fr; }
+    .ecosystem-top { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Partnerschaft</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h2>Welcome to Partnerschaft</h2>
-            <p>Your partnership solution for success</p>
-        </section>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">
+    <svg class="nav-logo-svg" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+      <rect width="120" height="80" rx="6" fill="#1a5fa8"/>
+      <!-- Left hexagon (open right) -->
+      <path d="M28 18 L14 28 L14 52 L28 62 L42 52 L42 28 Z" fill="none" stroke="white" stroke-width="5.5" stroke-linejoin="round"
+            stroke-dasharray="1000" stroke-dashoffset="0"/>
+      <!-- clip right side of left hex -->
+      <path d="M42 24 L42 56" stroke="#1a5fa8" stroke-width="7"/>
+      <!-- Right hexagon (open left) -->
+      <path d="M50 18 L64 28 L64 52 L50 62 L36 52 L36 28 Z" fill="none" stroke="white" stroke-width="5.5" stroke-linejoin="round"/>
+      <!-- clip left side of right hex -->
+      <path d="M36 24 L36 56" stroke="#1a5fa8" stroke-width="7"/>
+    </svg>
+    <div class="nav-logo-text">
+      PARTNERSCHAFT
+      <small>India</small>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#ecosystem">Ecosystem</a></li>
+    <li><a href="#enquiry">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#enquiry">Share Requirement</a>
+</nav>
 
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>Learn more about our partnership mission and values.</p>
-        </section>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-left">
+    <div class="hero-logo-block">
+      <div class="hero-logo-mark">
+        <svg viewBox="0 0 80 80" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+          <!-- Two interlocking hexagons -->
+          <!-- Left hex outline, open on right -->
+          <polygon points="10,22 28,12 28,12 10,22 2,40 10,58 28,68 46,58 46,22 28,12"
+            fill="none" stroke="white" stroke-width="5" stroke-linejoin="round"
+            clip-path="url(#leftClip)"/>
+          <clipPath id="leftClip"><rect x="0" y="0" width="42" height="80"/></clipPath>
 
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Service 1</h3>
-                    <p>Description of service 1</p>
-                </div>
-                <div class="service-card">
-                    <h3>Service 2</h3>
-                    <p>Description of service 2</p>
-                </div>
-                <div class="service-card">
-                    <h3>Service 3</h3>
-                    <p>Description of service 3</p>
-                </div>
-            </div>
-        </section>
+          <!-- Right hex outline, open on left -->
+          <polygon points="70,22 52,12 34,22 34,58 52,68 70,58 78,40"
+            fill="none" stroke="white" stroke-width="5" stroke-linejoin="round"
+            clip-path="url(#rightClip)"/>
+          <clipPath id="rightClip"><rect x="38" y="0" width="42" height="80"/></clipPath>
 
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+          <!-- Inner shared hexagon -->
+          <polygon points="40,24 30,30 30,50 40,56 50,50 50,30"
+            fill="none" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="hero-logo-label">
+        <span class="hero-logo-name">Partnerschaft</span>
+        <span class="hero-logo-sub">India · Retail Agency</span>
+      </div>
+    </div>
+    <div class="hero-eyebrow">Pan India Retail Execution Partner</div>
+    <h1 class="hero-headline">
+      Where Brands<br>
+      <em>Meet Markets.</em>
+    </h1>
+    <p class="hero-sub">
+      We identify, coordinate, and execute your retail activation needs across India — 
+      faster, smarter, and without the overhead. From BTL to complete store renovations.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#enquiry">Submit Requirement</a>
+      <a class="btn-outline" href="#services">What We Do</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat-card">
+      <div class="stat-icon">🗺️</div>
+      <div>
+        <div class="stat-num">Pan India</div>
+        <div class="stat-label">Vendor Network Coverage</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-icon">⚡</div>
+      <div>
+        <div class="stat-num">Faster</div>
+        <div class="stat-label">Identification & Execution</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-icon">🎯</div>
+      <div>
+        <div class="stat-num">Zero Gaps</div>
+        <div class="stat-label">BTL to Store Renovation</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Partnerschaft. All rights reserved.</p>
-    </footer>
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item">BTL Activation <span>✦</span></span>
+    <span class="ticker-item">Partner Meet <span>✦</span></span>
+    <span class="ticker-item">Instore Branding <span>✦</span></span>
+    <span class="ticker-item">Fixture & SIS <span>✦</span></span>
+    <span class="ticker-item">Store Renovation <span>✦</span></span>
+    <span class="ticker-item">Pan India Vendors <span>✦</span></span>
+    <span class="ticker-item">Retail Activation <span>✦</span></span>
+    <span class="ticker-item">Brand Experience <span>✦</span></span>
+    <span class="ticker-item">BTL Activation <span>✦</span></span>
+    <span class="ticker-item">Partner Meet <span>✦</span></span>
+    <span class="ticker-item">Instore Branding <span>✦</span></span>
+    <span class="ticker-item">Fixture & SIS <span>✦</span></span>
+    <span class="ticker-item">Store Renovation <span>✦</span></span>
+    <span class="ticker-item">Pan India Vendors <span>✦</span></span>
+    <span class="ticker-item">Retail Activation <span>✦</span></span>
+    <span class="ticker-item">Brand Experience <span>✦</span></span>
+  </div>
+</div>
 
-    <script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about">
+  <div class="fade-up">
+    <div class="section-tag">Who We Are</div>
+    <h2 class="section-title">No Setup. No Overhead.<br>Just Results.</h2>
+    <p class="section-sub" style="margin-bottom:2rem;">
+      Partnerschaft India is a lean retail agency built on the strength of our pan-India vendor 
+      network. We don't own execution infrastructure — we command it. That means no capital 
+      costs passed to you, and no delays waiting for teams to mobilise.
+    </p>
+    <p class="section-sub">
+      We plug into your brand's requirement, identify the right ground partner, coordinate 
+      seamlessly, and ensure faster execution at every touchpoint.
+    </p>
+  </div>
+  <div class="about-pillars fade-up">
+    <div class="pillar">
+      <div class="pillar-icon">🔍</div>
+      <h4>Identify</h4>
+      <p>Right vendor for the right market, matched to your brief and geography.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🤝</div>
+      <h4>Coordinate</h4>
+      <p>Single point of contact. We handle all vendor communication end-to-end.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">⚡</div>
+      <h4>Execute</h4>
+      <p>Faster turnaround through pre-vetted networks and streamlined processes.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">📊</div>
+      <h4>Report</h4>
+      <p>Transparent updates and documentation at every stage of the project.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header fade-up">
+    <div class="section-tag">Our Services</div>
+    <h2 class="section-title">All-Around Retail<br>Support, Delivered.</h2>
+    <p class="section-sub">End-to-end BTL and retail execution services across India — 
+    through our extensive vendor network, not a fixed setup.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <div class="service-num">01</div>
+      <div class="service-icon">🎪</div>
+      <h3>BTL Activation</h3>
+      <p>Below-the-line activations that create tangible consumer experiences. 
+      Product demos, kiosks, road shows, sampling drives — executed with precision 
+      across any geography in India.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">02</div>
+      <div class="service-icon">🤝</div>
+      <h3>Partner Meet</h3>
+      <p>Organise and execute dealer meets, distributor conferences, channel partner 
+      events and brand summits. End-to-end logistics, venue, and experience design.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">03</div>
+      <div class="service-icon">🏪</div>
+      <h3>Instore Branding</h3>
+      <p>Transform the retail shelf into a brand experience. POSM fabrication, visual 
+      merchandising, wall wraps, window displays and all instore communication material.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">04</div>
+      <div class="service-icon">🛒</div>
+      <h3>Fixture & SIS</h3>
+      <p>Shop-in-shop design and installation, branded fixtures, gondolas, counters and 
+      display units. Fabricated and installed to brand guidelines across multiple outlets.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">05</div>
+      <div class="service-icon">🏗️</div>
+      <h3>Store Renovation</h3>
+      <p>Complete retail space renovation and brand refresh. Civil work, flooring, false 
+      ceiling, electrical, branding and fitout — coordinated through specialist 
+      local vendors.</p>
+    </div>
+    <div class="service-card fade-up" style="background:var(--blue-dark); border-color:var(--blue-dark);">
+      <div class="service-num" style="color:var(--blue-light);">Custom</div>
+      <div class="service-icon">💡</div>
+      <h3 style="color:var(--white);">Got a Unique Requirement?</h3>
+      <p style="color:rgba(255,255,255,0.55);">If it's retail and it's anywhere in India, 
+      we'll find a way to execute it. Share your brief and we'll revert within 24 hours.</p>
+      <br>
+      <a class="btn-primary" href="#enquiry" style="font-size:0.8rem;padding:0.7rem 1.4rem;">
+        Share Requirement →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="fade-up">
+    <div class="section-tag">How We Work</div>
+    <h2 class="section-title">From Brief to<br>Execution in 4 Steps.</h2>
+  </div>
+  <div class="process-grid fade-up">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <h4>Share Your Brief</h4>
+      <p>Tell us what you need — service type, location, timeline, and budget. 
+      The more detail, the faster we move.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <h4>Vendor Identification</h4>
+      <p>We map your requirement to our pan-India vendor database and shortlist 
+      the best-fit partners in your geography.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <h4>Coordination & Quote</h4>
+      <p>We handle all vendor negotiation and coordination, presenting you a 
+      clean proposal with timeline and pricing.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <h4>Execute & Report</h4>
+      <p>Execution begins with regular updates and documentation. 
+      You stay informed without managing multiple vendors.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section id="ecosystem">
+  <div class="ecosystem-top fade-up">
+    <div>
+      <div class="section-tag">Our Ecosystem</div>
+      <h2 class="section-title" style="font-size:1.8rem;margin-bottom:0.3rem;">
+        Part of the Barada Group
+      </h2>
+      <p style="color:var(--muted);font-size:0.9rem;">
+        Connected businesses for holistic brand support
+      </p>
+    </div>
+    <div class="sister-links">
+      <a class="sister-link" href="https://barada.in" target="_blank">barada.in ↗</a>
+      <a class="sister-link" href="https://ayushman.world" target="_blank">ayushman.world ↗</a>
+    </div>
+  </div>
+  <div class="map-strip fade-up">
+    <p style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;">
+      Pan India Vendor Presence
+    </p>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">
+      Pre-vetted partners across major metros and Tier 2 & 3 cities
+    </p>
+    <div class="map-pins">
+      <span class="map-pin">Mumbai</span>
+      <span class="map-pin">Delhi NCR</span>
+      <span class="map-pin">Bengaluru</span>
+      <span class="map-pin">Hyderabad</span>
+      <span class="map-pin">Chennai</span>
+      <span class="map-pin">Kolkata</span>
+      <span class="map-pin">Pune</span>
+      <span class="map-pin">Ahmedabad</span>
+      <span class="map-pin">Jaipur</span>
+      <span class="map-pin">Kochi</span>
+      <span class="map-pin">Chandigarh</span>
+      <span class="map-pin">Indore</span>
+      <span class="map-pin">Bhubaneswar</span>
+      <span class="map-pin">& More</span>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY / CONTACT -->
+<section id="enquiry">
+  <div class="fade-up">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Share Your<br>Requirement.</h2>
+    <p class="section-sub">
+      Fill in the brief below and our team will revert within 24 hours with 
+      a vendor plan and initial estimate.
+    </p>
+  </div>
+  <div class="enquiry-layout">
+    <div class="contact-info fade-up">
+      <div class="contact-block">
+        <h4>Call Us</h4>
+        <a href="tel:+919886553937">+91 98865 53937</a>
+      </div>
+      <div class="contact-block">
+        <h4>Email Us</h4>
+        <a href="mailto:baradaindofficial@gmail.com">baradaindofficial@gmail.com</a>
+      </div>
+      <div class="contact-block">
+        <h4>Coverage</h4>
+        <p style="color:rgba(255,255,255,0.55);">Pan India — all major metros and growing Tier 2/3 cities</p>
+      </div>
+      <div class="contact-block">
+        <h4>Our Sister Sites</h4>
+        <a href="https://barada.in" target="_blank" style="display:block;margin-bottom:0.3rem;">barada.in ↗</a>
+        <a href="https://ayushman.world" target="_blank">ayushman.world ↗</a>
+      </div>
+      <div class="contact-block">
+        <h4>Response Time</h4>
+        <p style="color:rgba(255,255,255,0.55);">We typically respond within 24 hours on all working days</p>
+      </div>
+    </div>
+
+    <form class="enquiry-form fade-up" id="enquiryForm" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" required placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label>Company / Brand *</label>
+          <input type="text" required placeholder="Company name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Mobile Number *</label>
+          <input type="tel" required placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="you@company.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Service Required *</label>
+        <div class="checkbox-group">
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="btl"> <span>BTL Activation</span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="partner-meet"> <span>Partner Meet</span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="instore-branding"> <span>Instore Branding</span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="fixture-sis"> <span>Fixture & SIS</span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="store-renovation"> <span>Store Renovation</span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="other"> <span>Other / Custom</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Target Location(s)</label>
+          <input type="text" placeholder="e.g. Mumbai, Delhi, All India">
+        </div>
+        <div class="form-group">
+          <label>Expected Timeline</label>
+          <select>
+            <option value="">Select timeline</option>
+            <option>Within 2 weeks</option>
+            <option>Within 1 month</option>
+            <option>1–3 months</option>
+            <option>3+ months</option>
+            <option>Planning stage</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Budget Range (₹)</label>
+        <select>
+          <option value="">Select range</option>
+          <option>Below ₹1 Lakh</option>
+          <option>₹1 – 5 Lakhs</option>
+          <option>₹5 – 20 Lakhs</option>
+          <option>₹20 – 50 Lakhs</option>
+          <option>₹50 Lakhs+</option>
+          <option>To be discussed</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Describe Your Requirement *</label>
+        <textarea rows="5" required 
+          placeholder="Tell us about your project — what you need, number of outlets/locations, specific brand guidelines, or any other details that help us respond accurately."></textarea>
+      </div>
+      <div class="success-msg" id="successMsg">
+        ✅ &nbsp;Thank you! We've received your requirement and will get back to you within 24 hours.
+      </div>
+      <button type="submit" class="form-submit">Submit Requirement →</button>
+      <p class="form-note">* Required fields. We'll never share your details with third parties.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo" style="display:flex;align-items:center;gap:0.6rem;">
+    <svg viewBox="0 0 80 80" width="32" height="32" xmlns="http://www.w3.org/2000/svg" style="background:#1a5fa8;border-radius:6px;padding:4px;">
+      <polygon points="10,22 28,12 10,22 2,40 10,58 28,68 46,58 46,22 28,12"
+        fill="none" stroke="white" stroke-width="6" stroke-linejoin="round"
+        clip-path="url(#flc)"/>
+      <clipPath id="flc"><rect x="0" y="0" width="42" height="80"/></clipPath>
+      <polygon points="70,22 52,12 34,22 34,58 52,68 70,58 78,40"
+        fill="none" stroke="white" stroke-width="6" stroke-linejoin="round"
+        clip-path="url(#frc)"/>
+      <clipPath id="frc"><rect x="38" y="0" width="42" height="80"/></clipPath>
+      <polygon points="40,24 30,30 30,50 40,56 50,50 50,30"
+        fill="none" stroke="white" stroke-width="4.5" stroke-linejoin="round"/>
+    </svg>
+    <span style="font-family:'DM Sans',sans-serif;font-weight:800;letter-spacing:0.1em;font-size:0.95rem;">PARTNERSCHAFT <span style="color:#2e7fd4;">INDIA</span></span>
+  </div>
+  <p>© 2025 Partnerschaft India. Retail Activation Agency.</p>
+  <div class="footer-links">
+    <a href="https://barada.in" target="_blank">barada.in</a>
+    <a href="https://ayushman.world" target="_blank">ayushman.world</a>
+    <a href="mailto:baradaindofficial@gmail.com">Email</a>
+    <a href="tel:+919886553937">Call</a>
+  </div>
+</footer>
+
+<script>
+  // Scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('successMsg').classList.add('show');
+      btn.textContent = 'Submitted ✓';
+      btn.style.background = '#2d7a2d';
+    }, 1000);
+  }
+
+  // Hero entrance
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.hero-left').style.animation = 'slideInLeft 0.7s ease both';
+  });
+
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  `;
+  document.head.appendChild(style);
+</script>
+
 </body>
 </html>
