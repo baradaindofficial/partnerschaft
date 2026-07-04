@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About BK Satpathy — Partnerschaft India | 19 Years Retail & Procurement Expert</title>
+<meta name="description" content="Meet BK Satpathy — founder of Partnerschaft India. 19 years in retail execution, procurement, and BTL. Rutgers-certified, Guinness Record holder, IIM Kozhikode, Great Manager Award.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════
+   PARTNERSCHAFT INDIA — Shared Stylesheet
+   partnerschaft.in
+══════════════════════════════════════════════════ */
+
+:root {
+  --ink:        #162119;
+  --paper:      #f5f0e8;
+  --green:       #2d6a4f;
+  --green-dark:  #1b4332;
+  --green-mid:   #245f40;
+  --green-light: #40916c;
+  --green-pale:  #e8f5ee;
+  --muted:      #4a6555;
+  --border:     #c8dbd0;
+  --white:      #ffffff;
+  --green:      #1a7a4a;
+  --shadow:     0 4px 24px rgba(13,31,53,0.08);
+  --shadow-lg:  0 12px 48px rgba(13,31,53,0.14);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+
+/* ── TYPOGRAPHY ─────────────────────────────────── */
+.serif { font-family: 'Playfair Display', serif; }
+.mono  { font-family: 'DM Mono', monospace; }
+
+.section-tag { font-family:'DM Mono',monospace; font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; color:var(--green); margin-bottom:.7rem; }
+.section-h2  { font-family:'Playfair Display',serif; font-size:clamp(1.9rem,3.2vw,2.8rem); font-weight:700; color:var(--ink); line-height:1.15; margin-bottom:.9rem; }
+.section-h2.light { color: var(--white); }
+.section-sub { font-size:.96rem; color:var(--muted); line-height:1.78; max-width:560px; }
+.section-sub.light { color: rgba(255,255,255,0.6); }
+
+/* ── LAYOUT ─────────────────────────────────────── */
+section { padding: 5.5rem 8vw; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* ── LOGO MARK ──────────────────────────────────── */
+.logo-mark {
+  display:inline-flex; align-items:center; justify-content:center;
+  background:var(--green); border-radius:8px; padding:5px; flex-shrink:0;
+}
+
+/* ── NAV ────────────────────────────────────────── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  background:rgba(244,247,251,0.96); backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 5vw; height:68px;
+}
+.nav-logo { display:flex; align-items:center; gap:.7rem; text-decoration:none; }
+.nav-logo-text { font-family:'DM Sans',sans-serif; font-weight:800; font-size:1rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); line-height:1.1; }
+.nav-logo-text small { display:block; font-family:'DM Mono',monospace; font-size:.58rem; letter-spacing:.2em; color:var(--green); font-weight:400; }
+.nav-links { display:flex; gap:1.4rem; list-style:none; align-items:center; }
+.nav-links a { text-decoration:none; font-size:.8rem; font-weight:600; color:var(--muted); letter-spacing:.04em; text-transform:uppercase; transition:color .2s; padding:.25rem 0; border-bottom:2px solid transparent; }
+.nav-links a:hover, .nav-links a.active { color:var(--green); border-bottom-color:var(--green); }
+.nav-cta { background:var(--green); color:var(--white)!important; border:none; padding:.5rem 1.3rem; border-radius:3px; font-family:'DM Sans',sans-serif; font-size:.8rem; font-weight:700; cursor:pointer; text-decoration:none; letter-spacing:.06em; text-transform:uppercase; transition:all .2s; border-bottom:none!important; }
+.nav-cta:hover { background:var(--ink)!important; transform:translateY(-1px); }
+.nav-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+.nav-hamburger span { display:block; width:22px; height:2px; background:var(--ink); border-radius:2px; transition:all .3s; }
+.nav-mobile { display:none; position:fixed; top:68px; left:0; right:0; background:var(--white); border-bottom:1px solid var(--border); padding:1.5rem 5vw; z-index:499; flex-direction:column; gap:1rem; box-shadow:var(--shadow-lg); }
+.nav-mobile.open { display:flex; }
+.nav-mobile a { font-size:.9rem; font-weight:600; color:var(--ink); text-decoration:none; padding:.5rem 0; border-bottom:1px solid var(--border); letter-spacing:.04em; text-transform:uppercase; }
+.nav-mobile a:last-child { border-bottom:none; }
+
+/* ── BUTTONS ─────────────────────────────────────── */
+.btn { display:inline-block; padding:.85rem 2rem; font-family:'DM Sans',sans-serif; font-size:.88rem; font-weight:700; letter-spacing:.04em; text-decoration:none; border-radius:3px; transition:all .2s; cursor:pointer; border:2px solid transparent; }
+.btn-primary { background:var(--green); color:var(--white); border-color:var(--green); }
+.btn-primary:hover { background:var(--ink); border-color:var(--ink); transform:translateY(-2px); box-shadow:var(--shadow); }
+.btn-outline { background:transparent; color:var(--ink); border-color:var(--border); }
+.btn-outline:hover { border-color:var(--green); color:var(--green); }
+.btn-outline-white { background:transparent; color:var(--white); border-color:rgba(255,255,255,.4); }
+.btn-outline-white:hover { border-color:var(--white); background:rgba(255,255,255,.08); }
+.btn-sm { padding:.55rem 1.2rem; font-size:.8rem; }
+
+/* ── CARDS ───────────────────────────────────────── */
+.card { background:var(--white); border:1px solid var(--border); border-radius:8px; overflow:hidden; transition:all .3s; }
+.card:hover { box-shadow:var(--shadow-lg); transform:translateY(-3px); }
+.card-body { padding:2rem 1.8rem; }
+.card-accent { border-top:3px solid var(--green); }
+
+/* ── PILL TAGS ───────────────────────────────────── */
+.pill { display:inline-block; font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; background:var(--green-pale); color:var(--green); padding:.22rem .7rem; border-radius:12px; }
+.pill-green { background:#e6f4ed; color:var(--green); }
+.pill-dark  { background:rgba(255,255,255,.1); color:rgba(255,255,255,.8); }
+
+/* ── IMAGE BLOCKS ────────────────────────────────── */
+.img-cover { width:100%; height:100%; object-fit:cover; }
+.img-rounded { border-radius:8px; }
+.img-frame { border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+
+/* ── TICKER ──────────────────────────────────────── */
+.ticker-wrap { background:var(--green-dark); overflow:hidden; padding:.75rem 0; border-top:3px solid var(--green-light); }
+.ticker-inner { display:flex; gap:3rem; animation:ticker 30s linear infinite; white-space:nowrap; }
+.ticker-item { font-family:'DM Mono',monospace; font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.7); flex-shrink:0; }
+.ticker-sep { color:var(--green-light); margin:0 .5rem; }
+@keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ── FORM ELEMENTS ───────────────────────────────── */
+.fg { display:flex; flex-direction:column; gap:.35rem; }
+.fg label { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.4); }
+.fg label.dark { color:var(--muted); }
+.fg input, .fg select, .fg textarea {
+  padding:.82rem 1rem; font-family:'DM Sans',sans-serif; font-size:.88rem;
+  border-radius:3px; outline:none; resize:vertical; transition:border-color .2s;
+}
+.fg input.dark-field, .fg select.dark-field, .fg textarea.dark-field {
+  background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.15); color:var(--white);
+}
+.fg input.light-field, .fg select.light-field, .fg textarea.light-field {
+  background:var(--white); border:1px solid var(--border); color:var(--ink);
+}
+.fg input.dark-field:focus, .fg select.dark-field:focus, .fg textarea.dark-field:focus { border-color:var(--green-light); }
+.fg input.light-field:focus, .fg select.light-field:focus, .fg textarea.light-field:focus { border-color:var(--green); }
+.fg select option { background:#1b4332; }
+.fg select.light-field option { background:#fff; color:var(--ink); }
+.cb-grid { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+.cb-item { display:flex; align-items:center; gap:.55rem; cursor:pointer; }
+.cb-item input[type="checkbox"] { width:15px; height:15px; accent-color:var(--green-light); flex-shrink:0; }
+.cb-item span { font-size:.82rem; color:rgba(255,255,255,.7); }
+.cb-item span.dark { color:var(--muted); }
+.form-note { font-size:.75rem; color:rgba(255,255,255,.3); }
+.form-note.dark { color:var(--muted); }
+
+/* ── SUCCESS / NEXT STEPS ────────────────────────── */
+.success-box { display:none; background:rgba(46,127,212,.15); border:1px solid var(--green-light); border-radius:4px; padding:1.1rem 1.4rem; color:#8bbfee; font-size:.88rem; align-items:center; gap:.7rem; }
+.success-box.show { display:flex; }
+.next-steps { display:none; margin-top:.8rem; background:rgba(14,61,114,.4); border:1px solid rgba(46,127,212,.3); border-radius:4px; padding:1.2rem 1.5rem; }
+.next-steps.show { display:block; }
+.next-steps h5 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--green-light); margin-bottom:.8rem; }
+.ns-row { display:flex; align-items:flex-start; gap:.7rem; margin-bottom:.55rem; font-size:.82rem; color:rgba(255,255,255,.65); }
+.ns-dot { width:20px; height:20px; border-radius:50%; background:var(--green-light); color:white; display:flex; align-items:center; justify-content:center; font-size:.65rem; font-weight:700; flex-shrink:0; margin-top:1px; }
+
+/* ── PAGE HERO (inner pages) ─────────────────────── */
+.page-hero { padding:7rem 8vw 4rem; background:linear-gradient(135deg,var(--green-dark) 0%,var(--green-mid) 100%); color:var(--white); position:relative; overflow:hidden; margin-top:68px; }
+.page-hero::before { content:''; position:absolute; inset:0; background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(255,255,255,.04) 59px,rgba(255,255,255,.04) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(255,255,255,.04) 59px,rgba(255,255,255,.04) 60px); }
+.page-hero-inner { position:relative; z-index:1; max-width:680px; }
+.page-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.2rem,4vw,3.6rem); font-weight:900; line-height:1.08; margin-bottom:1rem; }
+.page-hero p { font-size:1rem; color:rgba(255,255,255,.7); line-height:1.78; }
+.breadcrumb { display:flex; align-items:center; gap:.5rem; margin-bottom:1.5rem; font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.15em; text-transform:uppercase; }
+.breadcrumb a { color:rgba(255,255,255,.45); text-decoration:none; transition:color .2s; }
+.breadcrumb a:hover { color:var(--white); }
+.breadcrumb span { color:rgba(255,255,255,.25); }
+
+/* ── WHATSAPP FLOAT ──────────────────────────────── */
+.wa-float { position:fixed; bottom:2rem; right:2rem; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:.5rem; }
+.wa-tooltip { background:var(--ink); color:var(--white); font-size:.78rem; font-weight:600; padding:.45rem .9rem; border-radius:4px; white-space:nowrap; opacity:0; transform:translateY(4px); transition:all .25s; pointer-events:none; }
+.wa-float:hover .wa-tooltip { opacity:1; transform:translateY(0); }
+.wa-btn { width:56px; height:56px; border-radius:50%; background:#25d366; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow:0 4px 20px rgba(37,211,102,.4); transition:transform .2s,box-shadow .2s; animation:waPulse 2.5s ease infinite; }
+.wa-btn:hover { transform:scale(1.08); box-shadow:0 6px 28px rgba(37,211,102,.55); animation:none; }
+.wa-btn svg { width:30px; height:30px; }
+@keyframes waPulse { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)} 50%{box-shadow:0 4px 32px rgba(37,211,102,.7)} }
+
+/* ── FOOTER ──────────────────────────────────────── */
+footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem; border-top:1px solid rgba(255,255,255,.06); }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem; }
+.footer-brand-name { font-family:'DM Sans',sans-serif; font-weight:800; letter-spacing:.1em; font-size:.95rem; color:var(--white); margin-bottom:.4rem; }
+.footer-brand-name span { color:var(--green-light); }
+.footer-tagline { font-size:.8rem; color:rgba(255,255,255,.35); line-height:1.6; margin-top:.5rem; max-width:240px; }
+.footer-col h5 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--green-light); margin-bottom:1rem; }
+.footer-col ul { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
+.footer-col ul a { color:rgba(255,255,255,.4); text-decoration:none; font-size:.82rem; transition:color .2s; }
+.footer-col ul a:hover { color:var(--white); }
+.footer-bottom { padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.06); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:.75rem; }
+.footer-bottom a { color:rgba(255,255,255,.35); text-decoration:none; }
+.footer-bottom a:hover { color:var(--white); }
+
+/* ── ANIMATIONS ──────────────────────────────────── */
+.fade-up { opacity:0; transform:translateY(20px); transition:opacity .55s ease,transform .55s ease; }
+.fade-up.visible { opacity:1; transform:translateY(0); }
+.fade-up:nth-child(2){transition-delay:.1s} .fade-up:nth-child(3){transition-delay:.2s} .fade-up:nth-child(4){transition-delay:.3s}
+.fade-left { opacity:0; transform:translateX(-20px); transition:opacity .6s ease,transform .6s ease; }
+.fade-left.visible { opacity:1; transform:translateX(0); }
+.fade-right { opacity:0; transform:translateX(20px); transition:opacity .6s ease,transform .6s ease; }
+.fade-right.visible { opacity:1; transform:translateX(0); }
+
+/* ── RESPONSIVE ──────────────────────────────────── */
+@media (max-width:960px) {
+  .footer-grid { grid-template-columns:1fr 1fr; gap:2rem; }
+  .nav-links { display:none; }
+  .nav-hamburger { display:flex; }
+}
+@media (max-width:600px) {
+  section { padding:4rem 6vw; }
+  .page-hero { padding:5rem 6vw 3rem; }
+  .footer-grid { grid-template-columns:1fr; gap:1.5rem; }
+  .cb-grid { grid-template-columns:1fr; }
+}
+
+/* ── SOCIAL ICONS ─────────────────────────────────── */
+.social-icons { display:flex; gap:.7rem; align-items:center; }
+.social-icons a {
+  width:36px; height:36px; border-radius:50%;
+  border:1px solid rgba(255,255,255,.18);
+  display:flex; align-items:center; justify-content:center;
+  color:rgba(255,255,255,.55); transition:all .2s; text-decoration:none;
+}
+.social-icons a:hover { background:var(--green); border-color:var(--green); color:var(--white); transform:translateY(-2px); }
+.social-icons svg { flex-shrink:0; }
+.mobile-social { display:flex; gap:.8rem; padding:.5rem 0 .2rem; border-top:1px solid var(--border); margin-top:.4rem; }
+.mobile-social a { width:36px; height:36px; border-radius:50%; background:var(--green-pale); color:var(--green); display:flex; align-items:center; justify-content:center; text-decoration:none; transition:all .2s; }
+.mobile-social a:hover { background:var(--green); color:var(--white); }
+/* ── FOOTER SOCIAL ROW ────────────────────────────── */
+.footer-social-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.08); margin-top:1.5rem; }
+.footer-social-label { font-family:"DM Mono",monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.3); }
+/* ── TOP CONTACT BAR ──────────────────────────────── */
+.top-bar { background:var(--green-dark); padding:.4rem 5vw; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; }
+.top-bar-left { display:flex; gap:1.4rem; }
+.top-bar a { font-family:"DM Mono",monospace; font-size:.65rem; letter-spacing:.1em; color:rgba(255,255,255,.55); text-decoration:none; display:flex; align-items:center; gap:.4rem; transition:color .2s; }
+.top-bar a:hover { color:var(--white); }
+.top-bar-right .social-icons a { width:28px; height:28px; border-color:rgba(255,255,255,.12); }
+.top-bar-right .social-icons a:hover { background:var(--green-light); border-color:var(--green-light); }
+
+</style>
+<style>
+.about-hero-layout { display:grid; grid-template-columns:1fr 1.4fr; gap:5rem; align-items:center; padding:4rem 8vw 4rem; background:var(--green-dark); }
+.about-hero-img { border-radius:12px; overflow:hidden; box-shadow:var(--shadow-lg); position:relative; }
+.about-hero-img img { width:100%; height:460px; object-fit:cover; }
+.about-hero-img-caption { position:absolute; bottom:0; left:0; right:0; padding:1.5rem; background:linear-gradient(transparent,rgba(0,0,0,.6)); }
+.about-hero-img-caption h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--white); }
+.about-hero-img-caption p { font-size:.78rem; color:rgba(255,255,255,.65); margin-top:.2rem; }
+.about-hero-text { color:var(--white); }
+.about-hero-text .section-tag { color:var(--green-light); }
+.about-hero-text h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,3.5vw,3rem); font-weight:900; line-height:1.1; margin-bottom:1rem; }
+.about-hero-text p { font-size:.95rem; color:rgba(255,255,255,.65); line-height:1.8; margin-bottom:1rem; }
+.credential-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin:2rem 0; }
+.cred { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:1.3rem 1.4rem; }
+.cred-icon { font-size:1.5rem; margin-bottom:.6rem; }
+.cred h4 { font-size:.88rem; font-weight:700; color:var(--white); margin-bottom:.25rem; }
+.cred p { font-size:.76rem; color:rgba(255,255,255,.45); line-height:1.55; }
+.cred .pill { margin-top:.5rem; }
+.model-section { background:var(--white); }
+.model-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; margin-top:3rem; }
+.model-img { border-radius:10px; overflow:hidden; box-shadow:var(--shadow); }
+.model-img img { width:100%; height:360px; object-fit:cover; }
+.model-steps { display:flex; flex-direction:column; gap:1.2rem; }
+.model-step { display:flex; gap:1.2rem; align-items:flex-start; }
+.ms-num { width:40px; height:40px; border-radius:50%; background:var(--green); color:var(--white); display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.ms-text h4 { font-size:.92rem; font-weight:700; margin-bottom:.3rem; }
+.ms-text p { font-size:.82rem; color:var(--muted); line-height:1.65; }
+.timeline { padding:5rem 8vw; background:var(--paper); }
+.timeline-items { margin-top:3rem; position:relative; }
+.timeline-items::before { content:''; position:absolute; left:180px; top:0; bottom:0; width:2px; background:var(--border); }
+.tl-item { display:grid; grid-template-columns:180px 1fr; gap:2.5rem; margin-bottom:2rem; align-items:flex-start; }
+.tl-year { font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:700; color:var(--green); text-align:right; padding-top:.2rem; }
+.tl-body { position:relative; padding-left:2rem; }
+.tl-body::before { content:''; position:absolute; left:-2rem; top:.6rem; width:12px; height:12px; border-radius:50%; background:var(--green); border:3px solid var(--white); box-shadow:0 0 0 2px var(--green); }
+.tl-body h4 { font-size:.92rem; font-weight:700; margin-bottom:.3rem; }
+.tl-body p { font-size:.82rem; color:var(--muted); line-height:1.65; }
+.associates { background:var(--green-dark); padding:4rem 8vw; text-align:center; }
+.assoc-logos { display:flex; justify-content:center; flex-wrap:wrap; gap:1.5rem; margin-top:2.5rem; }
+.assoc-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:1.5rem 2rem; min-width:180px; }
+.assoc-card h4 { font-family:'Playfair Display',serif; font-size:1rem; color:var(--white); margin-bottom:.3rem; }
+.assoc-card p { font-size:.75rem; color:rgba(255,255,255,.45); }
+@media(max-width:900px){
+  .about-hero-layout{grid-template-columns:1fr;gap:2.5rem;padding:3rem 6vw;}
+  .about-hero-img img{height:300px;}
+  .model-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .timeline-items::before{left:0;}
+  .tl-item{grid-template-columns:1fr;gap:.5rem;}
+  .tl-year{text-align:left;}
+  .tl-body{padding-left:1.5rem;}
+  .credential-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<!-- TOP CONTACT BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <a href="tel:+919113283848">📞 +91 91132 83848</a>
+    <a href="mailto:business@partnerschaft.in">✉ business@partnerschaft.in</a>
+  </div>
+  <div class="top-bar-right">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/partnerschaftindia/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/partnerschaftindia/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://in.linkedin.com/company/partnerschaftindia" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+<nav>
+  <a class="nav-logo" href="/index.html">
+    <div class="logo-mark" style="width:38px;height:38px;border-radius:7px;"><svg viewBox="0 0 64 64" width="26" height="26" xmlns="http://www.w3.org/2000/svg"><polygon points="8,18 20,11 8,18 2,32 8,46 20,53 32,46 32,18 20,11" fill="none" stroke="white" stroke-width="4.5" stroke-linejoin="round" clip-path="url(#n1)"/><clipPath id="n1"><rect x="0" y="0" width="30" height="64"/></clipPath><polygon points="56,18 44,11 32,18 32,46 44,53 56,46 62,32" fill="none" stroke="white" stroke-width="4.5" stroke-linejoin="round" clip-path="url(#n2)"/><clipPath id="n2"><rect x="30" y="0" width="34" height="64"/></clipPath><polygon points="32,20 24,25 24,39 32,44 40,39 40,25" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round"/></svg></div>
+    <div class="nav-logo-text">PARTNERSCHAFT<small>India · Retail Agency</small></div>
+  </a>
+    <ul class="nav-links">
+    <li><a href="/index.html" id="nl-home">Home</a></li>
+    <li><a href="/about" id="nl-about">About</a></li>
+    <li><a href="/services" id="nl-services">Services</a></li>
+    <li><a href="/network" id="nl-network">Join Network</a></li>
+    <li><a href="/contact" class="nav-cta">Share Requirement</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="/index.html">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/network">Join Network</a>
+  <a href="/contact">Share Requirement →</a>
+  <div class="mobile-social">
+    <a href="https://www.facebook.com/partnerschaftindia/" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/partnerschaftindia/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://in.linkedin.com/company/partnerschaftindia" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ABOUT HERO -->
+<div style="margin-top:68px;">
+  <div class="about-hero-layout">
+    <div class="about-hero-img fade-left">
+      <img src="https://picsum.photos/seed/professional1/600/460" alt="BK Satpathy — Founder Partnerschaft India">
+      <div class="about-hero-img-caption">
+        <h3>BK Satpathy</h3>
+        <p>Founder · Partnerschaft India · 19 Years Retail & Procurement</p>
+      </div>
+    </div>
+    <div class="about-hero-text fade-right">
+      <div class="section-tag">The Expert Behind This</div>
+      <h1>Barada Kanta Satpathy</h1>
+      <p>My career spans 19 years across retail execution, procurement operations, and BTL marketing governance — in consumer electronics, FMCG, and services. I have managed pan-India vendor networks, overseen multi-city store rollouts, driven SAP P2P implementations, and built commercial teams from the ground up.</p>
+      <p>Partnerschaft India is built on that experience. A lean model that puts domain expertise at the centre, uses a pre-vetted vendor network as the engine, and removes every unnecessary cost layer between a brand's requirement and its execution.</p>
+      <p style="color:rgba(255,255,255,.85);font-style:italic;font-family:'Playfair Display',serif;font-size:1rem;margin-top:1.5rem;padding-left:1rem;border-left:3px solid var(--green-light);">"When you share a brief with us, I personally assess it, identify the right vendor partner, and coordinate the outcome. One accountable expert — not a chain of project managers."</p>
+      <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a class="btn btn-primary btn-sm" href="/contact">Work With Me</a>
+        <a class="btn btn-outline-white btn-sm" href="https://linkedin.com/in/bksatpathy" target="_blank">LinkedIn Profile ↗</a>
+        <a class="btn btn-outline-white btn-sm" href="https://bksatpathy.com" target="_blank">bksatpathy.com ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CREDENTIALS -->
+<section style="background:var(--paper);">
+  <div class="fade-up"><div class="section-tag">Credentials & Recognition</div><h2 class="section-h2">The Track Record<br>Behind the Work.</h2></div>
+  <div class="credential-grid" style="margin-top:2.5rem;">
+    <div class="cred fade-up" style="background:var(--white);border-color:var(--border);color:var(--ink);">
+      <div class="cred-icon">🎓</div><h4 style="color:var(--ink);">Global Procurement & Sourcing</h4><p style="color:var(--muted);">Rutgers University, USA — the lead credential behind every sourcing and vendor engagement we manage.</p><span class="pill">Lead Credential</span>
+    </div>
+    <div class="cred fade-up" style="background:var(--white);border-color:var(--border);">
+      <div class="cred-icon">🏆</div><h4 style="color:var(--ink);">Great People Manager Award</h4><p style="color:var(--muted);">Awarded by the Great Manager Institute in partnership with the Ministry of HRD, Government of India.</p><span class="pill">National Award</span>
+    </div>
+    <div class="cred fade-up" style="background:var(--white);border-color:var(--border);">
+      <div class="cred-icon">📊</div><h4 style="color:var(--ink);">Business Analytics — IIM Kozhikode</h4><p style="color:var(--muted);">Data-driven decision making applied across spend analysis, vendor performance, and ROI measurement.</p><span class="pill">IIM Certified</span>
+    </div>
+    <div class="cred fade-up" style="background:var(--white);border-color:var(--border);">
+      <div class="cred-icon">🌏</div><h4 style="color:var(--ink);">Guinness World Record</h4><p style="color:var(--muted);">Highest exclusive brand store launches in a single calendar year — Xiaomi India, 2022. Pan-India retail rollout at scale.</p><span class="pill">Record Holder</span>
+    </div>
+    <div class="cred fade-up" style="background:var(--white);border-color:var(--border);">
+      <div class="cred-icon">⚙️</div><h4 style="color:var(--ink);">SAP Implementation & Operations</h4><p style="color:var(--muted);">Ariba · SRM · MM · RMS. Implementer and operational user across multiple organisations — full P2P lifecycle.</p><span class="pill">P2P Systems Expert</span>
+    </div>
+    <div class="cred fade-up" style="background:var(--white);border-color:var(--border);">
+      <div class="cred-icon">✅</div><h4 style="color:var(--ink);">Zero Audit Findings — Three Cycles</h4><p style="color:var(--muted);">Three consecutive procurement and vendor governance audit cycles with zero major findings. Process integrity is foundational.</p><span class="pill">Track Record</span>
+    </div>
+  </div>
+</section>
+
+<!-- MODEL -->
+<section class="model-section">
+  <div class="fade-up"><div class="section-tag">The Business Model</div><h2 class="section-h2">How the Mediator<br>Model Works.</h2><p class="section-sub">No setup costs passed to you. No bloated team. Just expertise and a network that delivers.</p></div>
+  <div class="model-grid">
+    <div class="model-img fade-left"><img src="https://picsum.photos/seed/teamwork/600/460" alt="Coordination and vendor management"></div>
+    <div class="model-steps fade-right">
+      <div class="model-step"><div class="ms-num">1</div><div class="ms-text"><h4>You share a brief</h4><p>Service area, target locations, timeline, budget — the more context, the faster we move. One form, one call.</p></div></div>
+      <div class="model-step"><div class="ms-num">2</div><div class="ms-text"><h4>We identify the right vendor</h4><p>Our pan-India pre-vetted network is mapped against your requirement. City, category, scale — matched in 24–48 hours.</p></div></div>
+      <div class="model-step"><div class="ms-num">3</div><div class="ms-text"><h4>We coordinate everything</h4><p>All vendor communication, negotiation, and alignment happens on our side. You receive a clean proposal.</p></div></div>
+      <div class="model-step"><div class="ms-num">4</div><div class="ms-text"><h4>Execution with accountability</h4><p>We manage quality, timelines, and documentation. You get milestone updates — no vendor chasing needed.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<div class="timeline">
+  <div class="fade-up"><div class="section-tag">Career Journey</div><h2 class="section-h2">19 Years of<br>Relevant Experience.</h2></div>
+  <div class="timeline-items fade-up">
+    <div class="tl-item"><div class="tl-year">2005–08</div><div class="tl-body"><h4>Early Career — Procurement & SAP Implementation</h4><p>Started at Eureka Forbes and Virgin Mobile India. Implemented SAP procurement modules and built foundational P2P operational skills.</p></div></div>
+    <div class="tl-item"><div class="tl-year">2008–14</div><div class="tl-body"><h4>Vendor Management & Retail Operations</h4><p>Managed vendor networks and retail execution across multi-city programmes. Developed expertise in BTL coordination and instore branding governance.</p></div></div>
+    <div class="tl-item"><div class="tl-year">2014–19</div><div class="tl-body"><h4>Senior Commercial & Procurement Leadership</h4><p>Led procurement and commercial operations across large-scale retail programmes. Managed multi-billion INR annual spend portfolios and cross-functional vendor governance.</p></div></div>
+    <div class="tl-item"><div class="tl-year">2019–22</div><div class="tl-body"><h4>Xiaomi India — Retail Marketing Commercial</h4><p>Oversaw retail marketing commercial operations including budget planning, PO-to-payment processes, promoter resources, and exclusive store opex across India. Guinness Record: highest exclusive brand store launches in a calendar year.</p></div></div>
+    <div class="tl-item"><div class="tl-year">2022–Now</div><div class="tl-body"><h4>Partnerschaft India — Founded</h4><p>Launched Partnerschaft India as a lean expert mediator for retail execution and procurement. Built the pan-India vendor network and the operational model that delivers results without overhead.</p></div></div>
+  </div>
+</div>
+
+<!-- ASSOCIATED BRANDS -->
+<div class="associates">
+  <div class="fade-up"><div class="section-tag" style="color:var(--green-light);">Our Ecosystem</div><h2 class="section-h2 light">Connected Businesses</h2><p class="section-sub light" style="margin:0 auto;text-align:center;">Partnerschaft India is part of a broader ecosystem of purpose-driven organisations.</p></div>
+  <div class="assoc-logos">
+    <div class="assoc-card fade-up"><h4>barada.in</h4><p>BTL marketing, activations, retail branding &amp; events</p><a href="https://barada.in" target="_blank" style="color:var(--green-light);font-size:.75rem;text-decoration:none;margin-top:.5rem;display:inline-block;">Visit ↗</a></div>
+    <div class="assoc-card fade-up"><h4>partnerschaft.in</h4><p>Corporate partnerships, BTL execution &amp; procurement mediation</p><a href="https://partnerschaft.in" target="_blank" style="color:var(--green-light);font-size:.75rem;text-decoration:none;margin-top:.5rem;display:inline-block;">Visit ↗</a></div>
+    <div class="assoc-card fade-up"><h4>ayushman.world</h4><p>Purpose-driven initiative for children with special needs</p><a href="https://ayushman.world" target="_blank" style="color:var(--green-light);font-size:.75rem;text-decoration:none;margin-top:.5rem;display:inline-block;">Visit ↗</a></div>
+    <div class="assoc-card fade-up"><h4>bksatpathy.com</h4><p>Personal professional portfolio &amp; thought leadership</p><a href="https://bksatpathy.com" target="_blank" style="color:var(--green-light);font-size:.75rem;text-decoration:none;margin-top:.5rem;display:inline-block;">Visit ↗</a></div>
+  </div>
+  <div style="margin-top:2.5rem;text-align:center;">
+    <a class="btn btn-outline-white" href="/contact">Work With Us →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand-name">PARTNERSCHAFT <span>INDIA</span></div><div class="footer-tagline">Pan-India retail execution mediator. BTL · Printing · Fixtures · Gifting · P2P.</div></div>
+    <div class="footer-col"><h5>Pages</h5><ul><li><a href="/index.html">Home</a></li><li><a href="/about">About</a></li><li><a href="/services">Services</a></li><li><a href="/network">Join Network</a></li><li><a href="/contact">Contact</a></li></ul></div>
+    <div class="footer-col"><h5>Services</h5><ul><li><a href="/services#btl">BTL Activation</a></li><li><a href="/services#printing">Printing</a></li><li><a href="/services#fixtures">Fixtures</a></li><li><a href="/services#gifting">Gifting</a></li><li><a href="/services#p2p">P2P Support</a></li></ul></div>
+    <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:+919113283848">+91 91132 83848</a></li><li><a href="mailto:business@partnerschaft.in">Email Us</a></li><li><a href="https://wa.me/919113283848" target="_blank">WhatsApp</a></li>
+      <li><a href="https://www.facebook.com/partnerschaftindia/" target="_blank">Facebook ↗</a></li>
+      <li><a href="https://www.instagram.com/partnerschaftindia/" target="_blank">Instagram ↗</a></li>
+      <li><a href="https://in.linkedin.com/company/partnerschaftindia" target="_blank">LinkedIn ↗</a></li></ul></div>
+  </div>
+      <div class="footer-social-row">
+        <span class="footer-social-label">Follow Us</span>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/partnerschaftindia/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/partnerschaftindia/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://in.linkedin.com/company/partnerschaftindia" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+  <div class="footer-bottom"><p>© 2025 Partnerschaft India. All rights reserved.</p></div>
+</footer>
+<div class="wa-float"><div class="wa-tooltip">💬 WhatsApp Us</div><a class="wa-btn" href="https://wa.me/919113283848?text=Hi+BK%2C+I+read+your+profile+on+partnerschaft.in" target="_blank"><svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.554 4.112 1.523 5.843L.057 23.882l6.204-1.628A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.49-5.19-1.348l-.372-.22-3.684.967.984-3.595-.242-.373A9.932 9.932 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a></div>
+<script>
+document.getElementById('nl-about').classList.add('active');
+function toggleMenu(){document.getElementById('navMobile').classList.toggle('open');}
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.fade-up,.fade-left,.fade-right').forEach(el=>io.observe(el));
+</script>
+</body></html>
