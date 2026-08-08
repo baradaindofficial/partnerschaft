@@ -13,15 +13,15 @@
 ══════════════════════════════════════════════════ */
 
 :root {
-  --ink:        #162119;
-  --paper:      #f5f0e8;
-  --green:       #2d6a4f;
-  --green-dark:  #1b4332;
-  --green-mid:   #245f40;
-  --green-light: #40916c;
-  --green-pale:  #e8f5ee;
-  --muted:      #4a6555;
-  --border:     #c8dbd0;
+  --ink:        #0a1825;
+  --paper:      #faf7f2;
+  --green:       #0d2b4e;
+  --green-dark:  #071828;
+  --green-mid:   #163d6a;
+  --green-light: #e8860a;
+  --green-pale:  #fef3e2;
+  --muted:      #546070;
+  --border:     #d8d0c0;
   --white:      #ffffff;
   --green:      #1a7a4a;
   --shadow:     0 4px 24px rgba(13,31,53,0.08);
@@ -37,7 +37,7 @@ img { display: block; max-width: 100%; }
 .serif { font-family: 'Playfair Display', serif; }
 .mono  { font-family: 'DM Mono', monospace; }
 
-.section-tag { font-family:'DM Mono',monospace; font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; color:var(--green); margin-bottom:.7rem; }
+.section-tag { font-family:'DM Mono',monospace; font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; color:var(--navy); margin-bottom:.7rem; }
 .section-h2  { font-family:'Playfair Display',serif; font-size:clamp(1.9rem,3.2vw,2.8rem); font-weight:700; color:var(--ink); line-height:1.15; margin-bottom:.9rem; }
 .section-h2.light { color: var(--white); }
 .section-sub { font-size:.96rem; color:var(--muted); line-height:1.78; max-width:560px; }
@@ -50,7 +50,7 @@ section { padding: 5.5rem 8vw; }
 /* ── LOGO MARK ──────────────────────────────────── */
 .logo-mark {
   display:inline-flex; align-items:center; justify-content:center;
-  background:var(--green); border-radius:8px; padding:5px; flex-shrink:0;
+  background:var(--navy); border-radius:8px; padding:5px; flex-shrink:0;
 }
 
 /* ── NAV ────────────────────────────────────────── */
@@ -63,11 +63,11 @@ nav {
 }
 .nav-logo { display:flex; align-items:center; gap:.7rem; text-decoration:none; }
 .nav-logo-text { font-family:'DM Sans',sans-serif; font-weight:800; font-size:1rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); line-height:1.1; }
-.nav-logo-text small { display:block; font-family:'DM Mono',monospace; font-size:.58rem; letter-spacing:.2em; color:var(--green); font-weight:400; }
+.nav-logo-text small { display:block; font-family:'DM Mono',monospace; font-size:.58rem; letter-spacing:.2em; color:var(--navy); font-weight:400; }
 .nav-links { display:flex; gap:1.4rem; list-style:none; align-items:center; }
 .nav-links a { text-decoration:none; font-size:.8rem; font-weight:600; color:var(--muted); letter-spacing:.04em; text-transform:uppercase; transition:color .2s; padding:.25rem 0; border-bottom:2px solid transparent; }
-.nav-links a:hover, .nav-links a.active { color:var(--green); border-bottom-color:var(--green); }
-.nav-cta { background:var(--green); color:var(--white)!important; border:none; padding:.5rem 1.3rem; border-radius:3px; font-family:'DM Sans',sans-serif; font-size:.8rem; font-weight:700; cursor:pointer; text-decoration:none; letter-spacing:.06em; text-transform:uppercase; transition:all .2s; border-bottom:none!important; }
+.nav-links a:hover, .nav-links a.active { color:var(--navy); border-bottom-color:var(--navy); }
+.nav-cta { background:var(--navy); color:var(--white)!important; border:none; padding:.5rem 1.3rem; border-radius:3px; font-family:'DM Sans',sans-serif; font-size:.8rem; font-weight:700; cursor:pointer; text-decoration:none; letter-spacing:.06em; text-transform:uppercase; transition:all .2s; border-bottom:none!important; }
 .nav-cta:hover { background:var(--ink)!important; transform:translateY(-1px); }
 .nav-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
 .nav-hamburger span { display:block; width:22px; height:2px; background:var(--ink); border-radius:2px; transition:all .3s; }
@@ -78,10 +78,10 @@ nav {
 
 /* ── BUTTONS ─────────────────────────────────────── */
 .btn { display:inline-block; padding:.85rem 2rem; font-family:'DM Sans',sans-serif; font-size:.88rem; font-weight:700; letter-spacing:.04em; text-decoration:none; border-radius:3px; transition:all .2s; cursor:pointer; border:2px solid transparent; }
-.btn-primary { background:var(--green); color:var(--white); border-color:var(--green); }
+.btn-primary { background:var(--navy); color:var(--white); border-color:var(--navy); }
 .btn-primary:hover { background:var(--ink); border-color:var(--ink); transform:translateY(-2px); box-shadow:var(--shadow); }
 .btn-outline { background:transparent; color:var(--ink); border-color:var(--border); }
-.btn-outline:hover { border-color:var(--green); color:var(--green); }
+.btn-outline:hover { border-color:var(--navy); color:var(--navy); }
 .btn-outline-white { background:transparent; color:var(--white); border-color:rgba(255,255,255,.4); }
 .btn-outline-white:hover { border-color:var(--white); background:rgba(255,255,255,.08); }
 .btn-sm { padding:.55rem 1.2rem; font-size:.8rem; }
@@ -90,11 +90,11 @@ nav {
 .card { background:var(--white); border:1px solid var(--border); border-radius:8px; overflow:hidden; transition:all .3s; }
 .card:hover { box-shadow:var(--shadow-lg); transform:translateY(-3px); }
 .card-body { padding:2rem 1.8rem; }
-.card-accent { border-top:3px solid var(--green); }
+.card-accent { border-top:3px solid var(--navy); }
 
 /* ── PILL TAGS ───────────────────────────────────── */
-.pill { display:inline-block; font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; background:var(--green-pale); color:var(--green); padding:.22rem .7rem; border-radius:12px; }
-.pill-green { background:#e6f4ed; color:var(--green); }
+.pill { display:inline-block; font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; background:var(--saffron-pale); color:var(--navy); padding:.22rem .7rem; border-radius:12px; }
+.pill-green { background:#e6f4ed; color:var(--navy); }
 .pill-dark  { background:rgba(255,255,255,.1); color:rgba(255,255,255,.8); }
 
 /* ── IMAGE BLOCKS ────────────────────────────────── */
@@ -103,10 +103,10 @@ nav {
 .img-frame { border:1px solid var(--border); border-radius:8px; overflow:hidden; }
 
 /* ── TICKER ──────────────────────────────────────── */
-.ticker-wrap { background:var(--green-dark); overflow:hidden; padding:.75rem 0; border-top:3px solid var(--green-light); }
+.ticker-wrap { background:var(--navy-dark); overflow:hidden; padding:.75rem 0; border-top:3px solid var(--saffron); }
 .ticker-inner { display:flex; gap:3rem; animation:ticker 30s linear infinite; white-space:nowrap; }
 .ticker-item { font-family:'DM Mono',monospace; font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.7); flex-shrink:0; }
-.ticker-sep { color:var(--green-light); margin:0 .5rem; }
+.ticker-sep { color:var(--saffron); margin:0 .5rem; }
 @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
 /* ── FORM ELEMENTS ───────────────────────────────── */
@@ -123,29 +123,29 @@ nav {
 .fg input.light-field, .fg select.light-field, .fg textarea.light-field {
   background:var(--white); border:1px solid var(--border); color:var(--ink);
 }
-.fg input.dark-field:focus, .fg select.dark-field:focus, .fg textarea.dark-field:focus { border-color:var(--green-light); }
-.fg input.light-field:focus, .fg select.light-field:focus, .fg textarea.light-field:focus { border-color:var(--green); }
-.fg select option { background:#1b4332; }
+.fg input.dark-field:focus, .fg select.dark-field:focus, .fg textarea.dark-field:focus { border-color:var(--saffron); }
+.fg input.light-field:focus, .fg select.light-field:focus, .fg textarea.light-field:focus { border-color:var(--navy); }
+.fg select option { background:#071828; }
 .fg select.light-field option { background:#fff; color:var(--ink); }
 .cb-grid { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
 .cb-item { display:flex; align-items:center; gap:.55rem; cursor:pointer; }
-.cb-item input[type="checkbox"] { width:15px; height:15px; accent-color:var(--green-light); flex-shrink:0; }
+.cb-item input[type="checkbox"] { width:15px; height:15px; accent-color:var(--saffron); flex-shrink:0; }
 .cb-item span { font-size:.82rem; color:rgba(255,255,255,.7); }
 .cb-item span.dark { color:var(--muted); }
 .form-note { font-size:.75rem; color:rgba(255,255,255,.3); }
 .form-note.dark { color:var(--muted); }
 
 /* ── SUCCESS / NEXT STEPS ────────────────────────── */
-.success-box { display:none; background:rgba(46,127,212,.15); border:1px solid var(--green-light); border-radius:4px; padding:1.1rem 1.4rem; color:#8bbfee; font-size:.88rem; align-items:center; gap:.7rem; }
+.success-box { display:none; background:rgba(46,127,212,.15); border:1px solid var(--saffron); border-radius:4px; padding:1.1rem 1.4rem; color:#8bbfee; font-size:.88rem; align-items:center; gap:.7rem; }
 .success-box.show { display:flex; }
 .next-steps { display:none; margin-top:.8rem; background:rgba(14,61,114,.4); border:1px solid rgba(46,127,212,.3); border-radius:4px; padding:1.2rem 1.5rem; }
 .next-steps.show { display:block; }
-.next-steps h5 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--green-light); margin-bottom:.8rem; }
+.next-steps h5 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--saffron); margin-bottom:.8rem; }
 .ns-row { display:flex; align-items:flex-start; gap:.7rem; margin-bottom:.55rem; font-size:.82rem; color:rgba(255,255,255,.65); }
-.ns-dot { width:20px; height:20px; border-radius:50%; background:var(--green-light); color:white; display:flex; align-items:center; justify-content:center; font-size:.65rem; font-weight:700; flex-shrink:0; margin-top:1px; }
+.ns-dot { width:20px; height:20px; border-radius:50%; background:var(--saffron); color:white; display:flex; align-items:center; justify-content:center; font-size:.65rem; font-weight:700; flex-shrink:0; margin-top:1px; }
 
 /* ── PAGE HERO (inner pages) ─────────────────────── */
-.page-hero { padding:7rem 8vw 4rem; background:linear-gradient(135deg,var(--green-dark) 0%,var(--green-mid) 100%); color:var(--white); position:relative; overflow:hidden; margin-top:68px; }
+.page-hero { padding:7rem 8vw 4rem; background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy-mid) 100%); color:var(--white); position:relative; overflow:hidden; margin-top:68px; }
 .page-hero::before { content:''; position:absolute; inset:0; background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(255,255,255,.04) 59px,rgba(255,255,255,.04) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(255,255,255,.04) 59px,rgba(255,255,255,.04) 60px); }
 .page-hero-inner { position:relative; z-index:1; max-width:680px; }
 .page-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.2rem,4vw,3.6rem); font-weight:900; line-height:1.08; margin-bottom:1rem; }
@@ -165,12 +165,12 @@ nav {
 @keyframes waPulse { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)} 50%{box-shadow:0 4px 32px rgba(37,211,102,.7)} }
 
 /* ── FOOTER ──────────────────────────────────────── */
-footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem; border-top:1px solid rgba(255,255,255,.06); }
+footer { background:#071020; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem; border-top:1px solid rgba(255,255,255,.06); }
 .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem; }
 .footer-brand-name { font-family:'DM Sans',sans-serif; font-weight:800; letter-spacing:.1em; font-size:.95rem; color:var(--white); margin-bottom:.4rem; }
-.footer-brand-name span { color:var(--green-light); }
+.footer-brand-name span { color:var(--saffron); }
 .footer-tagline { font-size:.8rem; color:rgba(255,255,255,.35); line-height:1.6; margin-top:.5rem; max-width:240px; }
-.footer-col h5 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--green-light); margin-bottom:1rem; }
+.footer-col h5 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--saffron); margin-bottom:1rem; }
 .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
 .footer-col ul a { color:rgba(255,255,255,.4); text-decoration:none; font-size:.82rem; transition:color .2s; }
 .footer-col ul a:hover { color:var(--white); }
@@ -208,21 +208,21 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
   display:flex; align-items:center; justify-content:center;
   color:rgba(255,255,255,.55); transition:all .2s; text-decoration:none;
 }
-.social-icons a:hover { background:var(--green); border-color:var(--green); color:var(--white); transform:translateY(-2px); }
+.social-icons a:hover { background:var(--navy); border-color:var(--navy); color:var(--white); transform:translateY(-2px); }
 .social-icons svg { flex-shrink:0; }
 .mobile-social { display:flex; gap:.8rem; padding:.5rem 0 .2rem; border-top:1px solid var(--border); margin-top:.4rem; }
-.mobile-social a { width:36px; height:36px; border-radius:50%; background:var(--green-pale); color:var(--green); display:flex; align-items:center; justify-content:center; text-decoration:none; transition:all .2s; }
-.mobile-social a:hover { background:var(--green); color:var(--white); }
+.mobile-social a { width:36px; height:36px; border-radius:50%; background:var(--saffron-pale); color:var(--navy); display:flex; align-items:center; justify-content:center; text-decoration:none; transition:all .2s; }
+.mobile-social a:hover { background:var(--navy); color:var(--white); }
 /* ── FOOTER SOCIAL ROW ────────────────────────────── */
 .footer-social-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.08); margin-top:1.5rem; }
 .footer-social-label { font-family:"DM Mono",monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.3); }
 /* ── TOP CONTACT BAR ──────────────────────────────── */
-.top-bar { background:var(--green-dark); padding:.4rem 5vw; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; }
+.top-bar { background:var(--navy-dark); padding:.4rem 5vw; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; }
 .top-bar-left { display:flex; gap:1.4rem; }
 .top-bar a { font-family:"DM Mono",monospace; font-size:.65rem; letter-spacing:.1em; color:rgba(255,255,255,.55); text-decoration:none; display:flex; align-items:center; gap:.4rem; transition:color .2s; }
 .top-bar a:hover { color:var(--white); }
 .top-bar-right .social-icons a { width:28px; height:28px; border-color:rgba(255,255,255,.12); }
-.top-bar-right .social-icons a:hover { background:var(--green-light); border-color:var(--green-light); }
+.top-bar-right .social-icons a:hover { background:var(--saffron); border-color:var(--saffron); }
 
 </style>
 <style>
@@ -237,18 +237,18 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
 .svc-img img { width:100%; height:360px; object-fit:cover; }
 .svc-img-grid { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
 .svc-img-grid img { border-radius:6px; height:170px; object-fit:cover; width:100%; }
-.svc-num { font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:var(--green-light); margin-bottom:.5rem; }
+.svc-num { font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:var(--saffron); margin-bottom:.5rem; }
 .svc-h2 { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,2.8vw,2.4rem); font-weight:700; color:var(--ink); line-height:1.15; margin-bottom:1rem; }
 .svc-body p { font-size:.92rem; color:var(--muted); line-height:1.82; margin-bottom:1rem; }
 .use-cases { display:flex; flex-direction:column; gap:.6rem; margin:1.2rem 0; }
 .use-case { display:flex; align-items:flex-start; gap:.7rem; font-size:.85rem; color:var(--ink); }
-.use-case-dot { width:6px; height:6px; border-radius:50%; background:var(--green); margin-top:.5rem; flex-shrink:0; }
+.use-case-dot { width:6px; height:6px; border-radius:50%; background:var(--navy); margin-top:.5rem; flex-shrink:0; }
 .svc-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin:1rem 0 1.2rem; }
-.svc-quick-contact { background:var(--green-pale); border:1px solid var(--border); border-radius:6px; padding:1.2rem 1.4rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:1.2rem; }
-.svc-quick-contact p { font-size:.83rem; color:var(--green-dark); font-weight:600; margin:0; }
-.services-nav { background:var(--green-dark); padding:2rem 8vw; display:flex; gap:1rem; flex-wrap:wrap; margin-top:68px; border-bottom:1px solid rgba(255,255,255,.1); }
+.svc-quick-contact { background:var(--saffron-pale); border:1px solid var(--border); border-radius:6px; padding:1.2rem 1.4rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:1.2rem; }
+.svc-quick-contact p { font-size:.83rem; color:var(--navy-dark); font-weight:600; margin:0; }
+.services-nav { background:var(--navy-dark); padding:2rem 8vw; display:flex; gap:1rem; flex-wrap:wrap; margin-top:68px; border-bottom:1px solid rgba(255,255,255,.1); }
 .svc-nav-pill { font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.5); text-decoration:none; padding:.4rem .9rem; border-radius:14px; border:1px solid rgba(255,255,255,.15); transition:all .2s; }
-.svc-nav-pill:hover, .svc-nav-pill.active { background:var(--green); color:var(--white); border-color:var(--green); }
+.svc-nav-pill:hover, .svc-nav-pill.active { background:var(--navy); color:var(--white); border-color:var(--navy); }
 @media(max-width:900px){
   .svc-layout,.svc-layout.reverse{grid-template-columns:1fr;direction:ltr;}
   .svc-img img{height:250px;}
@@ -333,6 +333,11 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
     <div class="svc-body fade-right">
       <div class="svc-num">Service 01 · BTL Marketing Agency</div>
       <h2 class="svc-h2">BTL Activation</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0">
+              <img src="https://picsum.photos/seed/btl-roadshow/500/280" alt="BTL road show activation" style="width:100%;height:160px;object-fit:cover;border-radius:8px;grid-column:1/-1">
+              <img src="https://picsum.photos/seed/kiosk-on-ground/400/220" alt="Kiosk on-ground activation" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+              <img src="https://picsum.photos/seed/sampling-team-retail/400/220" alt="Sampling team retail" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+            </div>
       <p>Below-the-line activations that create real consumer experiences — not just impressions. We identify and coordinate specialist BTL agencies anywhere in India, matching your campaign geography and brief.</p>
       <p>As a mediator, we bring the right execution partner to your table. You brief us once. We handle vendor identification, coordination, quality oversight, and reporting.</p>
       <div class="use-cases">
@@ -362,6 +367,11 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
     <div class="svc-body fade-left">
       <div class="svc-num">Service 02 · Printing Agency · Mediator</div>
       <h2 class="svc-h2">Printing Mediation</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0">
+              <img src="https://picsum.photos/seed/posm-standee-retail/500/280" alt="POSM standee printing" style="width:100%;height:160px;object-fit:cover;border-radius:8px;grid-column:1/-1">
+              <img src="https://picsum.photos/seed/large-format-banner/400/220" alt="Large format banner" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+              <img src="https://picsum.photos/seed/fsu-shelf-display/400/220" alt="FSU shelf display" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+            </div>
       <p>From POSM and large-format display to brochures, danglers, shelf talkers, and FSUs — we mediate between your brand and specialist printers across India. Competitive pricing, brand-accurate output, reliable delivery.</p>
       <p>We understand print specifications, GSM, lamination, and brand colour matching — so you don't have to manage print vendors who speak a different language than your brand team.</p>
       <div class="use-cases">
@@ -386,6 +396,11 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
     <div class="svc-body fade-right">
       <div class="svc-num">Service 03 · Furniture & Fixtures · Mediator</div>
       <h2 class="svc-h2">Furniture & Fixtures</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0">
+              <img src="https://picsum.photos/seed/retail-sis-unit/500/280" alt="SIS retail unit installation" style="width:100%;height:160px;object-fit:cover;border-radius:8px;grid-column:1/-1">
+              <img src="https://picsum.photos/seed/gondola-store-display/400/220" alt="Gondola store display" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+              <img src="https://picsum.photos/seed/display-counter-brand/400/220" alt="Branded display counter" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+            </div>
       <p>Branded display counters, gondolas, shop-in-shop units, SIS installations, and custom retail furniture. We connect you with specialist fabricators and coordinate multi-city rollouts with consistency across all outlets.</p>
       <p>Whether you are launching 10 outlets or 500, our fabrication network covers metros and Tier 2 cities — same brand standard, coordinated from one brief.</p>
       <div class="use-cases">
@@ -410,6 +425,11 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
     <div class="svc-body fade-left">
       <div class="svc-num">Service 04 · Retail Gifting</div>
       <h2 class="svc-h2">Retail & Corporate Gifting</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0">
+              <img src="https://picsum.photos/seed/gift-hamper-festive/500/280" alt="Festive corporate gift hamper" style="width:100%;height:160px;object-fit:cover;border-radius:8px;grid-column:1/-1">
+              <img src="https://picsum.photos/seed/dealer-gift-box/400/220" alt="Dealer gift box" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+              <img src="https://picsum.photos/seed/branded-merchandise/400/220" alt="Branded merchandise" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+            </div>
       <p>Curated gifting solutions for dealer meets, channel partner rewards, festive gifting, and corporate giveaways. We source, brand, and coordinate fulfilment — from concept to door-delivered, pan India.</p>
       <p>Budget-first sourcing is our strength. We map your per-unit budget and occasion to the right product and supplier — never over-engineered, always on-brand.</p>
       <div class="use-cases">
@@ -434,6 +454,31 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
     <div class="svc-body fade-right">
       <div class="svc-num">Service 05 · P2P Operational Support</div>
       <h2 class="svc-h2">P2P Operational Support</h2>
+            <div style="background:#faf7f2;border:1px solid #d8d0c0;border-radius:10px;padding:1.5rem;margin:1.2rem 0;overflow-x:auto">
+              <p style="font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#c06808;margin-bottom:1rem">P2P Process Flow</p>
+              <svg viewBox="0 0 860 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:600px">
+                <defs><marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#e8860a"/></marker></defs>
+                <g><rect x="0" y="20" width="90" height="50" rx="6" fill="#0d2b4e"/><text x="45" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Requisition</text><text x="45" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.6)">Raised</text></g>
+                <line x1="92" y1="45" x2="108" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="110" y="20" width="90" height="50" rx="6" fill="#163d6a"/><text x="155" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Approval</text><text x="155" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.6)">L1/L2</text></g>
+                <line x1="202" y1="45" x2="218" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="220" y="20" width="90" height="50" rx="6" fill="#e8860a"/><text x="265" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Vendor ID</text><text x="265" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.85)">24-48 hrs</text></g>
+                <line x1="312" y1="45" x2="328" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="330" y="20" width="90" height="50" rx="6" fill="#163d6a"/><text x="375" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">PO Issue</text><text x="375" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.6)">SAP/Manual</text></g>
+                <line x1="422" y1="45" x2="438" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="440" y="20" width="90" height="50" rx="6" fill="#0d2b4e"/><text x="485" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Delivery</text><text x="485" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.6)">GRN</text></g>
+                <line x1="532" y1="45" x2="548" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="550" y="20" width="90" height="50" rx="6" fill="#163d6a"/><text x="595" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Invoice</text><text x="595" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.6)">Verify</text></g>
+                <line x1="642" y1="45" x2="658" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="660" y="20" width="90" height="50" rx="6" fill="#e8860a"/><text x="705" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Payment</text><text x="705" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.85)">Released</text></g>
+                <line x1="752" y1="45" x2="768" y2="45" stroke="#e8860a" stroke-width="1.5" marker-end="url(#a1)"/>
+                <g><rect x="770" y="20" width="90" height="50" rx="6" fill="#0d2b4e"/><text x="815" y="40" text-anchor="middle" font-family="DM Sans" font-size="8" fill="white" font-weight="700">Closure</text><text x="815" y="54" text-anchor="middle" font-family="DM Sans" font-size="7" fill="rgba(255,255,255,.6)">Audit</text></g>
+              </svg>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1rem 0">
+              <img src="https://picsum.photos/seed/procurement-meeting/500/280" alt="Procurement operations meeting" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+              <img src="https://picsum.photos/seed/vendor-documentation/500/280" alt="Vendor documentation P2P" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+            </div>
       <p>Procure-to-Pay operational expertise — delivered remotely to augment your in-house procurement or marketing ops team. Vendor identification, PO creation support, invoice tracking, payment follow-up, and vendor governance.</p>
       <p>Especially useful for brands scaling their retail footprint who need experienced P2P bandwidth without growing headcount. SAP Ariba, SRM, MM — we know the systems.</p>
       <div class="use-cases">
@@ -458,6 +503,11 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
     <div class="svc-body fade-left">
       <div class="svc-num">Service 06 · Instore Branding & Store Renovation</div>
       <h2 class="svc-h2">Instore Branding &<br>Store Renovation</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0">
+              <img src="https://picsum.photos/seed/instore-branding-wall/500/280" alt="Instore wall branding" style="width:100%;height:160px;object-fit:cover;border-radius:8px;grid-column:1/-1">
+              <img src="https://picsum.photos/seed/store-renovation-retail/400/220" alt="Retail store renovation" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+              <img src="https://picsum.photos/seed/vm-display-store/400/220" alt="Visual merchandising store" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+            </div>
       <p>Complete instore branding, visual merchandising, wall wraps, partner meets, and full store renovation — civil, electrical, flooring, and fitout. Coordinated through specialist local vendors, managed from one brief.</p>
       <p>Whether it's a brand refresh for 20 stores or a complete ground-up renovation, we coordinate the specialist contractors, quality-check execution, and manage timelines end-to-end.</p>
       <div class="use-cases">
@@ -474,9 +524,9 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
 </div>
 
 <!-- CTA BAND -->
-<div style="background:var(--green);padding:4rem 8vw;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;">
+<div style="background:var(--navy);padding:4rem 8vw;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;">
   <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;color:var(--white);max-width:520px;line-height:1.3;">Don't see your exact requirement? Share it anyway — we will find the right expert.</h2>
-  <div style="display:flex;gap:1rem;flex-wrap:wrap;"><a class="btn btn-outline-white" href="/network">Join as Expert</a><a class="btn" style="background:var(--white);color:var(--green);border-color:var(--white);" href="/contact">Submit Brief →</a></div>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;"><a class="btn btn-outline-white" href="/network">Join as Expert</a><a class="btn" style="background:var(--white);color:var(--navy);border-color:var(--white);" href="/contact">Submit Brief →</a></div>
 </div>
 
 <footer>
@@ -504,6 +554,14 @@ footer { background:#0a1f10; color:rgba(255,255,255,.35); padding:3rem 8vw 2rem;
         </div>
       </div>
   <div class="footer-bottom"><p>© 2025 Partnerschaft India.</p></div>
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06);margin-top:1.5rem">
+  <span style="font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.25)">Follow Partnerschaft India</span>
+  <div style="display:flex;gap:.6rem">
+    <a href="https://www.facebook.com/partnerschaftindia/" target="_blank" style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);text-decoration:none;transition:all .2s" aria-label="Facebook"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+    <a href="https://www.instagram.com/partnerschaftindia/" target="_blank" style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);text-decoration:none;transition:all .2s" aria-label="Instagram"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="https://in.linkedin.com/company/partnerschaftindia" target="_blank" style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);text-decoration:none;transition:all .2s" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+  </div>
+</div>
 </footer>
 <div class="wa-float"><div class="wa-tooltip">💬 WhatsApp Us</div><a class="wa-btn" href="https://wa.me/919113283848?text=Hi+BK%2C+I+was+looking+at+your+services+page+and+have+a+requirement." target="_blank"><svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.554 4.112 1.523 5.843L.057 23.882l6.204-1.628A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.49-5.19-1.348l-.372-.22-3.684.967.984-3.595-.242-.373A9.932 9.932 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a></div>
 <script>
@@ -520,4 +578,7 @@ window.addEventListener('scroll',()=>{
   pills.forEach(p=>{p.classList.toggle('active',p.getAttribute('href')==='#'+cur);});
 });
 </script>
+<div style="position:fixed;bottom:2rem;right:2rem;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:.5rem">
+  <a href="https://wa.me/919113283848?text=Hi+BK%2C+I+visited+partnerschaft.in+and+have+a+requirement." target="_blank" style="width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4)" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.554 4.112 1.523 5.843L.057 23.882l6.204-1.628A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.49-5.19-1.348l-.372-.22-3.684.967.984-3.595-.242-.373A9.932 9.932 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+</div>
 </body></html>
