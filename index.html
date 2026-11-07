@@ -30,7 +30,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
@@ -41,17 +41,17 @@
 </script>
 <style>
 :root {
-  --blue:        #004C97;
-  --blue-dark:   #003070;
-  --blue-bright: #004C97;
-  --blue-light:  #E8F0FB;
+  --blue:        #0B5ED7;
+  --blue-dark:   #0D183D;
+  --blue-bright: #0B5ED7;
+  --blue-light:  #EAF3FA;
   --white:       #FFFFFF;
   --light:       #F0F4FA;
   --gray-100:    #E2E8F0;
   --gray-400:    #94A3B8;
-  --gray-600:    #475569;
+  --gray-600:    #68798C;
   --dark:        #1A1A1A;
-  --fh: 'Plus Jakarta Sans', sans-serif;
+  --fh: 'Manrope', sans-serif;
   --fb: 'Inter', sans-serif;
   --radius: 8px;
   --max-w: 1200px;
@@ -72,9 +72,9 @@ h1,h2,h3,h4{font-family:var(--fh);line-height:1.2}
 .skip-link:focus{top:1rem}
 
 /* NAV */
-nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px solid var(--blue);box-shadow:0 2px 12px rgba(0,76,151,.1)}
+nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px solid var(--blue);box-shadow:0 2px 12px rgba(11,94,215,.1)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:.75rem var(--gutter)}
-.nav-logo-img{height:60px;width:auto;max-width:200px;object-fit:contain;filter:brightness(0) saturate(100%) invert(21%) sepia(96%) saturate(1200%) hue-rotate(200deg) brightness(95%) contrast(105%)}
+.nav-logo-img{height:60px;width:auto;max-width:200px;object-fit:contain;filter:brightness(0) saturate(100%) invert(28%) sepia(100%) saturate(2000%) hue-rotate(207deg) brightness(100%) contrast(102%)}
 @media(max-width:860px){.nav-logo-img{height:48px}}
 .nav-menu{display:flex;list-style:none;gap:2rem;align-items:center}
 .nav-link{font-family:var(--fh);font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);padding:.3rem 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
@@ -97,7 +97,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px 
 @media(max-width:860px){
   .nav-toggle{display:flex;flex-direction:column;gap:5px}
   .nav-toggle span{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:all .3s}
-  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:1.5rem var(--gutter);gap:1rem;border-bottom:2px solid var(--blue);box-shadow:0 8px 24px rgba(0,76,151,.1)}
+  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:1.5rem var(--gutter);gap:1rem;border-bottom:2px solid var(--blue);box-shadow:0 8px 24px rgba(11,94,215,.1)}
   .nav-menu.open{display:flex}
   .nav-cta-wrap{display:none}
   .nav-cta-wrap.open{display:flex;flex-direction:column;padding:0 var(--gutter) 1.5rem;position:absolute;top:calc(100% + 1px);left:0;right:0;background:var(--white)}
@@ -139,7 +139,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px 
 @media(max-width:700px){.services-grid{grid-template-columns:1fr}}
 .service-card{background:var(--white);border:2px solid var(--gray-100);border-radius:12px;padding:2rem;transition:border-color .2s,box-shadow .2s;position:relative;overflow:hidden}
 .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--blue)}
-.service-card:hover{border-color:var(--blue);box-shadow:0 8px 32px rgba(0,76,151,.12)}
+.service-card:hover{border-color:var(--blue);box-shadow:0 8px 32px rgba(11,94,215,.12)}
 .service-card-badge{display:inline-block;width:36px;height:36px;background:var(--blue);color:#fff;font-family:var(--fh);font-weight:900;font-size:1rem;border-radius:8px;text-align:center;line-height:36px;margin-bottom:1rem}
 .service-card h3{font-size:1.1rem;font-weight:800;color:var(--blue);margin-bottom:.6rem}
 .service-card p{font-size:.88rem;color:var(--gray-600);line-height:1.75}
