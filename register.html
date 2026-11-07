@@ -1,1281 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register as Vendor | Join Partnerschaft India’s Execution Network</title>
-  <meta name="description" content="Register your organisation with Partnerschaft India. List your services in BTL, Printing, Fixtures, Gifting, P2P and Instore activation. Free directory listing or paid managed routing.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.partnerschaft.in/register.html">
-  <meta property="og:title" content="Register Your Organisation — Partnerschaft India">
-  <meta property="og:description" content="Join the Partnerschaft vendor network. Get discovered by India's leading brands for retail execution work.">
-  <meta property="og:url" content="https://www.partnerschaft.in/register.html">
-  <meta property="og:type" content="website">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* ============================================================
-       PARTNERSCHAFT DESIGN TOKENS
-    ============================================================ */
-    :root {
-      --red:        #D11A1A;
-      --navy:       #0D1830;
-      --white:      #FFFFFF;
-      --steel-blue: #1E3A8A;
-      --light-gray: #F2F4F7;
-      --dark-gray:  #1A1A1A;
-      --border:     #D1D5DB;
-      --error:      #B91C1C;
-      --success:    #15803D;
-
-      --font-heading: 'Montserrat', Arial, sans-serif;
-      --font-body:    'Inter', Arial, sans-serif;
-
-      --radius: 8px;
-      --radius-lg: 12px;
-      --shadow: 0 2px 8px rgba(13,24,48,.08);
-      --shadow-md: 0 4px 16px rgba(13,24,48,.12);
-      --transition: 200ms ease;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.6;
-      color: var(--dark-gray);
-      background: var(--light-gray);
-      min-height: 100vh;
-    }
-
-    /* ============================================================
-       SKIP LINK
-    ============================================================ */
-    .skip-link {
-      position: absolute;
-      left: -9999px;
-      top: 6px;
-      background: var(--red);
-      color: var(--white);
-      padding: 8px 16px;
-      border-radius: 0 0 var(--radius) var(--radius);
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: .875rem;
-      z-index: 9999;
-      text-decoration: none;
-    }
-    .skip-link:focus { left: 6px; }
-
-    /* ============================================================
-       TOP BAR
-    ============================================================ */
-    .topbar {
-      background: var(--navy);
-      color: rgba(255,255,255,.75);
-      font-size: .8125rem;
-      font-family: var(--font-body);
-      padding: 8px 0;
-    }
-    .topbar-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .topbar a {
-      color: rgba(255,255,255,.75);
-      text-decoration: none;
-    }
-    .topbar a:hover { color: var(--white); }
-
-    /* ============================================================
-       NAVIGATION
-    ============================================================ */
-    .nav {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: var(--shadow);
-    }
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 72px;
-    }
-    .nav-logo-link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      flex-shrink: 0;
-    }
-    .nav-logo-img {
-      height: 52px;
-      width: auto;
-      object-fit: contain;
-      display: block;
-    }
-    .nav-back {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-body);
-      font-size: .875rem;
-      font-weight: 500;
-      color: var(--navy);
-      text-decoration: none;
-      border: 1.5px solid var(--border);
-      padding: 8px 16px;
-      border-radius: var(--radius);
-      transition: all var(--transition);
-    }
-    .nav-back:hover {
-      background: var(--navy);
-      color: var(--white);
-      border-color: var(--navy);
-    }
-    .nav-back svg { width: 16px; height: 16px; flex-shrink: 0; }
-
-    /* ============================================================
-       PAGE HEADER
-    ============================================================ */
-    .page-header {
-      background: var(--navy);
-      padding: 56px 24px 48px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .page-header::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        repeating-linear-gradient(60deg, rgba(255,255,255,.03) 0, rgba(255,255,255,.03) 1px, transparent 1px, transparent 32px),
-        repeating-linear-gradient(-60deg, rgba(255,255,255,.03) 0, rgba(255,255,255,.03) 1px, transparent 1px, transparent 32px);
-      pointer-events: none;
-    }
-    .page-header-tag {
-      display: inline-block;
-      background: var(--red);
-      color: var(--white);
-      font-family: var(--font-heading);
-      font-size: .6875rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      padding: 4px 14px;
-      border-radius: 2px;
-      margin-bottom: 20px;
-    }
-    .page-header h1 {
-      font-family: var(--font-heading);
-      font-size: clamp(1.75rem, 4vw, 2.75rem);
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-    .page-header p {
-      font-family: var(--font-body);
-      font-size: 1.0625rem;
-      color: rgba(255,255,255,.75);
-      max-width: 560px;
-      margin: 0 auto;
-      line-height: 1.7;
-    }
-
-    /* ============================================================
-       MAIN CONTAINER
-    ============================================================ */
-    .main {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    /* ============================================================
-       FORM CARD
-    ============================================================ */
-    .form-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-      overflow: hidden;
-    }
-
-    .form-section {
-      padding: 32px 40px;
-      border-bottom: 1px solid var(--light-gray);
-    }
-    .form-section:last-of-type { border-bottom: none; }
-
-    @media (max-width: 600px) {
-      .form-section { padding: 24px 20px; }
-    }
-
-    .section-label {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-    .section-number {
-      width: 28px;
-      height: 28px;
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 50%;
-      font-family: var(--font-heading);
-      font-size: .75rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .section-title {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--navy);
-      letter-spacing: .02em;
-      text-transform: uppercase;
-    }
-
-    /* ============================================================
-       FIELD GROUPS
-    ============================================================ */
-    .field-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-bottom: 16px;
-    }
-    .field-row.three { grid-template-columns: 1fr 1fr 1fr; }
-    .field-row.full { grid-template-columns: 1fr; }
-
-    @media (max-width: 640px) {
-      .field-row,
-      .field-row.three { grid-template-columns: 1fr; }
-    }
-
-    .field-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    label {
-      font-family: var(--font-body);
-      font-size: .8125rem;
-      font-weight: 600;
-      color: var(--navy);
-      letter-spacing: .01em;
-    }
-    label .req {
-      color: var(--red);
-      margin-left: 2px;
-    }
-    label .opt {
-      color: #9CA3AF;
-      font-weight: 400;
-      font-size: .75rem;
-      margin-left: 4px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="url"],
-    input[type="number"],
-    select,
-    textarea {
-      font-family: var(--font-body);
-      font-size: .9375rem;
-      color: var(--dark-gray);
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius);
-      padding: 11px 14px;
-      width: 100%;
-      transition: border-color var(--transition), box-shadow var(--transition);
-      appearance: none;
-      -webkit-appearance: none;
-    }
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: var(--navy);
-      box-shadow: 0 0 0 3px rgba(13,24,48,.12);
-    }
-    input[aria-invalid="true"],
-    select[aria-invalid="true"],
-    textarea[aria-invalid="true"] {
-      border-color: var(--error);
-    }
-    input:focus[aria-invalid="true"],
-    select:focus[aria-invalid="true"],
-    textarea:focus[aria-invalid="true"] {
-      box-shadow: 0 0 0 3px rgba(185,28,28,.15);
-    }
-    textarea { min-height: 130px; resize: vertical; }
-    select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230D1830' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 12px center;
-      padding-right: 40px;
-    }
-
-    .field-hint {
-      font-size: .75rem;
-      color: #6B7280;
-      margin-top: 2px;
-    }
-    .field-error {
-      font-size: .75rem;
-      color: var(--error);
-      font-weight: 500;
-      margin-top: 2px;
-      display: none;
-    }
-    .field-error.visible { display: block; }
-
-    /* ============================================================
-       SERVICE TYPE TOGGLE
-    ============================================================ */
-    .service-type-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 8px;
-    }
-    @media (max-width: 520px) {
-      .service-type-grid { grid-template-columns: 1fr; }
-    }
-
-    .service-type-card {
-      position: relative;
-      cursor: pointer;
-    }
-    .service-type-card input[type="radio"] {
-      position: absolute;
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    .service-type-label {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      padding: 16px 20px;
-      border: 2px solid var(--border);
-      border-radius: var(--radius);
-      cursor: pointer;
-      transition: all var(--transition);
-      user-select: none;
-    }
-    .service-type-label:hover {
-      border-color: var(--navy);
-      background: rgba(13,24,48,.03);
-    }
-    .service-type-card input:checked + .service-type-label {
-      border-color: var(--red);
-      background: rgba(209,26,26,.04);
-    }
-    .service-type-card input:focus-visible + .service-type-label {
-      outline: 3px solid rgba(13,24,48,.3);
-      outline-offset: 2px;
-    }
-    .st-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--font-heading);
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .st-free .st-badge { color: var(--steel-blue); }
-    .st-paid .st-badge { color: var(--red); }
-    .st-badge-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .st-free .st-badge-dot { background: var(--steel-blue); }
-    .st-paid .st-badge-dot { background: var(--red); }
-    .st-name {
-      font-family: var(--font-heading);
-      font-size: .9375rem;
-      font-weight: 700;
-      color: var(--navy);
-    }
-    .st-desc {
-      font-size: .8125rem;
-      color: #6B7280;
-      line-height: 1.5;
-    }
-
-    /* ============================================================
-       DOMAIN CHECKBOXES
-    ============================================================ */
-    .domain-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 8px;
-    }
-    @media (max-width: 500px) {
-      .domain-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    .domain-chip {
-      position: relative;
-    }
-    .domain-chip input[type="checkbox"] {
-      position: absolute;
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    .domain-chip-label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border: 2px solid var(--border);
-      border-radius: var(--radius);
-      cursor: pointer;
-      font-family: var(--font-heading);
-      font-size: .8125rem;
-      font-weight: 600;
-      color: var(--navy);
-      text-align: center;
-      transition: all var(--transition);
-      user-select: none;
-    }
-    .domain-chip-label:hover {
-      border-color: var(--navy);
-      background: rgba(13,24,48,.04);
-    }
-    .domain-chip input:checked + .domain-chip-label {
-      border-color: var(--red);
-      background: rgba(209,26,26,.06);
-      color: var(--red);
-    }
-    .domain-chip input:focus-visible + .domain-chip-label {
-      outline: 3px solid rgba(13,24,48,.3);
-      outline-offset: 2px;
-    }
-    .domain-icon {
-      width: 18px;
-      height: 18px;
-      flex-shrink: 0;
-    }
-
-    /* ============================================================
-       SUBMIT SECTION
-    ============================================================ */
-    .form-submit-section {
-      padding: 32px 40px 40px;
-      background: var(--light-gray);
-      border-top: 1px solid var(--border);
-    }
-    @media (max-width: 600px) {
-      .form-submit-section { padding: 24px 20px 32px; }
-    }
-
-    .consent-row {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
-    .consent-row input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      flex-shrink: 0;
-      margin-top: 2px;
-      cursor: pointer;
-      accent-color: var(--red);
-    }
-    .consent-text {
-      font-size: .8125rem;
-      color: #6B7280;
-      line-height: 1.6;
-    }
-    .consent-text a {
-      color: var(--navy);
-      text-decoration: underline;
-    }
-
-    .btn-submit {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: var(--red);
-      color: var(--white);
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      border: none;
-      border-radius: var(--radius);
-      padding: 16px 40px;
-      cursor: pointer;
-      transition: background var(--transition), transform 80ms ease;
-      width: 100%;
-    }
-    .btn-submit:hover { background: #B81515; }
-    .btn-submit:active { transform: scale(.98); }
-    .btn-submit:disabled {
-      opacity: .6;
-      cursor: not-allowed;
-      transform: none;
-    }
-    .btn-submit:focus-visible {
-      outline: 3px solid rgba(209,26,26,.4);
-      outline-offset: 3px;
-    }
-
-    /* Spinner */
-    .btn-spinner {
-      display: none;
-      width: 18px;
-      height: 18px;
-      border: 2.5px solid rgba(255,255,255,.4);
-      border-top-color: var(--white);
-      border-radius: 50%;
-      animation: spin .7s linear infinite;
-    }
-    .btn-submit.loading .btn-spinner { display: block; }
-    .btn-submit.loading .btn-text { opacity: .7; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* ============================================================
-       STATUS MESSAGES
-    ============================================================ */
-    .form-status {
-      display: none;
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      font-size: .9375rem;
-      font-weight: 500;
-      margin-top: 20px;
-      border-left: 4px solid;
-    }
-    .form-status.success {
-      display: block;
-      background: #F0FDF4;
-      color: var(--success);
-      border-color: var(--success);
-    }
-    .form-status.error {
-      display: block;
-      background: #FEF2F2;
-      color: var(--error);
-      border-color: var(--error);
-    }
-    .form-status[role="status"],
-    .form-status[role="alert"] { display: none; }
-    .form-status.success[role="status"],
-    .form-status.error[role="alert"] { display: block; }
-
-    /* ============================================================
-       SUCCESS STATE (full card replacement)
-    ============================================================ */
-    .success-card {
-      display: none;
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-      padding: 64px 40px;
-      text-align: center;
-    }
-    .success-card.visible { display: block; }
-    .success-icon {
-      width: 72px;
-      height: 72px;
-      background: #F0FDF4;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-    }
-    .success-icon svg { width: 36px; height: 36px; color: var(--success); }
-    .success-card h2 {
-      font-family: var(--font-heading);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 12px;
-    }
-    .success-card p {
-      font-size: .9375rem;
-      color: #6B7280;
-      max-width: 420px;
-      margin: 0 auto 32px;
-      line-height: 1.7;
-    }
-    .success-card .btn-home {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--navy);
-      color: var(--white);
-      font-family: var(--font-heading);
-      font-size: .875rem;
-      font-weight: 700;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 12px 28px;
-      border-radius: var(--radius);
-      transition: background var(--transition);
-    }
-    .success-card .btn-home:hover { background: #1a2d50; }
-
-    /* ============================================================
-       FOOTER
-    ============================================================ */
-    .footer {
-      background: var(--navy);
-      color: rgba(255,255,255,.65);
-      text-align: center;
-      padding: 32px 24px;
-      font-size: .875rem;
-      font-family: var(--font-body);
-    }
-    .footer a {
-      color: rgba(255,255,255,.8);
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register as Vendor | Join Partnerschaft India's Pan-India Network</title>
+<meta name="description" content="Register your business as a vendor with Partnerschaft India. We work with BTL agencies, printers, fixture manufacturers, gifting suppliers and IT service providers across India.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.partnerschaft.in/register">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Register as Vendor | Join Partnerschaft India's Pan-India Network">
+<meta property="og:description" content="Register your business as a vendor with Partnerschaft India. We work with BTL agencies, printers, fixture manufacturers, gifting suppliers and IT service providers across India.">
+<meta property="og:url" content="https://www.partnerschaft.in/register">
+<meta property="og:image" content="https://www.partnerschaft.in/assets/logo-stacked.png">
+<meta property="og:site_name" content="Partnerschaft India">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
-(function(c,l,a,r,i,t,y){
-  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window,document,"clarity","script","yz2p5ay0c5");
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yz2p5ay0c5");
 </script>
+
+<style>
+:root{--blue:#004C97;--blue-dark:#003070;--blue-bright:#0066CC;--blue-light:#E8F0FB;--white:#FFFFFF;--light:#F0F4FA;--gray-100:#E2E8F0;--gray-400:#94A3B8;--gray-600:#475569;--dark:#1A1A1A;--fh:'Montserrat',sans-serif;--fb:'Inter',sans-serif;--radius:8px;--max-w:1200px;--gutter:clamp(1.25rem,5vw,4rem)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{font-family:var(--fb);color:var(--dark);background:var(--white);line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}h1,h2,h3,h4{font-family:var(--fh);line-height:1.2}
+.skip-link{position:absolute;top:-40px;left:1rem;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:4px;font-size:.85rem;font-weight:600;z-index:9999;transition:top .2s}.skip-link:focus{top:1rem}
+nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px solid var(--blue);box-shadow:0 2px 12px rgba(0,76,151,.1)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:.75rem var(--gutter)}
+.nav-logo-img{height:52px;width:auto;object-fit:contain}
+@media(max-width:860px){.nav-logo-img{height:42px}}
+.nav-menu{display:flex;list-style:none;gap:2rem;align-items:center}
+.nav-link{font-family:var(--fh);font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-dark);padding:.3rem 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
+.nav-link:hover,.nav-link[aria-current="page"]{color:var(--blue);border-bottom-color:var(--blue)}
+.nav-cta-wrap{display:flex;align-items:center;gap:.75rem}
+.nav-cta-register{font-family:var(--fh);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:2px solid var(--blue);padding:.45rem 1rem;border-radius:4px;transition:background .2s,color .2s}
+.nav-cta-register:hover{background:var(--blue);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--fh);font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;text-decoration:none;cursor:pointer;border:none;transition:all .2s}
+.btn-cta{background:var(--blue);color:#fff;padding:.6rem 1.4rem;font-size:.8rem}.btn-cta:hover{background:var(--blue-dark)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);padding:.6rem 1.4rem;font-size:.8rem}.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-sm{padding:.45rem 1rem;font-size:.75rem}.btn-lg{padding:.8rem 2rem;font-size:.9rem}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:.5rem;color:var(--blue)}
+@media(max-width:860px){
+  .nav-toggle{display:flex;flex-direction:column;gap:5px}
+  .nav-toggle span{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:all .3s}
+  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:1.5rem var(--gutter);gap:1rem;border-bottom:2px solid var(--blue);box-shadow:0 8px 24px rgba(0,76,151,.1)}
+  .nav-menu.open{display:flex}
+  .nav-cta-wrap{display:none}.nav-cta-wrap.open{display:flex;flex-direction:column;padding:0 var(--gutter) 1.5rem;position:absolute;top:calc(100% + 1px);left:0;right:0;background:var(--white)}
+}
+.ticker{background:var(--blue);color:#fff;padding:.45rem var(--gutter);font-family:var(--fh);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center}
+.section{padding:4rem var(--gutter)}.section-alt{background:var(--light)}.section-blue{background:var(--blue);color:#fff}.section-dark{background:var(--blue-dark);color:#fff}
+.container{max-width:var(--max-w);margin:0 auto}
+.section-label{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem}
+.section-blue .section-label,.section-dark .section-label{color:rgba(255,255,255,.65)}
+.section-heading{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;margin-bottom:1rem}
+.section-sub{color:var(--gray-600);font-size:.95rem;line-height:1.75;max-width:600px;margin-bottom:2.5rem}
+.page-hero{background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#fff;padding:4rem var(--gutter) 3rem}
+.page-hero-inner{max-width:var(--max-w);margin:0 auto}
+.page-hero h1{font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;margin-bottom:.75rem}
+.page-hero p{color:rgba(255,255,255,.75);font-size:1rem;max-width:560px;line-height:1.75}
+.cta-band{background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#fff;padding:4rem var(--gutter);display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+@media(max-width:860px){.cta-band{grid-template-columns:1fr}}
+.cta-band h2{font-size:clamp(1.4rem,2.5vw,2rem);font-weight:800}
+.cta-band p{color:rgba(255,255,255,.7);font-size:.9rem;margin-top:.5rem}
+.cta-band-actions{display:flex;flex-direction:column;gap:.75rem;min-width:200px}
+.cta-note{font-size:.75rem;color:rgba(255,255,255,.55);text-align:center;margin-top:.25rem}
+footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var(--gutter) 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:2.5rem;max-width:var(--max-w);margin:0 auto}
+@media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.footer-grid{grid-template-columns:1fr}}
+.footer-logo-img{height:48px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1)}
+.footer-tagline{font-size:.82rem;line-height:1.7;color:rgba(255,255,255,.6);margin-top:.5rem}
+.footer-col h4,.footer-grid>div>h4{font-family:var(--fh);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.footer-links a{font-size:.83rem;color:rgba(255,255,255,.65);transition:color .2s}.footer-links a:hover{color:#fff}
+.footer-address{font-size:.8rem;line-height:1.75;color:rgba(255,255,255,.6)}
+.footer-address strong{color:rgba(255,255,255,.85);display:block;margin-bottom:.2rem;margin-top:.8rem;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.5rem;max-width:var(--max-w);margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+.footer-legal{font-size:.72rem;color:rgba(255,255,255,.4);line-height:1.6}
+.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:999;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s}
+.wa-float:hover{transform:scale(1.1)}.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:var(--dark);color:#fff;font-family:var(--fh);font-size:.72rem;font-weight:600;padding:.35rem .75rem;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.wa-float:hover .wa-tooltip{opacity:1}
+</style>
+
 </head>
 <body>
-
-  <a href="#registration-form" class="skip-link">Skip to registration form</a>
-
-  <!-- TOP BAR -->
-  <div class="topbar" role="banner" aria-label="Contact information">
-    <div class="topbar-inner">
-      <span>🇮🇳 Pan-India Retail Execution Network</span>
-      <span><a href="mailto:business@partnerschaft.in">business@partnerschaft.in</a></span>
+<a href="#main" class="skip-link">Skip to main content</a><nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" aria-label="Partnerschaft India — Home"><img src="assets/logo-horizontal.png" alt="Partnerschaft India" class="nav-logo-img"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-menu" id="nav-menu" role="list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/about" class="nav-link">About</a></li><li><a href="/services" class="nav-link">Services</a></li><li><a href="/network" class="nav-link">Join Network</a></li><li><a href="/contact" class="nav-link">Contact</a></li></ul>
+    <div class="nav-cta-wrap">
+      <a href="/register" class="nav-cta-register">Register Vendor</a>
+      <a href="/contact" class="btn btn-cta btn-sm">Start a Requirement</a>
     </div>
   </div>
+</nav>
+<div class="ticker">GST Registered · Udyam Certified MSME <span aria-hidden="true">·</span> 19+ States <span aria-hidden="true">·</span> 24hr Response</div>
+<main id="main">
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div style="font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.75rem">Vendor Registration</div>
+    <h1>Register Your Business with Partnerschaft.</h1>
+    <p>Join our pan-India vendor network. We connect qualified vendors with brands that need your services.</p>
+  </div>
+</div>
 
-  <!-- NAVIGATION -->
-  <nav class="nav" aria-label="Site navigation">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo-link" aria-label="Partnerschaft India — Home">
-        <!-- Logo injected by JS from assets or inline base64 -->
-        <img src="/assets/logo-stacked.png"
-             alt="Partnerschaft India — Partnering for Growth"
-             class="nav-logo-img"
-             width="120" height="73"
-             loading="eager"
-             onerror="this.style.display='none';document.getElementById('logo-text').style.display='block'">
-        <span id="logo-text" style="display:none;font-family:var(--font-heading);font-weight:800;font-size:1.125rem;color:var(--navy);letter-spacing:.04em;">PARTNERSCHAFT</span>
-      </a>
-      <a href="/" class="nav-back" aria-label="Back to Partnerschaft India homepage">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-        Back to Home
-      </a>
+<section class="section">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1.7fr;gap:5rem;align-items:start">
+    <div>
+      <h2 style="font-size:1.3rem;font-weight:800;color:var(--blue-dark);margin-bottom:.75rem">Why Register with Partnerschaft?</h2>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem">
+        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Access to brand requirements across pan-India</li>
+        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Structured briefings — no ambiguous or last-minute requests</li>
+        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Timely payment coordination through a GST-compliant process</li>
+        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Long-term relationship, not one-off engagements</li>
+      </ul>
+      <div style="background:var(--light);border-radius:10px;padding:1.25rem;border-left:4px solid var(--blue)">
+        <p style="font-size:.82rem;color:var(--gray-600);line-height:1.75">We work with BTL agencies, printers, fixture manufacturers, gifting suppliers, event companies, IT service providers and logistics partners.</p>
+      </div>
     </div>
-  </nav>
-
-  <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="page-header-tag">Vendor &amp; Organisation Registration</div>
-    <h1>Join the Partnerschaft Network</h1>
-    <p>Register your organisation and get connected with India's leading brands for retail execution, BTL, printing, fixtures, gifting and in-store activation.</p>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main class="main" id="main-content">
-
-    <!-- REGISTRATION FORM -->
-    <form
-      class="form-card"
-      id="registration-form"
-      novalidate
-      aria-label="Vendor and organisation registration form"
-    >
-
-      <!-- SECTION 1: Organisation Details -->
-      <div class="form-section">
-        <div class="section-label">
-          <div class="section-number" aria-hidden="true">1</div>
-          <div class="section-title">Organisation Details</div>
+    <div>
+      <form id="reg-form" style="background:var(--light);border-radius:14px;padding:2.5rem" method="POST" action="#">
+        <h3 style="font-family:var(--fh);font-size:1.2rem;font-weight:800;color:var(--blue-dark);margin-bottom:1.75rem">Vendor Registration Form</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Contact Name *</label><input name="contact_name" type="text" required placeholder="Full name" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
+          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Company Name *</label><input name="company_name" type="text" required placeholder="Registered company name" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
         </div>
-
-        <div class="field-row full">
-          <div class="field-group">
-            <label for="org_name">Organisation Name <span class="req" aria-label="required">*</span></label>
-            <input type="text" id="org_name" name="org_name" required
-                   autocomplete="organization"
-                   placeholder="e.g. Sharma Display Solutions Pvt. Ltd."
-                   aria-describedby="org_name_err">
-            <div class="field-error" id="org_name_err" role="alert">Please enter your organisation name.</div>
-          </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Email *</label><input name="email" type="email" required placeholder="your@email.com" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
+          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Phone *</label><input name="phone" type="tel" required placeholder="+91 XXXXX XXXXX" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
         </div>
-
-        <div class="field-row three">
-          <div class="field-group">
-            <label for="company_type">Company Type <span class="req" aria-label="required">*</span></label>
-            <select id="company_type" name="company_type" required aria-describedby="company_type_err">
-              <option value="">— Select —</option>
-              <option value="Proprietorship">Proprietorship</option>
-              <option value="Partnership">Partnership Firm</option>
-              <option value="LLP">LLP</option>
-              <option value="Pvt Ltd">Private Limited</option>
-              <option value="Public Ltd">Public Limited</option>
-              <option value="Other">Other</option>
-            </select>
-            <div class="field-error" id="company_type_err" role="alert">Please select your company type.</div>
-          </div>
-          <div class="field-group">
-            <label for="year_est">Year Established <span class="req" aria-label="required">*</span></label>
-            <input type="number" id="year_est" name="year_est" required
-                   min="1950" max="2026"
-                   placeholder="e.g. 2010"
-                   aria-describedby="year_est_err">
-            <div class="field-error" id="year_est_err" role="alert">Please enter a valid year (1950–2026).</div>
-          </div>
-          <div class="field-group">
-            <label for="turnover">Annual Turnover <span class="opt">(optional)</span></label>
-            <select id="turnover" name="turnover">
-              <option value="">— Select range —</option>
-              <option value="Below ₹25 Lakh">Below ₹25 Lakh</option>
-              <option value="₹25L – ₹1 Cr">₹25 Lakh – ₹1 Crore</option>
-              <option value="₹1 Cr – ₹5 Cr">₹1 Crore – ₹5 Crore</option>
-              <option value="₹5 Cr – ₹25 Cr">₹5 Crore – ₹25 Crore</option>
-              <option value="Above ₹25 Cr">Above ₹25 Crore</option>
-            </select>
-          </div>
+        <div style="margin-bottom:1rem"><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Service Category *</label>
+          <select name="category" required style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'">
+            <option value="">Select your primary service</option>
+            <option>BTL / Activation Agency</option><option>Printing / POSM</option><option>Retail Fixtures / Display</option><option>Signage / Branding</option><option>Corporate Gifting</option><option>Events / Experiential</option><option>IT / Digital Services</option><option>Logistics / Delivery</option><option>Other</option>
+          </select>
         </div>
-
-        <div class="field-row">
-          <div class="field-group">
-            <label for="website">Website <span class="opt">(optional)</span></label>
-            <input type="url" id="website" name="website"
-                   autocomplete="url"
-                   placeholder="https://yourwebsite.com"
-                   aria-describedby="website_err">
-            <div class="field-error" id="website_err" role="alert">Please enter a valid URL (include https://).</div>
-          </div>
-          <div class="field-group">
-            <label for="coverage_area">City / State / Coverage Area <span class="req" aria-label="required">*</span></label>
-            <input type="text" id="coverage_area" name="coverage_area" required
-                   placeholder="e.g. Mumbai, Maharashtra — Pan India"
-                   aria-describedby="coverage_area_err">
-            <div class="field-error" id="coverage_area_err" role="alert">Please enter your coverage area.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 2: Contact Information -->
-      <div class="form-section">
-        <div class="section-label">
-          <div class="section-number" aria-hidden="true">2</div>
-          <div class="section-title">Contact Information</div>
-        </div>
-
-        <div class="field-row">
-          <div class="field-group">
-            <label for="contact_name">Contact Person Name <span class="req" aria-label="required">*</span></label>
-            <input type="text" id="contact_name" name="contact_name" required
-                   autocomplete="name"
-                   placeholder="Full name"
-                   aria-describedby="contact_name_err">
-            <div class="field-error" id="contact_name_err" role="alert">Please enter the contact person's name.</div>
-          </div>
-          <div class="field-group">
-            <label for="designation">Designation / Role <span class="req" aria-label="required">*</span></label>
-            <input type="text" id="designation" name="designation" required
-                   autocomplete="organization-title"
-                   placeholder="e.g. Director, Sales Head"
-                   aria-describedby="designation_err">
-            <div class="field-error" id="designation_err" role="alert">Please enter your designation.</div>
-          </div>
-        </div>
-
-        <div class="field-row">
-          <div class="field-group">
-            <label for="mobile">Mobile Number <span class="req" aria-label="required">*</span></label>
-            <input type="tel" id="mobile" name="mobile" required
-                   autocomplete="tel"
-                   pattern="[6-9][0-9]{9}"
-                   placeholder="10-digit mobile number"
-                   aria-describedby="mobile_hint mobile_err">
-            <div class="field-hint" id="mobile_hint">India number without country code</div>
-            <div class="field-error" id="mobile_err" role="alert">Please enter a valid 10-digit Indian mobile number.</div>
-          </div>
-          <div class="field-group">
-            <label for="email">Business Email <span class="req" aria-label="required">*</span></label>
-            <input type="email" id="email" name="email" required
-                   autocomplete="email"
-                   placeholder="you@company.com"
-                   aria-describedby="email_err">
-            <div class="field-error" id="email_err" role="alert">Please enter a valid business email address.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 3: GST Information -->
-      <div class="form-section">
-        <div class="section-label">
-          <div class="section-number" aria-hidden="true">3</div>
-          <div class="section-title">GST Information</div>
-        </div>
-
-        <div class="field-row">
-          <div class="field-group">
-            <label for="gst_number">GST Number <span class="opt">(optional)</span></label>
-            <input type="text" id="gst_number" name="gst_number"
-                   placeholder="22AAAAA0000A1Z5"
-                   maxlength="15"
-                   style="text-transform:uppercase"
-                   aria-describedby="gst_hint gst_err">
-            <div class="field-hint" id="gst_hint">15-character GSTIN</div>
-            <div class="field-error" id="gst_err" role="alert">Please enter a valid 15-character GSTIN.</div>
-          </div>
-          <div class="field-group">
-            <label for="gst_state">GST Registration State <span class="opt">(optional)</span></label>
-            <select id="gst_state" name="gst_state">
-              <option value="">— Select State —</option>
-              <option>Andhra Pradesh</option><option>Arunachal Pradesh</option>
-              <option>Assam</option><option>Bihar</option>
-              <option>Chhattisgarh</option><option>Goa</option>
-              <option>Gujarat</option><option>Haryana</option>
-              <option>Himachal Pradesh</option><option>Jharkhand</option>
-              <option>Karnataka</option><option>Kerala</option>
-              <option>Madhya Pradesh</option><option>Maharashtra</option>
-              <option>Manipur</option><option>Meghalaya</option>
-              <option>Mizoram</option><option>Nagaland</option>
-              <option>Odisha</option><option>Punjab</option>
-              <option>Rajasthan</option><option>Sikkim</option>
-              <option>Tamil Nadu</option><option>Telangana</option>
-              <option>Tripura</option><option>Uttar Pradesh</option>
-              <option>Uttarakhand</option><option>West Bengal</option>
-              <option>Delhi</option><option>Jammu &amp; Kashmir</option>
-              <option>Ladakh</option><option>Puducherry</option>
-              <option>Chandigarh</option><option>Dadra &amp; Nagar Haveli</option>
-              <option>Daman &amp; Diu</option><option>Lakshadweep</option>
-              <option>Andaman &amp; Nicobar Islands</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 4: Service Type -->
-      <div class="form-section">
-        <div class="section-label">
-          <div class="section-number" aria-hidden="true">4</div>
-          <div class="section-title">Service Type</div>
-        </div>
-
-        <p style="font-size:.9rem;color:#6B7280;margin-bottom:16px;line-height:1.6;">
-          Choose how you want to be listed in the Partnerschaft network.
-        </p>
-
-        <fieldset style="border:none;padding:0;" aria-required="true">
-          <legend class="sr-only">Select service type (required)</legend>
-          <div class="service-type-grid" role="group" aria-label="Service type selection">
-
-            <div class="service-type-card st-free">
-              <input type="radio" id="service_free" name="service_type" value="Free — Directory Listing" required>
-              <label class="service-type-label" for="service_free">
-                <span class="st-badge">
-                  <span class="st-badge-dot" aria-hidden="true"></span>
-                  Free Listing
-                </span>
-                <span class="st-name">Directory &amp; Search</span>
-                <span class="st-desc">Your organisation is listed in our directory. Brands can find you through search. You respond to enquiries directly.</span>
-              </label>
-            </div>
-
-            <div class="service-type-card st-paid">
-              <input type="radio" id="service_paid" name="service_type" value="Paid — Managed Routing">
-              <label class="service-type-label" for="service_paid">
-                <span class="st-badge">
-                  <span class="st-badge-dot" aria-hidden="true"></span>
-                  Paid — Managed
-                </span>
-                <span class="st-name">Active Requirement Routing</span>
-                <span class="st-desc">Partnerschaft actively matches and routes live requirements from brands to you. We manage the brief handover process.</span>
-              </label>
-            </div>
-
-          </div>
-          <div class="field-error" id="service_type_err" role="alert" style="margin-top:8px">Please select a service type.</div>
-        </fieldset>
-      </div>
-
-      <!-- SECTION 5: Service Domains -->
-      <div class="form-section">
-        <div class="section-label">
-          <div class="section-number" aria-hidden="true">5</div>
-          <div class="section-title">Service Domain(s)</div>
-        </div>
-
-        <p style="font-size:.9rem;color:#6B7280;margin-bottom:16px;line-height:1.6;">
-          Select all domains your organisation operates in.
-        </p>
-
-        <fieldset style="border:none;padding:0;" aria-required="true">
-          <legend class="sr-only">Select service domains (select at least one)</legend>
-          <div class="domain-grid" role="group" aria-label="Service domain checkboxes">
-
-            <div class="domain-chip">
-              <input type="checkbox" id="domain_btl" name="domains" value="BTL Activation">
-              <label class="domain-chip-label" for="domain_btl">
-                <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                BTL Activation
-              </label>
-            </div>
-
-            <div class="domain-chip">
-              <input type="checkbox" id="domain_print" name="domains" value="Printing">
-              <label class="domain-chip-label" for="domain_print">
-                <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-                Printing
-              </label>
-            </div>
-
-            <div class="domain-chip">
-              <input type="checkbox" id="domain_fixtures" name="domains" value="Fixtures &amp; Display">
-              <label class="domain-chip-label" for="domain_fixtures">
-                <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                Fixtures
-              </label>
-            </div>
-
-            <div class="domain-chip">
-              <input type="checkbox" id="domain_gifting" name="domains" value="Corporate Gifting">
-              <label class="domain-chip-label" for="domain_gifting">
-                <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
-                Gifting
-              </label>
-            </div>
-
-            <div class="domain-chip">
-              <input type="checkbox" id="domain_p2p" name="domains" value="P2P Execution">
-              <label class="domain-chip-label" for="domain_p2p">
-                <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                P2P
-              </label>
-            </div>
-
-            <div class="domain-chip">
-              <input type="checkbox" id="domain_instore" name="domains" value="Instore Activation">
-              <label class="domain-chip-label" for="domain_instore">
-                <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                Instore
-              </label>
-            </div>
-
-          </div>
-          <div class="field-error" id="domains_err" role="alert" style="margin-top:8px">Please select at least one service domain.</div>
-        </fieldset>
-      </div>
-
-      <!-- SECTION 6: Company Profile -->
-      <div class="form-section">
-        <div class="section-label">
-          <div class="section-number" aria-hidden="true">6</div>
-          <div class="section-title">Company Profile &amp; Capabilities</div>
-        </div>
-
-        <div class="field-row full">
-          <div class="field-group">
-            <label for="company_profile">Describe Your Capabilities <span class="req" aria-label="required">*</span></label>
-            <textarea id="company_profile" name="company_profile" required
-                      placeholder="Briefly describe your organisation's capabilities, key clients served, geographies covered, and any specialisations relevant to retail execution..."
-                      aria-describedby="company_profile_hint company_profile_err"></textarea>
-            <div class="field-hint" id="company_profile_hint">Min. 100 characters. This is your pitch to brands browsing the network.</div>
-            <div class="field-error" id="company_profile_err" role="alert">Please provide a company description (minimum 100 characters).</div>
-          </div>
-        </div>
-
-        <div class="field-row full">
-          <div class="field-group">
-            <label for="profile_pdf">Upload Company Profile <span class="opt">(optional · PDF, max 5MB)</span></label>
-            <input type="file" id="profile_pdf" name="profile_pdf"
-                   accept=".pdf,application/pdf"
-                   aria-describedby="pdf_hint pdf_err"
-                   style="padding:8px 14px;font-size:.875rem;border:1.5px dashed var(--border);background:var(--light-gray);cursor:pointer;">
-            <div class="field-hint" id="pdf_hint">PDF only. Max 5MB. File is securely submitted with your registration.</div>
-            <div class="field-error" id="pdf_err" role="alert">File must be a PDF under 5MB.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SUBMIT -->
-      <div class="form-submit-section">
-        <div class="consent-row">
-          <input type="checkbox" id="consent" name="consent" required aria-describedby="consent_err">
-          <label class="consent-text" for="consent">
-            I confirm that the information provided is accurate and I authorise Partnerschaft India to contact me regarding this registration. I have read and accept the <a href="/index.html#privacy">Privacy Policy</a>.
-          </label>
-        </div>
-        <div class="field-error" id="consent_err" role="alert" style="margin-bottom:16px">Please accept the terms to proceed.</div>
-
-        <button type="submit" class="btn-submit" id="submit-btn">
-          <div class="btn-spinner" aria-hidden="true"></div>
-          <span class="btn-text">Submit Registration</span>
-        </button>
-
-        <div class="form-status" id="form-success" role="status" aria-live="polite">
-          ✅ Your registration has been submitted. Check your email for a confirmation from Partnerschaft India.
-        </div>
-        <div class="form-status" id="form-error" role="alert" aria-live="assertive">
-          ❌ Submission failed. Please try again or email us at <a href="mailto:business@partnerschaft.in">business@partnerschaft.in</a>.
-        </div>
-      </div>
-
-    </form><!-- /form-card -->
-
-    <!-- SUCCESS STATE (replaces form after submission) -->
-    <div class="success-card" id="success-card" aria-live="polite" role="status" tabindex="-1">
-      <div class="success-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      </div>
-      <h2>Registration Submitted!</h2>
-      <p>
-        Thank you for joining the Partnerschaft network. We've sent a confirmation to your email.
-        Our team will review your profile and be in touch within <strong>2–3 business days</strong>.
-      </p>
-      <a href="/" class="btn-home">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Back to Home
-      </a>
+        <div style="margin-bottom:1rem"><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">States / Regions Covered *</label><input name="states" type="text" required placeholder="e.g. Karnataka, Tamil Nadu, Telangana..." style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
+        <div style="margin-bottom:1.5rem"><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Brief Description of Services</label><textarea name="description" rows="4" placeholder="Describe what you offer, your capacity and any notable experience..." style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none;resize:vertical" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></textarea></div>
+        <button type="submit" class="btn btn-cta" style="width:100%;justify-content:center;padding:.8rem;font-size:.88rem" id="reg-submit">Submit Registration</button>
+        <div id="reg-success" style="display:none;margin-top:1rem;background:#E8F5E9;border:1px solid #A5D6A7;border-radius:6px;padding:1rem;font-size:.85rem;color:#2E7D32;font-weight:600;text-align:center">✓ Registration received. Our team will be in touch within 48 hours.</div>
+      </form>
     </div>
-
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2026 Partnerschaft India (OPC) Private Limited. All rights reserved. | <a href="/contact.html">Contact Us</a></p>
-    <p style="font-size:.75rem;margin-top:.5rem;opacity:.7;">CIN: U70200OD2026OPC055800 &nbsp;|&nbsp; Head Office: D155, DSM Synergy, Agrahara Layout, Bengaluru – 560064, Karnataka &nbsp;|&nbsp; Regd. Office: Ranapur, Jajpur – 755012, Odisha</p>
-  </footer>
-
-  <script>
-    /* ============================================================
-       FORM VALIDATION
-    ============================================================ */
-    const form = document.getElementById('registration-form');
-
-    const rules = {
-      org_name:       { required: true, minLen: 2,  err: 'org_name_err' },
-      company_type:   { required: true,              err: 'company_type_err' },
-      year_est:       { required: true, min: 1950, max: 2026, err: 'year_est_err' },
-      coverage_area:  { required: true, minLen: 3,  err: 'coverage_area_err' },
-      contact_name:   { required: true, minLen: 2,  err: 'contact_name_err' },
-      designation:    { required: true, minLen: 2,  err: 'designation_err' },
-      mobile:         { required: true, pattern: /^[6-9]\d{9}$/, err: 'mobile_err' },
-      email:          { required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, err: 'email_err' },
-      company_profile:{ required: true, minLen: 100, err: 'company_profile_err' },
-    };
-
-    function validateField(id, rule) {
-      const el = document.getElementById(id);
-      const errEl = document.getElementById(rule.err);
-      if (!el) return true;
-      const val = el.value.trim();
-      let valid = true;
-      if (rule.required && !val) valid = false;
-      else if (rule.minLen && val.length < rule.minLen) valid = false;
-      else if (rule.pattern && !rule.pattern.test(val)) valid = false;
-      else if (rule.min !== undefined && (isNaN(parseInt(val)) || parseInt(val) < rule.min || parseInt(val) > rule.max)) valid = false;
-      el.setAttribute('aria-invalid', valid ? 'false' : 'true');
-      if (errEl) errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    function validateWebsite() {
-      const el = document.getElementById('website');
-      const errEl = document.getElementById('website_err');
-      const val = el.value.trim();
-      if (!val) { el.setAttribute('aria-invalid','false'); errEl.classList.remove('visible'); return true; }
-      const valid = /^https?:\/\/.+\..+/.test(val);
-      el.setAttribute('aria-invalid', valid ? 'false' : 'true');
-      errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    function validateGST() {
-      const el = document.getElementById('gst_number');
-      const errEl = document.getElementById('gst_err');
-      const val = el.value.trim();
-      if (!val) { el.setAttribute('aria-invalid','false'); errEl.classList.remove('visible'); return true; }
-      const valid = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/.test(val.toUpperCase());
-      el.setAttribute('aria-invalid', valid ? 'false' : 'true');
-      errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    function validateServiceType() {
-      const selected = form.querySelector('input[name="service_type"]:checked');
-      const errEl = document.getElementById('service_type_err');
-      const valid = !!selected;
-      errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    function validateDomains() {
-      const checked = form.querySelectorAll('input[name="domains"]:checked');
-      const errEl = document.getElementById('domains_err');
-      const valid = checked.length > 0;
-      errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    function validateConsent() {
-      const cb = document.getElementById('consent');
-      const errEl = document.getElementById('consent_err');
-      const valid = cb.checked;
-      errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    function validatePDF() {
-      const el = document.getElementById('profile_pdf');
-      const errEl = document.getElementById('pdf_err');
-      if (!el.files || el.files.length === 0) { errEl.classList.remove('visible'); return true; }
-      const file = el.files[0];
-      const valid = file.type === 'application/pdf' && file.size <= 5 * 1024 * 1024;
-      errEl.classList.toggle('visible', !valid);
-      return valid;
-    }
-
-    // Live validation on blur
-    Object.keys(rules).forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('blur', () => validateField(id, rules[id]));
-    });
-    document.getElementById('website').addEventListener('blur', validateWebsite);
-    document.getElementById('gst_number').addEventListener('blur', validateGST);
-    document.getElementById('gst_number').addEventListener('input', e => {
-      e.target.value = e.target.value.toUpperCase();
-    });
-
-    /* ============================================================
-       FORM SUBMISSION — POST JSON to /api/register
-    ============================================================ */
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      let isValid = true;
-      Object.keys(rules).forEach(id => { if (!validateField(id, rules[id])) isValid = false; });
-      if (!validateWebsite()) isValid = false;
-      if (!validateGST()) isValid = false;
-      if (!validateServiceType()) isValid = false;
-      if (!validateDomains()) isValid = false;
-      if (!validateConsent()) isValid = false;
-      if (!validatePDF()) isValid = false;
-
-      if (!isValid) {
-        const firstErr = form.querySelector('[aria-invalid="true"], .field-error.visible');
-        if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        return;
-      }
-
-      const domains = Array.from(form.querySelectorAll('input[name="domains"]:checked'))
-        .map(cb => cb.value).join(', ');
-      const serviceType = form.querySelector('input[name="service_type"]:checked')?.value || '';
-
-      const payload = {
-        org_name:        document.getElementById('org_name').value.trim(),
-        company_type:    document.getElementById('company_type').value,
-        year_est:        document.getElementById('year_est').value,
-        turnover:        document.getElementById('turnover').value || '',
-        website:         document.getElementById('website').value.trim(),
-        coverage_area:   document.getElementById('coverage_area').value.trim(),
-        contact_name:    document.getElementById('contact_name').value.trim(),
-        designation:     document.getElementById('designation').value.trim(),
-        mobile:          document.getElementById('mobile').value.trim(),
-        email:           document.getElementById('email').value.trim(),
-        gst_number:      document.getElementById('gst_number').value.trim(),
-        gst_state:       document.getElementById('gst_state').value,
-        service_type:    serviceType,
-        domains:         domains,
-        company_profile: document.getElementById('company_profile').value.trim(),
-      };
-
-      const btn = document.getElementById('submit-btn');
-      btn.classList.add('loading');
-      btn.disabled = true;
-
-      const successStatus = document.getElementById('form-success');
-      const errorStatus = document.getElementById('form-error');
-      successStatus.className = 'form-status';
-      errorStatus.className = 'form-status';
-
-      try {
-        const resp = await fetch('/api/register', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-
-        const result = await resp.json();
-
-        if (resp.ok && result.success) {
-          showSuccess(payload.contact_name);
-        } else {
-          throw new Error(result.error || 'Submission failed');
-        }
-      } catch (err) {
-        console.error('Submission error:', err);
-        btn.classList.remove('loading');
-        btn.disabled = false;
-        errorStatus.className = 'form-status error';
-        errorStatus.setAttribute('role', 'alert');
-        errorStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    });
-
-    function showSuccess(name) {
-      document.getElementById('registration-form').style.display = 'none';
-      const card = document.getElementById('success-card');
-      card.classList.add('visible');
-      card.focus();
-      const h2 = card.querySelector('h2');
-      if (name) h2.textContent = `Thank you, ${name.split(' ')[0]}!`;
-    }
-  </script>
-
-</body>
-</html>
+  </div>
+</section>
+</main>
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <img src="assets/logo-footer.png" alt="Partnerschaft India" class="footer-logo-img">
+      <p class="footer-tagline">Retail Execution · Vendor Operations · Digital Enablement. Your outsourced operations partner across India.</p>
+      <div style="margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap">
+        <span style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.65);font-size:.68rem;font-weight:600;padding:.3rem .7rem;border-radius:4px;letter-spacing:.08em">GST REGISTERED</span>
+        <span style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.65);font-size:.68rem;font-weight:600;padding:.3rem .7rem;border-radius:4px;letter-spacing:.08em">UDYAM MSME</span>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li><li><a href="/about">About Us</a></li><li><a href="/services">Services</a></li><li><a href="/network">Join Network</a></li><li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="/services#btl">Retail &amp; BTL</a></li><li><a href="/services#vendor">Vendor Ops</a></li><li><a href="/services#printing">Printing &amp; POSM</a></li><li><a href="/services#digital">Digital / AI</a></li><li><a href="https://barada.in" target="_blank" rel="noopener">Barada →</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <div class="footer-address">
+        <strong>Head Office</strong>D155, DSM Synergy, Agrahara Layout Main Rd,<br>Bengaluru – 560064, Karnataka
+        <strong>Registered Office</strong>C/O B.N. Satapathy, Ranapur,<br>Binjharpur, Jajpur – 755012, Odisha
+        <strong style="margin-top:1rem">Get in Touch</strong>
+        <a href="tel:+919113283848" style="color:rgba(255,255,255,.65)">+91 91132 83848</a><br>
+        <a href="mailto:hello@partnerschaft.in" style="color:rgba(255,255,255,.65)">hello@partnerschaft.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-legal">© 2026 Partnerschaft (OPC) Private Limited. All rights reserved.<br>CIN: U70200OD2026OPC055800 | PAN: AARCP6090P</p>
+    <p class="footer-legal" style="text-align:right">GST Registered · Udyam Certified MSME<br>Bengaluru, Karnataka · Pan-India Operations</p>
+  </div>
+</footer><a href="https://wa.me/919113283848?text=Hello%20Partnerschaft%2C%20I%20have%20a%20requirement" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-tooltip">Chat with us</span>
+</a><script>
+const toggle=document.querySelector('.nav-toggle'),menu=document.getElementById('nav-menu'),ctaWrap=document.querySelector('.nav-cta-wrap');
+if(toggle){toggle.addEventListener('click',()=>{const o=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',o);if(ctaWrap)ctaWrap.classList.toggle('open',o);});}
+</script></body></html>
