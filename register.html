@@ -81,6 +81,11 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
 .wa-float:hover{transform:scale(1.1)}.wa-float svg{width:30px;height:30px;fill:#fff}
 .wa-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:var(--dark);color:#fff;font-family:var(--fh);font-size:.72rem;font-weight:600;padding:.35rem .75rem;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
 .wa-float:hover .wa-tooltip{opacity:1}
+
+@media(max-width:860px){
+  .reg-main-grid{grid-template-columns:1fr!important}
+  .reg-form-grid{grid-template-columns:1fr!important}
+}
 </style>
 
 </head>
@@ -109,7 +114,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
 </div>
 
 <section class="section">
-  <div class="container" style="display:grid;grid-template-columns:1fr 1.7fr;gap:5rem;align-items:start">
+  <div class="container reg-main-grid" style="display:grid;grid-template-columns:1fr 1.7fr;gap:5rem;align-items:start">
     <div>
       <h2 style="font-size:1.3rem;font-weight:800;color:var(--blue-dark);margin-bottom:.75rem">Why Register with Partnerschaft?</h2>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem">

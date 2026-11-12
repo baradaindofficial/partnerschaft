@@ -81,6 +81,13 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
 .wa-float:hover{transform:scale(1.1)}.wa-float svg{width:30px;height:30px;fill:#fff}
 .wa-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:var(--dark);color:#fff;font-family:var(--fh);font-size:.72rem;font-weight:600;padding:.35rem .75rem;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
 .wa-float:hover .wa-tooltip{opacity:1}
+
+@media(max-width:860px){
+  .network-grid{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:500px){
+  .network-grid{grid-template-columns:1fr!important}
+}
 </style>
 
 </head>
@@ -113,7 +120,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
     <div class="section-label">Who We're Looking For</div>
     <h2 class="section-heading">Vendors Who Deliver. Consistently.</h2>
     <p class="section-sub">We build long-term relationships with vendors who meet our quality and reliability standards. We're not a marketplace — we're a structured partner network.</p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+    <div class="network-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
       <div style="background:var(--light);border-radius:12px;padding:2rem;border-top:3px solid var(--blue)"><div style="font-size:1.5rem;margin-bottom:.75rem">🎯</div><h3 style="font-size:.95rem;font-weight:800;color:var(--blue-dark);margin-bottom:.5rem">BTL &amp; Activation Agencies</h3><p style="font-size:.85rem;color:var(--gray-600);line-height:1.75">On-ground activation, event execution, consumer engagement and experiential marketing — across any geography.</p></div>
       <div style="background:var(--light);border-radius:12px;padding:2rem;border-top:3px solid var(--blue)"><div style="font-size:1.5rem;margin-bottom:.75rem">🖨️</div><h3 style="font-size:.95rem;font-weight:800;color:var(--blue-dark);margin-bottom:.5rem">Printers &amp; POSM Vendors</h3><p style="font-size:.85rem;color:var(--gray-600);line-height:1.75">Digital, offset and large format printing. POSM production, flex printing, standees and packaging.</p></div>
       <div style="background:var(--light);border-radius:12px;padding:2rem;border-top:3px solid var(--blue)"><div style="font-size:1.5rem;margin-bottom:.75rem">🏪</div><h3 style="font-size:.95rem;font-weight:800;color:var(--blue-dark);margin-bottom:.5rem">Fixture &amp; Display Manufacturers</h3><p style="font-size:.85rem;color:var(--gray-600);line-height:1.75">Retail display units, gondolas, counters, SIS furniture and bespoke in-store fixtures.</p></div>

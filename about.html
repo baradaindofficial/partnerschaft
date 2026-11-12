@@ -81,6 +81,15 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
 .wa-float:hover{transform:scale(1.1)}.wa-float svg{width:30px;height:30px;fill:#fff}
 .wa-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:var(--dark);color:#fff;font-family:var(--fh);font-size:.72rem;font-weight:600;padding:.35rem .75rem;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
 .wa-float:hover .wa-tooltip{opacity:1}
+
+@media(max-width:860px){
+  .about-two-col{grid-template-columns:1fr!important;gap:2rem!important}
+  .about-stat-grid{grid-template-columns:1fr 1fr!important}
+  .about-offices-grid{grid-template-columns:1fr!important}
+}
+@media(max-width:500px){
+  .about-stat-grid{grid-template-columns:1fr!important}
+}
 </style>
 
 </head>
@@ -109,7 +118,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
 </div>
 
 <section class="section">
-  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
+  <div class="container about-two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
     <div>
       <div class="section-label">Who We Are</div>
       <h2 class="section-heading">A Lean Operations Partner Built for Indian Brands</h2>
@@ -127,7 +136,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
           <div><div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:.2rem">Registration</div><div style="font-size:.88rem;font-weight:600;color:var(--blue-dark)">GST Registered · Udyam Certified MSME</div></div>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
+      <div class="about-stat-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
         <div style="background:var(--blue);color:#fff;border-radius:10px;padding:1.25rem;text-align:center">
           <div style="font-family:var(--fh);font-size:1.75rem;font-weight:900">19+</div>
           <div style="font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:.3rem">States Covered</div>
@@ -145,7 +154,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var
   <div class="container">
     <div class="section-label">Our Offices</div>
     <h2 class="section-heading">Where We're Based</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+    <div class="about-offices-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
       <div style="background:var(--white);border:2px solid var(--blue);border-radius:12px;padding:2rem">
         <div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem">Head Office</div>
         <h3 style="font-size:1.1rem;color:var(--blue-dark);margin-bottom:.75rem">Bengaluru, Karnataka</h3>
