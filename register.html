@@ -2,194 +2,1001 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register as Vendor | Join Partnerschaft India's Pan-India Network</title>
-<meta name="description" content="Register your business as a vendor with Partnerschaft India. We work with BTL agencies, printers, fixture manufacturers, gifting suppliers and IT service providers across India.">
-<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register | Partnerschaft India</title>
+<meta name="description" content="Join Partnerschaft's pan-India vendor and brand network. Register as a service vendor or a brand looking for verified execution partners.">
 <link rel="canonical" href="https://www.partnerschaft.in/register">
-<link rel="icon" type="image/png" href="favicon.png">
-<meta property="og:title" content="Register as Vendor | Join Partnerschaft India's Pan-India Network">
-<meta property="og:description" content="Register your business as a vendor with Partnerschaft India. We work with BTL agencies, printers, fixture manufacturers, gifting suppliers and IT service providers across India.">
-<meta property="og:url" content="https://www.partnerschaft.in/register">
-<meta property="og:image" content="https://www.partnerschaft.in/assets/logo-stacked.png">
-<meta property="og:site_name" content="Partnerschaft India">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yz2p5ay0c5");
-</script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap">
 <style>
-:root{--blue:#0B5ED7;--blue-dark:#0D183D;--blue-bright:#0B5ED7;--blue-light:#EAF3FA;--white:#FFFFFF;--light:#F0F4FA;--gray-100:#E2E8F0;--gray-400:#94A3B8;--gray-600:#68798C;--dark:#1A1A1A;--fh:'Manrope',sans-serif;--fb:'Inter',sans-serif;--radius:8px;--max-w:1200px;--gutter:clamp(1.25rem,5vw,4rem)}
+/* ── Site tokens ── */
+:root{
+  --blue-dark:#0D183D;--blue:#0B5ED7;--blue-mid:#1A3272;
+  --amber:#C6613F;--amber2:#E07C1A;
+  --white:#fff;--light:#F0F4FA;--gray-100:#E2E8F0;--gray-400:#94A3B8;--gray-600:#68798C;--dark:#1A1A1A;
+  --fh:'Manrope',sans-serif;--fb:'Inter',sans-serif;
+  --radius:10px;--max-w:960px;--sh:0 2px 12px rgba(13,24,61,.10);
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}body{font-family:var(--fb);color:var(--dark);background:var(--white);line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}h1,h2,h3,h4{font-family:var(--fh);line-height:1.2}
-.skip-link{position:absolute;top:-40px;left:1rem;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:4px;font-size:.85rem;font-weight:600;z-index:9999;transition:top .2s}.skip-link:focus{top:1rem}
-nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px solid var(--blue);box-shadow:0 2px 12px rgba(11,94,215,.1)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:.75rem var(--gutter)}
-.nav-logo-img{height:60px;width:auto;max-width:200px;object-fit:contain;filter:brightness(0) saturate(100%) invert(28%) sepia(100%) saturate(2000%) hue-rotate(207deg) brightness(100%) contrast(102%)}
-@media(max-width:860px){.nav-logo-img{height:48px}}
-.nav-menu{display:flex;list-style:none;gap:2rem;align-items:center}
-.nav-link{font-family:var(--fh);font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);padding:.3rem 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
-.nav-link:hover,.nav-link[aria-current="page"]{color:var(--blue);border-bottom-color:var(--blue)}
-.nav-cta-wrap{display:flex;align-items:center;gap:.75rem}
-.nav-cta-register{font-family:var(--fh);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:2px solid var(--blue);padding:.45rem 1rem;border-radius:4px;transition:background .2s,color .2s}
+body{font-family:var(--fb);color:var(--dark);background:#F7F9FC;line-height:1.6}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* ── Nav (matches site) ── */
+nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--gray-100);box-shadow:0 1px 6px rgba(13,24,61,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem clamp(1rem,4vw,2.5rem);max-width:1280px;margin:auto;gap:1rem}
+.nav-logo-img{height:36px;width:auto}
+.nav-menu{display:flex;list-style:none;gap:1.75rem}
+.nav-link{font-family:var(--fh);font-size:.85rem;font-weight:600;color:var(--blue-dark);letter-spacing:.03em;text-transform:uppercase;transition:color .2s}
+.nav-link:hover,.nav-link.active{color:var(--blue)}
+.nav-cta-wrap{display:flex;gap:.75rem;align-items:center}
+.nav-cta-register{font-family:var(--fh);font-size:.82rem;font-weight:700;color:var(--blue);border:2px solid var(--blue);border-radius:6px;padding:.35rem .9rem;text-transform:uppercase;letter-spacing:.04em;transition:.2s}
 .nav-cta-register:hover{background:var(--blue);color:#fff}
-.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--fh);font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;text-decoration:none;cursor:pointer;border:none;transition:all .2s}
-.btn-cta{background:var(--blue);color:#fff;padding:.6rem 1.4rem;font-size:.8rem}.btn-cta:hover{background:var(--blue-dark)}
-.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);padding:.6rem 1.4rem;font-size:.8rem}.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
-.btn-sm{padding:.45rem 1rem;font-size:.75rem}.btn-lg{padding:.8rem 2rem;font-size:.9rem}
-.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:.5rem;color:var(--blue)}
-@media(max-width:860px){
-  .nav-toggle{display:flex;flex-direction:column;gap:5px}
-  .nav-toggle span{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:all .3s}
-  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:1.5rem var(--gutter);gap:1rem;border-bottom:2px solid var(--blue);box-shadow:0 8px 24px rgba(11,94,215,.1)}
-  .nav-menu.open{display:flex}
-  .nav-cta-wrap{display:none}.nav-cta-wrap.open{display:flex;flex-direction:column;padding:0 var(--gutter) 1.5rem;position:absolute;top:calc(100% + 1px);left:0;right:0;background:var(--white)}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:700;border:none;cursor:pointer;transition:.2s;text-align:center}
+.btn-cta{background:var(--amber2);color:#fff;border-radius:6px;padding:.4rem 1rem;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+.btn-cta:hover{background:var(--amber)}
+.btn-sm{padding:.35rem .9rem;font-size:.82rem}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--blue-dark);border-radius:2px}
+@media(max-width:768px){
+  .nav-menu,.nav-cta-wrap{display:none}
+  .nav-toggle{display:flex}
+  .nav-menu.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;padding:1rem 1.5rem;border-top:1px solid var(--gray-100);box-shadow:0 8px 24px rgba(0,0,0,.1);z-index:200}
+  .nav-cta-wrap.open{display:flex;flex-direction:column;padding:0 1.5rem 1rem;background:#fff}
 }
-.section{padding:4rem var(--gutter)}.section-alt{background:var(--light)}.section-blue{background:var(--blue);color:#fff}.section-dark{background:var(--blue-dark);color:#fff}
-.container{max-width:var(--max-w);margin:0 auto}
-.section-label{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem}
-.section-blue .section-label,.section-dark .section-label{color:rgba(255,255,255,.65)}
-.section-heading{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;margin-bottom:1rem}
-.section-sub{color:var(--gray-600);font-size:.95rem;line-height:1.75;max-width:600px;margin-bottom:2.5rem}
-.page-hero{background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#fff;padding:4rem var(--gutter) 3rem}
-.page-hero-inner{max-width:var(--max-w);margin:0 auto}
-.page-hero h1{font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;margin-bottom:.75rem}
-.page-hero p{color:rgba(255,255,255,.90);font-size:1rem;max-width:560px;line-height:1.75}
-.cta-band{background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#fff;padding:4rem var(--gutter);display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
-@media(max-width:860px){.cta-band{grid-template-columns:1fr}}
-.cta-band h2{font-size:clamp(1.4rem,2.5vw,2rem);font-weight:800}
-.cta-band p{color:rgba(255,255,255,.7);font-size:.9rem;margin-top:.5rem}
-.cta-band-actions{display:flex;flex-direction:column;gap:.75rem;min-width:200px}
-.cta-note{font-size:.75rem;color:rgba(255,255,255,.55);text-align:center;margin-top:.25rem}
-footer{background:var(--blue-dark);color:rgba(255,255,255,.8);padding:3.5rem var(--gutter) 2rem}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:2.5rem;max-width:var(--max-w);margin:0 auto}
-@media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:500px){.footer-grid{grid-template-columns:1fr}}
-.footer-logo-img{height:48px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1)}
-.footer-tagline{font-size:.82rem;line-height:1.7;color:rgba(255,255,255,.6);margin-top:.5rem}
-.footer-col h4,.footer-grid>div>h4{font-family:var(--fh);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1rem}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
-.footer-links a{font-size:.83rem;color:rgba(255,255,255,.65);transition:color .2s}.footer-links a:hover{color:#fff}
-.footer-address{font-size:.8rem;line-height:1.75;color:rgba(255,255,255,.6)}
-.footer-address strong{color:rgba(255,255,255,.85);display:block;margin-bottom:.2rem;margin-top:.8rem;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.5rem;max-width:var(--max-w);margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
-.footer-legal{font-size:.72rem;color:rgba(255,255,255,.4);line-height:1.6}
-.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:999;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s}
-.wa-float:hover{transform:scale(1.1)}.wa-float svg{width:30px;height:30px;fill:#fff}
-.wa-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:var(--dark);color:#fff;font-family:var(--fh);font-size:.72rem;font-weight:600;padding:.35rem .75rem;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
-.wa-float:hover .wa-tooltip{opacity:1}
 
-@media(max-width:860px){
-  .reg-main-grid{grid-template-columns:1fr!important}
-  .reg-form-grid{grid-template-columns:1fr!important}
-}
+/* ── Page hero ── */
+.reg-hero{background:var(--blue-dark);color:#fff;padding:3rem clamp(1rem,5vw,3rem) 2.5rem;text-align:center}
+.reg-hero .badge{display:inline-block;background:rgba(255,255,255,.12);color:rgba(255,255,255,.85);font-size:.72rem;font-family:var(--fh);font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border-radius:50px;margin-bottom:1rem}
+.reg-hero h1{font-family:var(--fh);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:.6rem}
+.reg-hero p{color:rgba(255,255,255,.7);font-size:.95rem;max-width:480px;margin:auto}
+
+/* ── Tab switcher ── */
+.tab-bar{background:#fff;border-bottom:1px solid var(--gray-100);position:sticky;top:65px;z-index:90}
+.tab-bar-inner{max-width:var(--max-w);margin:auto;display:flex;gap:0;padding:0 clamp(1rem,4vw,2rem)}
+.tab-btn{font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--gray-600);padding:1rem 1.5rem;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;transition:.2s;text-transform:uppercase;letter-spacing:.05em}
+.tab-btn.active{color:var(--blue);border-bottom-color:var(--blue)}
+.tab-btn:hover:not(.active){color:var(--blue-dark)}
+
+/* ── Main container ── */
+.reg-main{max-width:var(--max-w);margin:2rem auto;padding:0 clamp(1rem,4vw,2rem) 4rem}
+.tab-panel{display:none}.tab-panel.active{display:block}
+
+/* ── Step tracker ── */
+.steps{display:flex;gap:0;margin-bottom:2rem;position:relative}
+.steps::before{content:'';position:absolute;top:18px;left:0;right:0;height:2px;background:var(--gray-100);z-index:0}
+.step{flex:1;display:flex;flex-direction:column;align-items:center;gap:.4rem;position:relative;z-index:1}
+.step-dot{width:36px;height:36px;border-radius:50%;background:var(--gray-100);color:var(--gray-400);font-family:var(--fh);font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;border:2px solid var(--gray-100);transition:.3s}
+.step-label{font-size:.7rem;font-family:var(--fh);font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.06em;text-align:center}
+.step.done .step-dot{background:var(--blue);color:#fff;border-color:var(--blue)}
+.step.done .step-label{color:var(--blue)}
+.step.active .step-dot{background:#fff;color:var(--blue);border-color:var(--blue);box-shadow:0 0 0 4px rgba(11,94,215,.12)}
+.step.active .step-label{color:var(--blue-dark);font-weight:700}
+
+/* ── Cards ── */
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--sh);padding:clamp(1.25rem,4vw,2rem);margin-bottom:1.25rem}
+.card-title{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--blue-dark);margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--gray-100)}
+
+/* ── Form elements ── */
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+@media(max-width:600px){.field-row{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.field label{font-size:.8rem;font-family:var(--fh);font-weight:600;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.05em}
+.field label span{color:#dc2626;margin-left:2px}
+input,select,textarea{font-family:var(--fb);font-size:.9rem;color:var(--dark);background:#fff;border:1.5px solid var(--gray-100);border-radius:8px;padding:.65rem .9rem;width:100%;transition:.2s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,94,215,.1)}
+select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394A3B8' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
+textarea{resize:vertical;min-height:90px}
+.otp-row{display:flex;gap:.75rem}
+.otp-row input{flex:1;text-align:center;font-size:1.2rem;font-weight:700;letter-spacing:.15em}
+.otp-row .btn-send{white-space:nowrap;flex-shrink:0}
+.otp-hint{font-size:.78rem;color:var(--gray-600);margin-top:.35rem}
+.checkbox-group{display:flex;flex-wrap:wrap;gap:.5rem}
+.checkbox-item{display:flex;align-items:center;gap:.4rem;font-size:.85rem;padding:.35rem .65rem;border:1.5px solid var(--gray-100);border-radius:6px;cursor:pointer;transition:.15s}
+.checkbox-item:hover{border-color:var(--blue);background:var(--light)}
+.checkbox-item input{width:auto;margin:0;accent-color:var(--blue)}
+
+/* ── Upload zone ── */
+.upload-zone{border:2px dashed var(--gray-100);border-radius:8px;padding:1.25rem;text-align:center;cursor:pointer;transition:.2s;position:relative}
+.upload-zone:hover{border-color:var(--blue);background:var(--light)}
+.upload-zone input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer}
+.upload-zone .uz-icon{font-size:1.5rem;margin-bottom:.35rem}
+.upload-zone p{font-size:.82rem;color:var(--gray-600)}
+.upload-zone p strong{color:var(--blue)}
+.file-preview{display:flex;align-items:center;gap:.5rem;background:var(--light);border-radius:6px;padding:.5rem .75rem;font-size:.82rem;margin-top:.5rem}
+.file-preview .fp-name{flex:1;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file-preview .fp-remove{color:#dc2626;cursor:pointer;font-size:.85rem;font-weight:700}
+
+/* ── Consent box ── */
+.consent-card{background:var(--light);border:1.5px solid var(--gray-100);border-radius:8px;padding:1.1rem 1.25rem;margin-bottom:1rem}
+.consent-card h4{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--blue-dark);margin-bottom:.5rem}
+.consent-card p{font-size:.8rem;color:var(--gray-600);line-height:1.6;margin-bottom:.75rem}
+.consent-check{display:flex;align-items:flex-start;gap:.6rem;cursor:pointer}
+.consent-check input{accent-color:var(--blue);margin-top:3px;flex-shrink:0}
+.consent-check span{font-size:.82rem;color:var(--dark);line-height:1.55}
+
+/* ── Geo box ── */
+.geo-card{background:#EFF6FF;border:1.5px solid #BFDBFE;border-radius:8px;padding:.85rem 1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
+.geo-card .geo-status{font-size:.82rem;flex:1}
+.geo-status .geo-ok{color:#166534;font-weight:600}
+.geo-status .geo-err{color:#dc2626}
+.btn-geo{font-size:.8rem;padding:.4rem .9rem;white-space:nowrap}
+
+/* ── Buttons ── */
+.btn-primary{background:var(--blue);color:#fff;border-radius:8px;padding:.7rem 1.75rem;font-size:.9rem;font-weight:700;font-family:var(--fh);cursor:pointer;border:none;transition:.2s;text-transform:uppercase;letter-spacing:.04em}
+.btn-primary:hover:not(:disabled){background:#0d4fb8}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed}
+.btn-secondary{background:#fff;color:var(--blue);border:2px solid var(--blue);border-radius:8px;padding:.65rem 1.5rem;font-size:.88rem;font-weight:700;font-family:var(--fh);cursor:pointer;transition:.2s;text-transform:uppercase;letter-spacing:.04em}
+.btn-secondary:hover{background:var(--light)}
+.btn-outline-send{background:#fff;color:var(--blue);border:2px solid var(--blue);border-radius:8px;padding:.6rem 1rem;font-size:.82rem;font-weight:700;font-family:var(--fh);cursor:pointer;transition:.2s}
+.btn-outline-send:hover{background:var(--light)}
+.btn-outline-send:disabled{opacity:.45;cursor:not-allowed}
+.form-nav{display:flex;justify-content:space-between;align-items:center;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--gray-100)}
+
+/* ── Success screen ── */
+.success-screen{text-align:center;padding:3rem 1rem}
+.success-screen .s-icon{width:72px;height:72px;background:#DCFCE7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:2rem}
+.success-screen h2{font-family:var(--fh);font-size:1.5rem;font-weight:800;color:var(--blue-dark);margin-bottom:.5rem}
+.success-screen p{color:var(--gray-600);margin-bottom:.35rem;font-size:.9rem}
+.success-id{font-family:'Courier New',monospace;font-size:1rem;font-weight:700;color:var(--blue);background:var(--light);display:inline-block;padding:.4rem .9rem;border-radius:6px;margin:.5rem 0}
+
+/* ── Alerts ── */
+.alert{border-radius:8px;padding:.75rem 1rem;font-size:.85rem;margin-bottom.75rem;display:none}
+.alert.show{display:block}
+.alert-err{background:#FEF2F2;border:1px solid #FECACA;color:#dc2626}
+.alert-ok{background:#F0FDF4;border:1px solid #BBF7D0;color:#166534}
+
+/* ── Info list on landing ── */
+.reg-why{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+@media(max-width:600px){.reg-why{grid-template-columns:1fr}}
+.why-item{background:#fff;border-radius:var(--radius);padding:1rem 1.25rem;box-shadow:var(--sh);display:flex;gap:.75rem;align-items:flex-start}
+.why-icon{width:36px;height:36px;border-radius:8px;background:var(--light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.why-text h4{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--blue-dark);margin-bottom:.2rem}
+.why-text p{font-size:.78rem;color:var(--gray-600)}
 </style>
-
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to main content</a><nav role="navigation" aria-label="Main navigation">
+
+<!-- ── Nav ── -->
+<nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="/" aria-label="Partnerschaft India — Home">
       <img src="assets/logo-stacked.png" alt="Partnerschaft India" class="nav-logo-img">
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-menu" id="nav-menu" role="list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/about" class="nav-link">About</a></li><li><a href="/services" class="nav-link">Services</a></li><li><a href="/network" class="nav-link">Join Network</a></li><li><a href="/contact" class="nav-link">Contact</a></li></ul>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true');document.getElementById('nav-menu').classList.toggle('open');document.querySelector('.nav-cta-wrap').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu" role="list">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/services" class="nav-link">Services</a></li>
+      <li><a href="/network" class="nav-link">Join Network</a></li>
+      <li><a href="/contact" class="nav-link">Contact</a></li>
+    </ul>
     <div class="nav-cta-wrap">
-      <a href="/register" class="nav-cta-register">Register Vendor</a>
+      <a href="/register" class="nav-cta-register active">Register</a>
       <a href="/contact" class="btn btn-cta btn-sm">Start a Requirement</a>
     </div>
   </div>
 </nav>
-<main id="main">
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div style="font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.75rem">Vendor Registration</div>
-    <h1>Register Your Business with Partnerschaft.</h1>
-    <p>Join our pan-India vendor network. We connect qualified vendors with brands that need your services.</p>
+
+<!-- ── Hero ── -->
+<div class="reg-hero">
+  <div class="badge">Join the Network</div>
+  <h1>Register with Partnerschaft</h1>
+  <p>Vendors register to access brand requirements. Brands register to source verified execution partners.</p>
+</div>
+
+<!-- ── Tab bar ── -->
+<div class="tab-bar">
+  <div class="tab-bar-inner">
+    <button class="tab-btn active" onclick="switchTab('vendor',this)">🏭 Service Vendor</button>
+    <button class="tab-btn" onclick="switchTab('company',this)">🏢 Brand / Company</button>
   </div>
 </div>
 
-<section class="section">
-  <div class="container reg-main-grid" style="display:grid;grid-template-columns:1fr 1.7fr;gap:5rem;align-items:start">
-    <div>
-      <h2 style="font-size:1.3rem;font-weight:800;color:var(--blue-dark);margin-bottom:.75rem">Why Register with Partnerschaft?</h2>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem">
-        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Access to brand requirements across pan-India</li>
-        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Structured briefings — no ambiguous or last-minute requests</li>
-        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Timely payment coordination through a GST-compliant process</li>
-        <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;color:var(--gray-600);line-height:1.6"><span style="width:20px;height:20px;min-width:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Long-term relationship, not one-off engagements</li>
-      </ul>
-      <div style="background:var(--light);border-radius:10px;padding:1.25rem;border-left:4px solid var(--blue)">
-        <p style="font-size:.82rem;color:var(--gray-600);line-height:1.75">We work with BTL agencies, printers, fixture manufacturers, gifting suppliers, event companies, IT service providers and logistics partners.</p>
+<!-- ── Main ── -->
+<main class="reg-main">
+
+  <!-- ══ VENDOR PANEL ══ -->
+  <div class="tab-panel active" id="panel-vendor">
+
+    <!-- Step tracker -->
+    <div class="steps" id="vsteps">
+      <div class="step active" id="vs0"><div class="step-dot">1</div><div class="step-label">Verify</div></div>
+      <div class="step" id="vs1"><div class="step-dot">2</div><div class="step-label">Business</div></div>
+      <div class="step" id="vs2"><div class="step-dot">3</div><div class="step-label">Credentials</div></div>
+      <div class="step" id="vs3"><div class="step-dot">4</div><div class="step-label">Confirm</div></div>
+    </div>
+
+    <div id="v-step-0">
+      <div class="card">
+        <div class="card-title">Email Verification</div>
+        <div class="field-row">
+          <div class="field">
+            <label>Full Name <span>*</span></label>
+            <input type="text" id="v-name" placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label>Email Address <span>*</span></label>
+            <input type="email" id="v-email" placeholder="business@example.com">
+          </div>
+        </div>
+        <div class="field">
+          <label>OTP <span>*</span></label>
+          <div class="otp-row">
+            <input type="text" id="v-otp" placeholder="6-digit code" maxlength="6" inputmode="numeric">
+            <button class="btn-outline-send" id="v-send-btn" onclick="sendOtp('vendor')">Send OTP</button>
+          </div>
+          <span class="otp-hint" id="v-otp-hint"></span>
+        </div>
+        <div class="alert alert-err" id="v-err0"></div>
+      </div>
+      <div class="form-nav">
+        <span></span>
+        <button class="btn-primary" onclick="verifyOtp('vendor')">Verify & Continue →</button>
       </div>
     </div>
-    <div>
-      <form id="reg-form" style="background:var(--light);border-radius:14px;padding:2.5rem" method="POST" action="https://formspree.io/f/mjglnyan">
-        <h3 style="font-family:var(--fh);font-size:1.2rem;font-weight:800;color:var(--blue-dark);margin-bottom:1.75rem">Vendor Registration Form</h3>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
-          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Contact Name *</label><input name="contact_name" type="text" required placeholder="Full name" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
-          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Company Name *</label><input name="company_name" type="text" required placeholder="Registered company name" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
+
+    <div id="v-step-1" style="display:none">
+      <div class="card">
+        <div class="card-title">Business Information</div>
+        <div class="field-row">
+          <div class="field">
+            <label>Designation <span>*</span></label>
+            <input type="text" id="v-desig" placeholder="e.g. Owner, Director">
+          </div>
+          <div class="field">
+            <label>Business Name <span>*</span></label>
+            <input type="text" id="v-biz" placeholder="Registered business name">
+          </div>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
-          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Email *</label><input name="email" type="email" required placeholder="your@email.com" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
-          <div><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Phone *</label><input name="phone" type="tel" required placeholder="+91 XXXXX XXXXX" style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
+        <div class="field-row">
+          <div class="field">
+            <label>Mobile <span>*</span></label>
+            <input type="tel" id="v-mobile" placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="field">
+            <label>Website</label>
+            <input type="url" id="v-web" placeholder="https://yourdomain.com">
+          </div>
         </div>
-        <div style="margin-bottom:1rem"><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Service Category *</label>
-          <select name="category" required style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'">
-            <option value="">Select your primary service</option>
-            <option>BTL / Activation Agency</option><option>Printing / POSM</option><option>Retail Fixtures / Display</option><option>Signage / Branding</option><option>Corporate Gifting</option><option>Events / Experiential</option><option>IT / Digital Services</option><option>Logistics / Delivery</option><option>Other</option>
-          </select>
+        <div class="field-row">
+          <div class="field">
+            <label>State <span>*</span></label>
+            <select id="v-state">
+              <option value="">Select state</option>
+              <option>Andhra Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>City <span>*</span></label>
+            <input type="text" id="v-city" placeholder="City">
+          </div>
         </div>
-        <div style="margin-bottom:1rem"><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">States / Regions Covered *</label><input name="states" type="text" required placeholder="e.g. Karnataka, Tamil Nadu, Telangana..." style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></div>
-        <div style="margin-bottom:1.5rem"><label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);display:block;margin-bottom:.4rem">Brief Description of Services</label><textarea name="description" rows="4" placeholder="Describe what you offer, your capacity and any notable experience..." style="width:100%;border:2px solid var(--gray-100);border-radius:6px;padding:.65rem .9rem;font-family:var(--fb);font-size:.88rem;background:#fff;outline:none;resize:vertical" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--gray-100)'"></textarea></div>
-        <button type="submit" class="btn btn-cta" style="width:100%;justify-content:center;padding:.8rem;font-size:.88rem" id="reg-submit">Submit Registration</button>
-        <div id="reg-success" style="display:none;margin-top:1rem;background:#E8F5E9;border:1px solid #A5D6A7;border-radius:6px;padding:1rem;font-size:.85rem;color:#2E7D32;font-weight:600;text-align:center">✓ Registration received. Our team will be in touch within 48 hours.</div>
-      </form>
+        <div class="field-row">
+          <div class="field">
+            <label>PIN Code</label>
+            <input type="text" id="v-pin" placeholder="6-digit PIN" maxlength="6" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label>Office Address</label>
+            <input type="text" id="v-addr" placeholder="Building, street, area">
+          </div>
+        </div>
+
+        <!-- Geo tagging -->
+        <div class="geo-card">
+          <div class="geo-status" id="v-geo-status"><span>Capture your office location for verified listings.</span></div>
+          <button class="btn btn-secondary btn-geo" onclick="captureGeo('vendor')">📍 Capture Location</button>
+        </div>
+        <input type="hidden" id="v-lat"><input type="hidden" id="v-lng"><input type="hidden" id="v-geo-acc">
+
+        <div class="field">
+          <label>Nature of Services <span>*</span> (select all that apply)</label>
+          <div class="checkbox-group" id="v-services-cg">
+            <label class="checkbox-item"><input type="checkbox" value="Signage">Signage</label>
+            <label class="checkbox-item"><input type="checkbox" value="Furniture & Fixture">Furniture & Fixture</label>
+            <label class="checkbox-item"><input type="checkbox" value="Paper POSM">Paper POSM</label>
+            <label class="checkbox-item"><input type="checkbox" value="Acrylic Props">Acrylic Props</label>
+            <label class="checkbox-item"><input type="checkbox" value="Merchandising">Merchandising</label>
+            <label class="checkbox-item"><input type="checkbox" value="Gifting">Gifting</label>
+            <label class="checkbox-item"><input type="checkbox" value="Uniform">Uniform</label>
+            <label class="checkbox-item"><input type="checkbox" value="OOH">OOH</label>
+            <label class="checkbox-item"><input type="checkbox" value="Digital Branding (Flex/Vinyl/Fabric)">Digital Branding</label>
+            <label class="checkbox-item"><input type="checkbox" value="Event Agency">Event Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Social Media Agency">Social Media Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Carting">Carting</label>
+            <label class="checkbox-item"><input type="checkbox" value="Manpower">Manpower</label>
+            <label class="checkbox-item"><input type="checkbox" value="Housekeeping Agency">Housekeeping Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Security Agency">Security Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Housekeeping Consumable">HK Consumable</label>
+            <label class="checkbox-item"><input type="checkbox" value="Office Stationary">Office Stationary</label>
+            <label class="checkbox-item"><input type="checkbox" value="ATL Agency">ATL Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Financial Service">Financial Service</label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Preferred Brand Industries (select all)</label>
+          <div class="checkbox-group" id="v-pref-cg">
+            <label class="checkbox-item"><input type="checkbox" value="FMCG">FMCG</label>
+            <label class="checkbox-item"><input type="checkbox" value="Electronics">Electronics</label>
+            <label class="checkbox-item"><input type="checkbox" value="Telecom">Telecom</label>
+            <label class="checkbox-item"><input type="checkbox" value="Apparel">Apparel</label>
+            <label class="checkbox-item"><input type="checkbox" value="Logistics">Logistics</label>
+            <label class="checkbox-item"><input type="checkbox" value="IT">IT</label>
+            <label class="checkbox-item"><input type="checkbox" value="Pharma">Pharma</label>
+            <label class="checkbox-item"><input type="checkbox" value="Retail">Retail</label>
+            <label class="checkbox-item"><input type="checkbox" value="Banking/NBFC">Banking/NBFC</label>
+            <label class="checkbox-item"><input type="checkbox" value="Automotive">Automotive</label>
+          </div>
+        </div>
+        <div class="alert alert-err" id="v-err1"></div>
+      </div>
+      <div class="form-nav">
+        <button class="btn-secondary" onclick="vGoTo(0)">← Back</button>
+        <button class="btn-primary" onclick="vNext1()">Continue →</button>
+      </div>
     </div>
-  </div>
-</section>
+
+    <div id="v-step-2" style="display:none">
+      <div class="card">
+        <div class="card-title">Business Credentials &amp; Profile</div>
+        <div class="field-row">
+          <div class="field">
+            <label>Category <span>*</span></label>
+            <select id="v-cat">
+              <option value="">Select</option>
+              <option>Manufacturer</option><option>Trader</option><option>Service Provider</option><option>Agency</option><option>Consultant</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Zone / Coverage</label>
+            <select id="v-zone">
+              <option value="">Select zone</option>
+              <option>North</option><option>South</option><option>East</option><option>West</option><option>Central</option><option>Pan-India</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Annual Turnover (INR)</label>
+            <select id="v-turn">
+              <option value="">Select range</option>
+              <option>Below 10 Lakh</option><option>10–50 Lakh</option><option>50 Lakh–1 Cr</option><option>1–5 Cr</option><option>5–25 Cr</option><option>25 Cr+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Years in Business</label>
+            <select id="v-yib">
+              <option value="">Select</option>
+              <option>Less than 1 yr</option><option>1–3 yrs</option><option>3–7 yrs</option><option>7–15 yrs</option><option>15+ yrs</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Team Size</label>
+            <input type="text" id="v-team" placeholder="e.g. 10–25 people">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>GST Number</label>
+            <input type="text" id="v-gst" placeholder="GSTIN" maxlength="15">
+          </div>
+          <div class="field">
+            <label>CIN (if applicable)</label>
+            <input type="text" id="v-cin" placeholder="Company Identification No.">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>PAN Number</label>
+            <input type="text" id="v-pan" placeholder="PAN" maxlength="10">
+          </div>
+          <div class="field">
+            <label>Bank Name</label>
+            <input type="text" id="v-bank" placeholder="e.g. HDFC Bank">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Account Type</label>
+            <select id="v-acct">
+              <option value="">Select</option>
+              <option>Current</option><option>Savings</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>IFSC Code</label>
+            <input type="text" id="v-ifsc" placeholder="IFSC" maxlength="11">
+          </div>
+        </div>
+        <div class="field">
+          <label>Brief Description of Services</label>
+          <textarea id="v-desc" placeholder="Describe your capabilities, key clients, areas of specialisation…" rows="4"></textarea>
+        </div>
+
+        <!-- Document uploads -->
+        <div style="margin-top:1rem">
+          <label class="field" style="margin-bottom:.6rem"><span style="font-size:.8rem;font-family:var(--fh);font-weight:600;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.05em">Company Logo</span></label>
+          <div class="upload-zone" id="v-logo-zone">
+            <input type="file" accept="image/*" id="v-logo-file" onchange="previewFile(this,'v-logo-preview','v-logo-zone')">
+            <div class="uz-icon">🖼️</div>
+            <p><strong>Upload Logo</strong> — PNG, JPG (used in your vendor profile)</p>
+          </div>
+          <div id="v-logo-preview"></div>
+        </div>
+        <div style="margin-top:1rem">
+          <label class="field" style="margin-bottom:.6rem"><span style="font-size:.8rem;font-family:var(--fh);font-weight:600;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.05em">GST Certificate</span></label>
+          <div class="upload-zone">
+            <input type="file" accept=".pdf,image/*" id="v-gst-file" onchange="previewFile(this,'v-gst-preview')">
+            <div class="uz-icon">📄</div>
+            <p><strong>Upload GST Certificate</strong> — PDF or image</p>
+          </div>
+          <div id="v-gst-preview"></div>
+        </div>
+        <div style="margin-top:1rem">
+          <label class="field" style="margin-bottom:.6rem"><span style="font-size:.8rem;font-family:var(--fh);font-weight:600;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.05em">Company Profile</span></label>
+          <div class="upload-zone">
+            <input type="file" accept=".pdf" id="v-prof-file" onchange="previewFile(this,'v-prof-preview')">
+            <div class="uz-icon">📋</div>
+            <p><strong>Upload Company Profile</strong> — PDF</p>
+          </div>
+          <div id="v-prof-preview"></div>
+        </div>
+        <div style="margin-top:1rem">
+          <label class="field" style="margin-bottom:.6rem"><span style="font-size:.8rem;font-family:var(--fh);font-weight:600;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.05em">Last GST Filing</span></label>
+          <div class="upload-zone">
+            <input type="file" accept=".pdf,image/*" id="v-filing-file" onchange="previewFile(this,'v-filing-preview')">
+            <div class="uz-icon">🧾</div>
+            <p><strong>Upload Last GST Filing</strong> — PDF or image</p>
+          </div>
+          <div id="v-filing-preview"></div>
+        </div>
+        <div class="alert alert-err" id="v-err2"></div>
+      </div>
+      <div class="form-nav">
+        <button class="btn-secondary" onclick="vGoTo(1)">← Back</button>
+        <button class="btn-primary" onclick="vNext2()">Continue →</button>
+      </div>
+    </div>
+
+    <div id="v-step-3" style="display:none">
+      <div class="card">
+        <div class="card-title">Data Sharing Declaration</div>
+        <div class="consent-card">
+          <h4>Consent for Vendor</h4>
+          <p>By registering, you confirm that the information submitted is accurate. Partnerschaft will share your business profile — including contact details, service categories, credentials, and uploaded documents — with verified brands and clients on this platform for the purpose of vendor discovery and shortlisting. Your data will not be sold or shared with third parties outside the platform.</p>
+          <label class="consent-check">
+            <input type="checkbox" id="v-consent1">
+            <span>I confirm the information provided is true and accurate, and I consent to Partnerschaft sharing my vendor profile with verified brands for business matching.</span>
+          </label>
+        </div>
+        <div class="consent-card" style="margin-top:.75rem">
+          <h4>Consent for Brand Partners</h4>
+          <p>Brands and companies registered on Partnerschaft will access your profile to evaluate fit for their requirements. By submitting, you agree that your profile may be presented to such organisations.</p>
+          <label class="consent-check">
+            <input type="checkbox" id="v-consent2">
+            <span>I consent to my profile being shared with Partnerschaft's registered brand and company partners for procurement and requirement matching.</span>
+          </label>
+        </div>
+        <div class="alert alert-err" id="v-err3"></div>
+      </div>
+      <div class="form-nav">
+        <button class="btn-secondary" onclick="vGoTo(2)">← Back</button>
+        <button class="btn-primary" id="v-submit-btn" onclick="submitVendor()">Submit Registration</button>
+      </div>
+    </div>
+
+    <div id="v-success" style="display:none">
+      <div class="card"><div class="success-screen">
+        <div class="s-icon">✅</div>
+        <h2>Registration Submitted!</h2>
+        <p>Your Vendor ID</p>
+        <div class="success-id" id="v-success-id">—</div>
+        <p style="margin-top:.75rem">We will review your profile and reach out within 2 business days.<br>Save your Vendor ID for future reference.</p>
+        <a href="/" class="btn-primary" style="display:inline-block;margin-top:1.5rem">Back to Home</a>
+      </div></div>
+    </div>
+  </div><!-- /panel-vendor -->
+
+  <!-- ══ COMPANY PANEL ══ -->
+  <div class="tab-panel" id="panel-company">
+
+    <div class="steps" id="csteps">
+      <div class="step active" id="cs0"><div class="step-dot">1</div><div class="step-label">Verify</div></div>
+      <div class="step" id="cs1"><div class="step-dot">2</div><div class="step-label">Company</div></div>
+      <div class="step" id="cs2"><div class="step-dot">3</div><div class="step-label">Sourcing</div></div>
+      <div class="step" id="cs3"><div class="step-dot">4</div><div class="step-label">Confirm</div></div>
+    </div>
+
+    <div id="c-step-0">
+      <div class="card">
+        <div class="card-title">Email Verification</div>
+        <div class="field-row">
+          <div class="field">
+            <label>Contact Name <span>*</span></label>
+            <input type="text" id="c-name" placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label>Work Email <span>*</span></label>
+            <input type="email" id="c-email" placeholder="you@company.com">
+          </div>
+        </div>
+        <div class="field">
+          <label>OTP <span>*</span></label>
+          <div class="otp-row">
+            <input type="text" id="c-otp" placeholder="6-digit code" maxlength="6" inputmode="numeric">
+            <button class="btn-outline-send" id="c-send-btn" onclick="sendOtp('company')">Send OTP</button>
+          </div>
+          <span class="otp-hint" id="c-otp-hint"></span>
+        </div>
+        <div class="alert alert-err" id="c-err0"></div>
+      </div>
+      <div class="form-nav">
+        <span></span>
+        <button class="btn-primary" onclick="verifyOtp('company')">Verify & Continue →</button>
+      </div>
+    </div>
+
+    <div id="c-step-1" style="display:none">
+      <div class="card">
+        <div class="card-title">Company Details</div>
+        <div class="field-row">
+          <div class="field">
+            <label>Designation <span>*</span></label>
+            <input type="text" id="c-desig" placeholder="e.g. Procurement Head">
+          </div>
+          <div class="field">
+            <label>Company Name <span>*</span></label>
+            <input type="text" id="c-company" placeholder="Legal company name">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Industry <span>*</span></label>
+            <select id="c-industry">
+              <option value="">Select industry</option>
+              <option>FMCG</option><option>Electronics / Consumer Tech</option><option>Telecom</option><option>Apparel / Fashion</option><option>Logistics</option><option>IT / Software</option><option>Pharma / Healthcare</option><option>Banking / NBFC</option><option>Retail</option><option>Automotive</option><option>Education</option><option>Real Estate</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Mobile <span>*</span></label>
+            <input type="tel" id="c-mobile" placeholder="+91 XXXXX XXXXX">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>State <span>*</span></label>
+            <select id="c-state">
+              <option value="">Select state</option>
+              <option>Andhra Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>City <span>*</span></label>
+            <input type="text" id="c-city" placeholder="City">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Region / Zone</label>
+            <select id="c-region">
+              <option value="">Select region</option>
+              <option>North</option><option>South</option><option>East</option><option>West</option><option>Central</option><option>Pan-India</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Company Website</label>
+            <input type="url" id="c-web" placeholder="https://company.com">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>CIN</label>
+            <input type="text" id="c-cin" placeholder="Company Identification No.">
+          </div>
+          <div class="field">
+            <label>GST Number</label>
+            <input type="text" id="c-gst" placeholder="GSTIN" maxlength="15">
+          </div>
+        </div>
+        <div class="field">
+          <label>PAN</label>
+          <input type="text" id="c-pan" placeholder="PAN Number" maxlength="10">
+        </div>
+
+        <!-- Company Logo -->
+        <div style="margin-top:1rem">
+          <label class="field" style="margin-bottom:.6rem"><span style="font-size:.8rem;font-family:var(--fh);font-weight:600;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.05em">Company Logo</span></label>
+          <div class="upload-zone" id="c-logo-zone">
+            <input type="file" accept="image/*" id="c-logo-file" onchange="previewFile(this,'c-logo-preview','c-logo-zone')">
+            <div class="uz-icon">🖼️</div>
+            <p><strong>Upload Company Logo</strong> — PNG, JPG (shown on your brand profile)</p>
+          </div>
+          <div id="c-logo-preview"></div>
+        </div>
+        <div class="alert alert-err" id="c-err1"></div>
+      </div>
+      <div class="form-nav">
+        <button class="btn-secondary" onclick="cGoTo(0)">← Back</button>
+        <button class="btn-primary" onclick="cNext1()">Continue →</button>
+      </div>
+    </div>
+
+    <div id="c-step-2" style="display:none">
+      <div class="card">
+        <div class="card-title">Sourcing Requirements</div>
+        <div class="field">
+          <label>Types of Vendors Needed <span>*</span> (select all)</label>
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" value="Signage">Signage</label>
+            <label class="checkbox-item"><input type="checkbox" value="Furniture & Fixture">Furniture</label>
+            <label class="checkbox-item"><input type="checkbox" value="Paper POSM">Paper POSM</label>
+            <label class="checkbox-item"><input type="checkbox" value="Acrylic Props">Acrylic Props</label>
+            <label class="checkbox-item"><input type="checkbox" value="Merchandising">Merchandising</label>
+            <label class="checkbox-item"><input type="checkbox" value="Gifting">Gifting</label>
+            <label class="checkbox-item"><input type="checkbox" value="Uniform">Uniform</label>
+            <label class="checkbox-item"><input type="checkbox" value="OOH">OOH</label>
+            <label class="checkbox-item"><input type="checkbox" value="Digital Branding">Digital Branding</label>
+            <label class="checkbox-item"><input type="checkbox" value="Event Agency">Event Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Social Media Agency">Social Media</label>
+            <label class="checkbox-item"><input type="checkbox" value="Manpower">Manpower</label>
+            <label class="checkbox-item"><input type="checkbox" value="Housekeeping">Housekeeping</label>
+            <label class="checkbox-item"><input type="checkbox" value="Security">Security</label>
+            <label class="checkbox-item"><input type="checkbox" value="ATL Agency">ATL Agency</label>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Annual Procurement Spend (INR)</label>
+            <select id="c-spend">
+              <option value="">Select range</option>
+              <option>Below 10 Lakh</option><option>10–50 Lakh</option><option>50 Lakh–1 Cr</option><option>1–5 Cr</option><option>5–25 Cr</option><option>25 Cr+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Expected Vendor Queries/Year</label>
+            <select id="c-queries">
+              <option value="">Select</option>
+              <option>1–5</option><option>6–15</option><option>16–50</option><option>50+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Brief on Vendor Requirements</label>
+          <textarea id="c-desc" placeholder="Describe the type of vendors you're looking for, states covered, volumes, timelines…" rows="4"></textarea>
+        </div>
+        <div class="alert alert-err" id="c-err2"></div>
+      </div>
+      <div class="form-nav">
+        <button class="btn-secondary" onclick="cGoTo(1)">← Back</button>
+        <button class="btn-primary" onclick="cNext2()">Continue →</button>
+      </div>
+    </div>
+
+    <div id="c-step-3" style="display:none">
+      <div class="card">
+        <div class="card-title">Data Sharing Declaration</div>
+        <div class="consent-card">
+          <h4>Consent for Company / Brand</h4>
+          <p>By registering, you confirm that the information is accurate. Partnerschaft will use your company profile to match and present shortlisted vendors for your requirements. Your company details will be shared with vendor partners so they can respond to your requirements appropriately.</p>
+          <label class="consent-check">
+            <input type="checkbox" id="c-consent1">
+            <span>I confirm the information provided is true and accurate, and I consent to Partnerschaft sharing our company profile with registered vendors for the purpose of business matching and vendor discovery.</span>
+          </label>
+        </div>
+        <div class="consent-card" style="margin-top:.75rem">
+          <h4>Consent for Vendor Partners</h4>
+          <p>Vendors registered on Partnerschaft will access your company's requirement scope to evaluate fit and respond. By submitting, you agree that your company profile and requirement scope may be shared with verified vendor partners.</p>
+          <label class="consent-check">
+            <input type="checkbox" id="c-consent2">
+            <span>I consent to our company's requirement scope and profile being shared with verified vendors on the Partnerschaft network.</span>
+          </label>
+        </div>
+        <div class="alert alert-err" id="c-err3"></div>
+      </div>
+      <div class="form-nav">
+        <button class="btn-secondary" onclick="cGoTo(2)">← Back</button>
+        <button class="btn-primary" id="c-submit-btn" onclick="submitCompany()">Submit Registration</button>
+      </div>
+    </div>
+
+    <div id="c-success" style="display:none">
+      <div class="card"><div class="success-screen">
+        <div class="s-icon">✅</div>
+        <h2>Registration Submitted!</h2>
+        <p>Your Company ID</p>
+        <div class="success-id" id="c-success-id">—</div>
+        <p style="margin-top:.75rem">We will review your profile and connect you with matching vendors within 2 business days.</p>
+        <a href="/" class="btn-primary" style="display:inline-block;margin-top:1.5rem">Back to Home</a>
+      </div></div>
+    </div>
+  </div><!-- /panel-company -->
+
 </main>
-<footer role="contentinfo">
-  <div class="footer-grid">
-    <div>
-      <img src="assets/logo-stacked.png" alt="Partnerschaft India" class="footer-logo-img" style="height:52px;width:auto;object-fit:contain">
-      <p class="footer-tagline">Retail Execution · Vendor Operations · Digital Enablement. Your outsourced operations partner across India.</p>
-      <div style="margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap">
-      </div>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul class="footer-links">
-        <li><a href="/">Home</a></li><li><a href="/about">About Us</a></li><li><a href="/services">Services</a></li><li><a href="/network">Join Network</a></li><li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul class="footer-links">
-        <li><a href="/services#btl">Retail &amp; BTL</a></li><li><a href="/services#vendor">Vendor Ops</a></li><li><a href="/services#printing">Printing &amp; POSM</a></li><li><a href="/services#digital">Digital / AI</a></li><li><a href="https://barada.in" target="_blank" rel="noopener">Barada →</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <div class="footer-address">
-        <strong>Head Office</strong>D155, DSM Synergy, Agrahara Layout Main Rd,<br>Bengaluru – 560064, Karnataka
-        <strong>Registered Office</strong>C/O B.N. Satapathy, Ranapur,<br>Binjharpur, Jajpur – 755012, Odisha
-        <strong style="margin-top:1rem">Get in Touch</strong>
-        <a href="tel:+919113283848" style="color:rgba(255,255,255,.65)">+91 91132 83848</a><br>
-        <a href="mailto:business@partnerschaft.in" style="color:rgba(255,255,255,.65)">business@partnerschaft.in</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-legal">© 2026 Partnerschaft (OPC) Private Limited. All rights reserved.<br>CIN: U70200OD2026OPC055800 | PAN: AARCP6090P</p>
-    <p class="footer-legal" style="text-align:right">Bengaluru, Karnataka · Pan-India Operations</p>
-  </div>
-</footer><a href="https://wa.me/919113283848?text=Hello%20Partnerschaft%2C%20I%20have%20a%20requirement" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  <span class="wa-tooltip">Chat with us</span>
-</a><script>
-const toggle=document.querySelector('.nav-toggle'),menu=document.getElementById('nav-menu'),ctaWrap=document.querySelector('.nav-cta-wrap');
-if(toggle){toggle.addEventListener('click',()=>{const o=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',o);if(ctaWrap)ctaWrap.classList.toggle('open',o);});}
-</script></body></html>
+
+<!-- ── Footer ── -->
+<footer style="background:var(--blue-dark);color:rgba(255,255,255,.65);text-align:center;padding:1.5rem;font-size:.8rem;font-family:var(--fb)">
+  <p>© 2024 Partnerschaft (OPC) Pvt Ltd &nbsp;·&nbsp; <a href="/contact" style="color:rgba(255,255,255,.75)">Contact</a> &nbsp;·&nbsp; <a href="/" style="color:rgba(255,255,255,.75)">Home</a></p>
+</footer>
+
+<script>
+const API_URL = "https://script.google.com/macros/s/AKfycbwzdsZ0Q16fm7UAqSnBHQfZgObk3K1MSsB5f4wF-3oPKZWv5whMH3ymLwSbb5f2oxLV/exec";
+
+// ── Vendor state ──
+const VS = { step:0, name:'', email:'', lat:'', lng:'', geoAcc:'' };
+// ── Company state ──
+const CS = { step:0, name:'', email:'' };
+
+// ── Tab switch ──
+function switchTab(which, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + which).classList.add('active');
+}
+
+// ── API call ──
+async function api(data) {
+  const r = await fetch(API_URL, { method:'POST', redirect:'follow', headers:{'Content-Type':'text/plain'}, body: JSON.stringify(data) });
+  return r.json();
+}
+
+// ── OTP ──
+async function sendOtp(who) {
+  const email = document.getElementById(who[0] + '-email').value.trim();
+  const name  = document.getElementById(who[0] + '-name').value.trim();
+  if (!email || !name) { showErr(who[0] + '-err0', 'Please enter your name and email first.'); return; }
+  const btn = document.getElementById(who[0] + '-send-btn');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try {
+    const r = await api({ action:'sendOtp', email, name });
+    if (r.ok) {
+      showHint(who[0] + '-otp-hint', '✓ OTP sent to ' + email + ' — valid 10 min');
+      startCountdown(btn);
+    } else {
+      btn.disabled = false; btn.textContent = 'Send OTP';
+      showErr(who[0] + '-err0', r.error || 'Failed to send OTP');
+    }
+  } catch(e) { btn.disabled = false; btn.textContent = 'Send OTP'; showErr(who[0] + '-err0', 'Network error — please try again.'); }
+}
+
+function startCountdown(btn) {
+  let t = 60;
+  const iv = setInterval(() => {
+    btn.textContent = 'Resend (' + t + 's)';
+    if (--t < 0) { clearInterval(iv); btn.disabled = false; btn.textContent = 'Resend OTP'; }
+  }, 1000);
+}
+
+async function verifyOtp(who) {
+  const prefix = who[0];
+  const email = document.getElementById(prefix + '-email').value.trim();
+  const otp   = document.getElementById(prefix + '-otp').value.trim();
+  if (!otp) { showErr(prefix + '-err0', 'Please enter the OTP.'); return; }
+  hideErr(prefix + '-err0');
+  try {
+    const r = await api({ action:'verifyOtp', email, otp });
+    if (r.ok) {
+      if (who === 'vendor') { VS.name = document.getElementById('v-name').value.trim(); VS.email = email; vGoTo(1); }
+      else { CS.name = document.getElementById('c-name').value.trim(); CS.email = email; cGoTo(1); }
+    } else { showErr(prefix + '-err0', r.error || 'Invalid or expired OTP.'); }
+  } catch(e) { showErr(prefix + '-err0', 'Network error.'); }
+}
+
+// ── Geo ──
+function captureGeo(who) {
+  if (!navigator.geolocation) { return; }
+  navigator.geolocation.getCurrentPosition(pos => {
+    const { latitude: lat, longitude: lng, accuracy } = pos.coords;
+    if (who === 'vendor') {
+      document.getElementById('v-lat').value = lat;
+      document.getElementById('v-lng').value = lng;
+      document.getElementById('v-geo-acc').value = accuracy.toFixed(0);
+      document.getElementById('v-geo-status').innerHTML = '<span class="geo-ok">📍 Captured: ' + lat.toFixed(5) + ', ' + lng.toFixed(5) + ' (±' + accuracy.toFixed(0) + 'm)</span>';
+    }
+  }, () => {
+    document.getElementById('v-geo-status').innerHTML = '<span class="geo-err">Location access denied. You can skip this.</span>';
+  });
+}
+
+// ── File preview ──
+function previewFile(input, previewId, zoneId) {
+  const container = document.getElementById(previewId);
+  container.innerHTML = '';
+  if (!input.files || !input.files[0]) return;
+  const file = input.files[0];
+  const div = document.createElement('div');
+  div.className = 'file-preview';
+  div.innerHTML = '<span>📎</span><span class="fp-name">' + file.name + '</span><span class="fp-remove" onclick="removeFile(this,\'' + input.id + '\',\'' + previewId + '\')">✕</span>';
+  container.appendChild(div);
+}
+function removeFile(el, inputId, previewId) {
+  document.getElementById(inputId).value = '';
+  document.getElementById(previewId).innerHTML = '';
+}
+
+// ── File to base64 ──
+function fileToB64(file) {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = e => res(e.target.result.split(',')[1]);
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
+}
+
+// ── Checked values ──
+function getChecked(containerSel) {
+  return Array.from(document.querySelectorAll(containerSel + ' input:checked')).map(cb => cb.value).join(', ');
+}
+
+// ── Vendor navigation ──
+function vGoTo(n) {
+  document.getElementById('v-step-' + VS.step).style.display = 'none';
+  document.getElementById('vs' + VS.step).className = 'step done';
+  VS.step = n;
+  document.getElementById('v-step-' + n).style.display = 'block';
+  updateActiveStep('vs', n, 4);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function vNext1() {
+  if (!v('v-desig')) { showErr('v-err1','Designation required.'); return; }
+  if (!v('v-biz'))   { showErr('v-err1','Business name required.'); return; }
+  if (!v('v-mobile')){ showErr('v-err1','Mobile required.'); return; }
+  if (!v('v-state')) { showErr('v-err1','Please select your state.'); return; }
+  if (!v('v-city'))  { showErr('v-err1','City required.'); return; }
+  if (!getChecked('#v-services-cg')) { showErr('v-err1','Select at least one service category.'); return; }
+  hideErr('v-err1'); vGoTo(2);
+}
+
+function vNext2() { hideErr('v-err2'); vGoTo(3); }
+
+async function submitVendor() {
+  if (!document.getElementById('v-consent1').checked || !document.getElementById('v-consent2').checked) {
+    showErr('v-err3','Please tick both consent declarations to proceed.'); return;
+  }
+  const btn = document.getElementById('v-submit-btn');
+  btn.disabled = true; btn.textContent = 'Submitting…';
+
+  const payload = {
+    action:'registerVendor',
+    name: VS.name, email: VS.email,
+    designation: v('v-desig'), businessName: v('v-biz'), mobile: v('v-mobile'),
+    state: v('v-state'), city: v('v-city'), pinCode: v('v-pin'), officeAddress: v('v-addr'),
+    geoLat: document.getElementById('v-lat').value,
+    geoLng: document.getElementById('v-lng').value,
+    geoAccuracy: document.getElementById('v-geo-acc').value,
+    natureOfService: getChecked('#v-services-cg'),
+    preferredCompany: getChecked('#v-pref-cg'),
+    category: v('v-cat'), zone: v('v-zone'),
+    turnover: v('v-turn'), yearsInBiz: v('v-yib'), teamSize: v('v-team'),
+    website: v('v-web'), gst: v('v-gst'), cin: v('v-cin'), pan: v('v-pan'),
+    bankName: v('v-bank'), accountType: v('v-acct'), ifsc: v('v-ifsc'),
+    description: v('v-desc'), declaration: 'Yes'
+  };
+
+  try {
+    const r = await api(payload);
+    if (r.ok) {
+      const vid = r.vendorId;
+      // Upload files if present
+      await uploadIfPresent('v-logo-file', vid, null, 'logo');
+      await uploadIfPresent('v-gst-file',  vid, null, 'gst');
+      await uploadIfPresent('v-prof-file', vid, null, 'profile');
+      await uploadIfPresent('v-filing-file', vid, null, 'filing');
+      document.getElementById('v-step-3').style.display = 'none';
+      document.getElementById('vs3').className = 'step done';
+      document.getElementById('v-success').style.display = 'block';
+      document.getElementById('v-success-id').textContent = vid;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      btn.disabled = false; btn.textContent = 'Submit Registration';
+      showErr('v-err3', r.error || 'Submission failed. Please try again.');
+    }
+  } catch(e) {
+    btn.disabled = false; btn.textContent = 'Submit Registration';
+    showErr('v-err3', 'Network error. Please try again.');
+  }
+}
+
+// ── Company navigation ──
+function cGoTo(n) {
+  document.getElementById('c-step-' + CS.step).style.display = 'none';
+  document.getElementById('cs' + CS.step).className = 'step done';
+  CS.step = n;
+  document.getElementById('c-step-' + n).style.display = 'block';
+  updateActiveStep('cs', n, 4);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function cNext1() {
+  if (!v('c-desig'))   { showErr('c-err1','Designation required.'); return; }
+  if (!v('c-company')) { showErr('c-err1','Company name required.'); return; }
+  if (!v('c-industry')){ showErr('c-err1','Please select industry.'); return; }
+  if (!v('c-mobile'))  { showErr('c-err1','Mobile required.'); return; }
+  if (!v('c-state'))   { showErr('c-err1','Please select state.'); return; }
+  if (!v('c-city'))    { showErr('c-err1','City required.'); return; }
+  hideErr('c-err1'); cGoTo(2);
+}
+
+function cNext2() {
+  const vt = document.querySelectorAll('#panel-company [type="checkbox"]:checked');
+  if (!vt.length) { showErr('c-err2','Select at least one vendor type needed.'); return; }
+  hideErr('c-err2'); cGoTo(3);
+}
+
+async function submitCompany() {
+  if (!document.getElementById('c-consent1').checked || !document.getElementById('c-consent2').checked) {
+    showErr('c-err3','Please tick both consent declarations to proceed.'); return;
+  }
+  const btn = document.getElementById('c-submit-btn');
+  btn.disabled = true; btn.textContent = 'Submitting…';
+
+  const vendorTypes = Array.from(document.querySelectorAll('#panel-company [type="checkbox"]:checked')).map(cb => cb.value).join(', ');
+  const payload = {
+    action:'registerCompany',
+    contactName: CS.name, email: CS.email,
+    designation: v('c-desig'), companyName: v('c-company'), industry: v('c-industry'),
+    mobile: v('c-mobile'), state: v('c-state'), city: v('c-city'),
+    region: v('c-region'), website: v('c-web'),
+    cin: v('c-cin'), gst: v('c-gst'), pan: v('c-pan'),
+    vendorTypesNeeded: vendorTypes,
+    annualSpend: v('c-spend'), noOfQueries: v('c-queries'),
+    description: v('c-desc'), declaration: 'Yes'
+  };
+
+  try {
+    const r = await api(payload);
+    if (r.ok) {
+      const cid = r.companyId;
+      await uploadIfPresent('c-logo-file', null, cid, 'logo');
+      document.getElementById('c-step-3').style.display = 'none';
+      document.getElementById('cs3').className = 'step done';
+      document.getElementById('c-success').style.display = 'block';
+      document.getElementById('c-success-id').textContent = cid;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      btn.disabled = false; btn.textContent = 'Submit Registration';
+      showErr('c-err3', r.error || 'Submission failed. Please try again.');
+    }
+  } catch(e) {
+    btn.disabled = false; btn.textContent = 'Submit Registration';
+    showErr('c-err3', 'Network error. Please try again.');
+  }
+}
+
+// ── Upload helper ──
+async function uploadIfPresent(inputId, vendorId, companyId, docType) {
+  const input = document.getElementById(inputId);
+  if (!input || !input.files || !input.files[0]) return;
+  const file = input.files[0];
+  try {
+    const b64 = await fileToB64(file);
+    await api({ action:'uploadDoc', base64data: b64, fileName: file.name, mimeType: file.type, vendorId, companyId, docType });
+  } catch(e) {}
+}
+
+// ── Step dots ──
+function updateActiveStep(prefix, activeIdx, total) {
+  for (let i = 0; i < total; i++) {
+    const el = document.getElementById(prefix + i);
+    if (i < activeIdx) el.className = 'step done';
+    else if (i === activeIdx) el.className = 'step active';
+    else el.className = 'step';
+  }
+}
+
+// ── Helpers ──
+function v(id) { return document.getElementById(id).value.trim(); }
+function showErr(id, msg) { const el = document.getElementById(id); el.textContent = msg; el.classList.add('show'); }
+function hideErr(id) { const el = document.getElementById(id); el.textContent = ''; el.classList.remove('show'); }
+function showHint(id, msg) { document.getElementById(id).textContent = msg; }
+</script>
+</body>
+</html>
