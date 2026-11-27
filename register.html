@@ -209,8 +209,8 @@ textarea{resize:vertical;min-height:90px}
       <li><a href="/contact" class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-cta-wrap">
-      <a href="/register" class="nav-cta-register active">Register Vendor</a>
-      <a href="/contact" class="btn btn-cta btn-sm">Start a Requirement</a>
+      <a href="/register" class="nav-cta-register active">Register as Vendor</a>
+      <a href="/contact" class="btn btn-cta btn-sm">Post a Requirement</a>
     </div>
   </div>
 </nav>
@@ -245,7 +245,7 @@ textarea{resize:vertical;min-height:90px}
 <div class="reg-hero">
   <div class="badge">Join the Network</div>
   <h1>Register with Partnerschaft</h1>
-  <p>Vendors register to access brand requirements. Brands register to source verified execution partners.</p>
+  <p><strong>Service Vendors</strong> — join our pan-India network to receive brand requirements matched to your capabilities. <strong>Brands &amp; Companies</strong> — register to access shortlisted, verified execution partners or outsource your procurement operations.</p>
 </div>
 
 <!-- ── Tab bar ── -->
@@ -355,41 +355,76 @@ textarea{resize:vertical;min-height:90px}
 
         <div class="field">
           <label>Nature of Services <span>*</span> (select all that apply)</label>
-          <div class="checkbox-group" id="v-services-cg">
+          <div id="v-services-cg">
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Marketing &amp; Brand Activation</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
             <label class="checkbox-item"><input type="checkbox" value="Signage">Signage</label>
-            <label class="checkbox-item"><input type="checkbox" value="Furniture & Fixture">Furniture & Fixture</label>
             <label class="checkbox-item"><input type="checkbox" value="Paper POSM">Paper POSM</label>
-            <label class="checkbox-item"><input type="checkbox" value="Acrylic Props">Acrylic Props</label>
-            <label class="checkbox-item"><input type="checkbox" value="Merchandising">Merchandising</label>
-            <label class="checkbox-item"><input type="checkbox" value="Gifting">Gifting</label>
-            <label class="checkbox-item"><input type="checkbox" value="Uniform">Uniform</label>
-            <label class="checkbox-item"><input type="checkbox" value="OOH">OOH</label>
-            <label class="checkbox-item"><input type="checkbox" value="Digital Branding (Flex/Vinyl/Fabric)">Digital Branding</label>
-            <label class="checkbox-item"><input type="checkbox" value="Event Agency">Event Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Acrylic &amp; 3D Props">Acrylic / 3D Props</label>
+            <label class="checkbox-item"><input type="checkbox" value="OOH">OOH / Outdoor</label>
+            <label class="checkbox-item"><input type="checkbox" value="Digital Branding (Flex/Vinyl/Fabric)">Digital Branding (Flex/Vinyl)</label>
+            <label class="checkbox-item"><input type="checkbox" value="ATL Agency">ATL Agency</label>
             <label class="checkbox-item"><input type="checkbox" value="Social Media Agency">Social Media Agency</label>
-            <label class="checkbox-item"><input type="checkbox" value="Carting">Carting</label>
-            <label class="checkbox-item"><input type="checkbox" value="Manpower">Manpower</label>
+            <label class="checkbox-item"><input type="checkbox" value="Event Agency">Event Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Merchandising">Merchandising</label>
+            <label class="checkbox-item"><input type="checkbox" value="Uniforms &amp; Workwear">Uniforms &amp; Workwear</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Retail &amp; Visual Merchandising</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="Furniture &amp; Fixture">Furniture &amp; Fixture</label>
+            <label class="checkbox-item"><input type="checkbox" value="Shop-in-Shop / Display">Shop-in-Shop / Display</label>
+            <label class="checkbox-item"><input type="checkbox" value="Carting &amp; Retail Logistics">Carting &amp; Retail Logistics</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Corporate Gifting &amp; Branding</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="Corporate Gifting">Corporate Gifting</label>
+            <label class="checkbox-item"><input type="checkbox" value="Branded Merchandise">Branded Merchandise</label>
+            <label class="checkbox-item"><input type="checkbox" value="Packaging Design &amp; Production">Packaging Design &amp; Production</label>
+            <label class="checkbox-item"><input type="checkbox" value="Graphic Design &amp; Branding">Graphic Design &amp; Branding</label>
+            <label class="checkbox-item"><input type="checkbox" value="Photography &amp; Videography">Photography &amp; Videography</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Office, Admin &amp; Facility</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="Office Stationery">Office Stationery</label>
+            <label class="checkbox-item"><input type="checkbox" value="Office Supplies &amp; Pantry">Office Supplies &amp; Pantry</label>
+            <label class="checkbox-item"><input type="checkbox" value="Housekeeping Consumables">HK Consumables</label>
             <label class="checkbox-item"><input type="checkbox" value="Housekeeping Agency">Housekeeping Agency</label>
             <label class="checkbox-item"><input type="checkbox" value="Security Agency">Security Agency</label>
-            <label class="checkbox-item"><input type="checkbox" value="Housekeeping Consumable">HK Consumable</label>
-            <label class="checkbox-item"><input type="checkbox" value="Office Stationary">Office Stationary</label>
-            <label class="checkbox-item"><input type="checkbox" value="ATL Agency">ATL Agency</label>
-            <label class="checkbox-item"><input type="checkbox" value="Financial Service">Financial Service</label>
+            <label class="checkbox-item"><input type="checkbox" value="Facility Management">Facility Management</label>
+            <label class="checkbox-item"><input type="checkbox" value="Manpower / Staffing">Manpower / Staffing</label>
           </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">IT &amp; Digital Services</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="IT Hardware &amp; Peripherals">IT Hardware &amp; Peripherals</label>
+            <label class="checkbox-item"><input type="checkbox" value="Software &amp; SaaS">Software &amp; SaaS</label>
+            <label class="checkbox-item"><input type="checkbox" value="Digital Marketing Agency">Digital Marketing Agency</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Professional &amp; Financial Services</div>
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" value="Financial Services">Financial Services</label>
+            <label class="checkbox-item"><input type="checkbox" value="Legal &amp; Compliance">Legal &amp; Compliance</label>
+            <label class="checkbox-item"><input type="checkbox" value="HR &amp; Payroll Services">HR &amp; Payroll Services</label>
+            <label class="checkbox-item"><input type="checkbox" value="Training &amp; Development">Training &amp; Development</label>
+          </div>
+          </div><!-- /v-services-cg -->
         </div>
         <div class="field">
-          <label>Preferred Brand Industries (select all)</label>
+          <label>Preferred Brand / Client Industries (select all)</label>
           <div class="checkbox-group" id="v-pref-cg">
             <label class="checkbox-item"><input type="checkbox" value="FMCG">FMCG</label>
-            <label class="checkbox-item"><input type="checkbox" value="Electronics">Electronics</label>
+            <label class="checkbox-item"><input type="checkbox" value="Electronics / Consumer Tech">Electronics / Consumer Tech</label>
             <label class="checkbox-item"><input type="checkbox" value="Telecom">Telecom</label>
-            <label class="checkbox-item"><input type="checkbox" value="Apparel">Apparel</label>
+            <label class="checkbox-item"><input type="checkbox" value="Apparel / Fashion">Apparel / Fashion</label>
             <label class="checkbox-item"><input type="checkbox" value="Logistics">Logistics</label>
-            <label class="checkbox-item"><input type="checkbox" value="IT">IT</label>
-            <label class="checkbox-item"><input type="checkbox" value="Pharma">Pharma</label>
+            <label class="checkbox-item"><input type="checkbox" value="IT / Software">IT / Software</label>
+            <label class="checkbox-item"><input type="checkbox" value="Pharma / Healthcare">Pharma / Healthcare</label>
             <label class="checkbox-item"><input type="checkbox" value="Retail">Retail</label>
-            <label class="checkbox-item"><input type="checkbox" value="Banking/NBFC">Banking/NBFC</label>
+            <label class="checkbox-item"><input type="checkbox" value="Banking / NBFC">Banking / NBFC</label>
             <label class="checkbox-item"><input type="checkbox" value="Automotive">Automotive</label>
+            <label class="checkbox-item"><input type="checkbox" value="Education">Education</label>
+            <label class="checkbox-item"><input type="checkbox" value="Real Estate">Real Estate</label>
+            <label class="checkbox-item"><input type="checkbox" value="Food &amp; Beverage">Food &amp; Beverage</label>
+            <label class="checkbox-item"><input type="checkbox" value="Any / Open">Any / Open</label>
           </div>
         </div>
         <div class="alert alert-err" id="v-err1"></div>
@@ -526,21 +561,25 @@ textarea{resize:vertical;min-height:90px}
 
     <div id="v-step-3" style="display:none">
       <div class="card">
-        <div class="card-title">Data Sharing Declaration</div>
+        <div class="card-title">Data Sharing &amp; Privacy Declaration</div>
         <div class="consent-card">
-          <h4>Consent for Vendor</h4>
-          <p>By registering, you confirm that the information submitted is accurate. Partnerschaft will share your business profile — including contact details, service categories, credentials, and uploaded documents — with verified brands and clients on this platform for the purpose of vendor discovery and shortlisting. Your data will not be sold or shared with third parties outside the platform.</p>
+          <h4>Data Controller</h4>
+          <p style="margin-bottom:.5rem">Your personal and business data is processed by <strong>Partnerschaft (OPC) Private Limited</strong> (CIN: U70200OD2026OPC055800), Bengaluru, Karnataka, as the Data Fiduciary under the Digital Personal Data Protection Act, 2023 (DPDP Act). Data is collected solely for the purpose of vendor–brand matching on this platform. Your data will be retained for a period of up to <strong>3 years</strong> from registration, or until you withdraw consent — whichever is earlier.</p>
+        </div>
+        <div class="consent-card" style="margin-top:.75rem">
+          <h4>Purpose &amp; Disclosure of Business Information</h4>
+          <p>Your business profile — including contact details, service categories, credentials, and uploaded documents — will be shared with verified brands and companies registered on this platform for the limited purpose of vendor discovery and shortlisting. Your data will not be sold, rented, or disclosed to any third party outside the Partnerschaft platform. You have the right to access, correct, or erase your data, and to withdraw this consent at any time by writing to <strong>privacy@partnerschaft.in</strong>.</p>
           <label class="consent-check">
             <input type="checkbox" id="v-consent1">
-            <span>I confirm the information provided is true and accurate, and I consent to Partnerschaft sharing my vendor profile with verified brands for business matching.</span>
+            <span>I confirm the information provided is true and accurate. I consent to Partnerschaft (OPC) Private Limited processing and sharing my vendor profile with verified brand partners for business matching, as described above.</span>
           </label>
         </div>
         <div class="consent-card" style="margin-top:.75rem">
-          <h4>Consent for Brand Partners</h4>
-          <p>Brands and companies registered on Partnerschaft will access your profile to evaluate fit for their requirements. By submitting, you agree that your profile may be presented to such organisations.</p>
+          <h4>Sharing with Brand &amp; Company Partners</h4>
+          <p>Brands and companies registered on Partnerschaft will access your profile to evaluate fit for specific requirements. This disclosure is limited to your professional and business information and does not include sensitive personal data.</p>
           <label class="consent-check">
             <input type="checkbox" id="v-consent2">
-            <span>I consent to my profile being shared with Partnerschaft's registered brand and company partners for procurement and requirement matching.</span>
+            <span>I consent to my vendor profile being shared with Partnerschaft's registered brand and company partners for procurement matching. I understand I may withdraw this consent at any time.</span>
           </label>
         </div>
         <div class="alert alert-err" id="v-err3"></div>
@@ -689,27 +728,80 @@ textarea{resize:vertical;min-height:90px}
 
     <div id="c-step-2" style="display:none">
       <div class="card">
-        <div class="card-title">Sourcing Requirements</div>
+        <div class="card-title">Sourcing &amp; Procurement Requirements</div>
         <div class="field">
-          <label>Types of Vendors Needed <span>*</span> (select all)</label>
-          <div class="checkbox-group">
+          <label>Types of Vendors / Services Needed <span>*</span> (select all that apply)</label>
+          <div id="c-vendor-types-cg">
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Marketing &amp; Brand Activation</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
             <label class="checkbox-item"><input type="checkbox" value="Signage">Signage</label>
-            <label class="checkbox-item"><input type="checkbox" value="Furniture & Fixture">Furniture</label>
             <label class="checkbox-item"><input type="checkbox" value="Paper POSM">Paper POSM</label>
-            <label class="checkbox-item"><input type="checkbox" value="Acrylic Props">Acrylic Props</label>
-            <label class="checkbox-item"><input type="checkbox" value="Merchandising">Merchandising</label>
-            <label class="checkbox-item"><input type="checkbox" value="Gifting">Gifting</label>
-            <label class="checkbox-item"><input type="checkbox" value="Uniform">Uniform</label>
-            <label class="checkbox-item"><input type="checkbox" value="OOH">OOH</label>
-            <label class="checkbox-item"><input type="checkbox" value="Digital Branding">Digital Branding</label>
-            <label class="checkbox-item"><input type="checkbox" value="Event Agency">Event Agency</label>
-            <label class="checkbox-item"><input type="checkbox" value="Social Media Agency">Social Media</label>
-            <label class="checkbox-item"><input type="checkbox" value="Manpower">Manpower</label>
-            <label class="checkbox-item"><input type="checkbox" value="Housekeeping">Housekeeping</label>
-            <label class="checkbox-item"><input type="checkbox" value="Security">Security</label>
+            <label class="checkbox-item"><input type="checkbox" value="Acrylic / 3D Props">Acrylic / 3D Props</label>
+            <label class="checkbox-item"><input type="checkbox" value="OOH / Outdoor">OOH / Outdoor</label>
+            <label class="checkbox-item"><input type="checkbox" value="Digital Branding (Flex/Vinyl)">Digital Branding (Flex/Vinyl)</label>
             <label class="checkbox-item"><input type="checkbox" value="ATL Agency">ATL Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Social Media Agency">Social Media Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Event Agency">Event Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Merchandising">Merchandising</label>
+            <label class="checkbox-item"><input type="checkbox" value="Uniforms &amp; Workwear">Uniforms &amp; Workwear</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Retail &amp; Visual Merchandising</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="Furniture &amp; Fixture">Furniture &amp; Fixture</label>
+            <label class="checkbox-item"><input type="checkbox" value="Shop-in-Shop / Display">Shop-in-Shop / Display</label>
+            <label class="checkbox-item"><input type="checkbox" value="Carting &amp; Retail Logistics">Carting &amp; Retail Logistics</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Corporate Gifting &amp; Branding</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="Corporate Gifting">Corporate Gifting</label>
+            <label class="checkbox-item"><input type="checkbox" value="Branded Merchandise">Branded Merchandise</label>
+            <label class="checkbox-item"><input type="checkbox" value="Packaging Design &amp; Production">Packaging Design &amp; Production</label>
+            <label class="checkbox-item"><input type="checkbox" value="Graphic Design &amp; Branding">Graphic Design &amp; Branding</label>
+            <label class="checkbox-item"><input type="checkbox" value="Photography &amp; Videography">Photography &amp; Videography</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Office, Admin &amp; Facility</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="Office Stationery">Office Stationery</label>
+            <label class="checkbox-item"><input type="checkbox" value="Office Supplies &amp; Pantry">Office Supplies &amp; Pantry</label>
+            <label class="checkbox-item"><input type="checkbox" value="Housekeeping Consumables">HK Consumables</label>
+            <label class="checkbox-item"><input type="checkbox" value="Housekeeping Agency">Housekeeping Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Security Agency">Security Agency</label>
+            <label class="checkbox-item"><input type="checkbox" value="Facility Management">Facility Management</label>
+            <label class="checkbox-item"><input type="checkbox" value="Manpower / Staffing">Manpower / Staffing</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">IT &amp; Digital</div>
+          <div class="checkbox-group" style="margin-bottom:.75rem">
+            <label class="checkbox-item"><input type="checkbox" value="IT Hardware &amp; Peripherals">IT Hardware &amp; Peripherals</label>
+            <label class="checkbox-item"><input type="checkbox" value="Software &amp; SaaS">Software &amp; SaaS</label>
+            <label class="checkbox-item"><input type="checkbox" value="Digital Marketing Agency">Digital Marketing Agency</label>
+          </div>
+          <div style="font-size:.75rem;font-family:var(--fh);font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Professional &amp; Financial Services</div>
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" value="Financial Services">Financial Services</label>
+            <label class="checkbox-item"><input type="checkbox" value="Legal &amp; Compliance">Legal &amp; Compliance</label>
+            <label class="checkbox-item"><input type="checkbox" value="HR &amp; Payroll">HR &amp; Payroll</label>
+            <label class="checkbox-item"><input type="checkbox" value="Training &amp; Development">Training &amp; Development</label>
+          </div>
+          </div><!-- /c-vendor-types-cg -->
+        </div>
+
+        <!-- Procurement Operations Support -->
+        <div class="field" style="margin-top:1.25rem">
+          <label>Procurement Operations Support Needed <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--gray-600)">(select if applicable)</span></label>
+          <div style="background:#EFF6FF;border:1.5px solid #BFDBFE;border-radius:8px;padding:.85rem 1rem;margin-bottom:.5rem;font-size:.8rem;color:var(--blue-dark)">
+            <strong>Outsourced Procurement:</strong> Partnerschaft can act as your extended procurement team — managing vendor discovery, RFQ/RFP, PO follow-up, and supplier relationships on your behalf. Select the functions you'd like support with.
+          </div>
+          <div class="checkbox-group" id="c-proc-ops-cg">
+            <label class="checkbox-item"><input type="checkbox" value="Vendor Discovery &amp; Shortlisting">Vendor Discovery &amp; Shortlisting</label>
+            <label class="checkbox-item"><input type="checkbox" value="RFQ / RFP Management">RFQ / RFP Management</label>
+            <label class="checkbox-item"><input type="checkbox" value="Purchase Order Management">Purchase Order Management</label>
+            <label class="checkbox-item"><input type="checkbox" value="Supplier Relationship Management">Supplier Relationship Mgmt (SRM)</label>
+            <label class="checkbox-item"><input type="checkbox" value="Spend Analytics &amp; Reporting">Spend Analytics &amp; Reporting</label>
+            <label class="checkbox-item"><input type="checkbox" value="Contract Management">Contract Management</label>
+            <label class="checkbox-item"><input type="checkbox" value="Full P2P Outsourcing">Full P2P Outsourcing</label>
           </div>
         </div>
+
         <div class="field-row">
           <div class="field">
             <label>Annual Procurement Spend (INR)</label>
@@ -719,7 +811,7 @@ textarea{resize:vertical;min-height:90px}
             </select>
           </div>
           <div class="field">
-            <label>Expected Vendor Queries/Year</label>
+            <label>Expected Vendor Queries / Year</label>
             <select id="c-queries">
               <option value="">Select</option>
               <option>1–5</option><option>6–15</option><option>16–50</option><option>50+</option>
@@ -727,8 +819,8 @@ textarea{resize:vertical;min-height:90px}
           </div>
         </div>
         <div class="field">
-          <label>Brief on Vendor Requirements</label>
-          <textarea id="c-desc" placeholder="Describe the type of vendors you're looking for, states covered, volumes, timelines…" rows="4"></textarea>
+          <label>Brief on Requirements</label>
+          <textarea id="c-desc" placeholder="Describe what you're looking for — vendor types, states to be covered, estimated volumes, timelines, or any specific requirements…" rows="4"></textarea>
         </div>
         <div class="alert alert-err" id="c-err2"></div>
       </div>
@@ -740,21 +832,25 @@ textarea{resize:vertical;min-height:90px}
 
     <div id="c-step-3" style="display:none">
       <div class="card">
-        <div class="card-title">Data Sharing Declaration</div>
+        <div class="card-title">Data Sharing &amp; Privacy Declaration</div>
         <div class="consent-card">
-          <h4>Consent for Company / Brand</h4>
-          <p>By registering, you confirm that the information is accurate. Partnerschaft will use your company profile to match and present shortlisted vendors for your requirements. Your company details will be shared with vendor partners so they can respond to your requirements appropriately.</p>
+          <h4>Data Controller</h4>
+          <p style="margin-bottom:.5rem">Your personal and business data is processed by <strong>Partnerschaft (OPC) Private Limited</strong> (CIN: U70200OD2026OPC055800), Bengaluru, Karnataka, as the Data Fiduciary under the Digital Personal Data Protection Act, 2023 (DPDP Act). Data is collected for the limited purpose of vendor–brand matching and procurement support on this platform. Your data will be retained for up to <strong>3 years</strong> from registration, or until you withdraw consent — whichever is earlier. To exercise your rights of access, correction, erasure, or withdrawal of consent, write to <strong>privacy@partnerschaft.in</strong>.</p>
+        </div>
+        <div class="consent-card" style="margin-top:.75rem">
+          <h4>Purpose &amp; Use of Company Information</h4>
+          <p>Partnerschaft will use your company profile to shortlist and present verified vendors suited to your requirements. Your company name, industry, and requirement scope — but not your individual contact details — may be shared with shortlisted vendor partners so they can evaluate fit and respond appropriately. Your data will not be sold or shared outside the platform.</p>
           <label class="consent-check">
             <input type="checkbox" id="c-consent1">
-            <span>I confirm the information provided is true and accurate, and I consent to Partnerschaft sharing our company profile with registered vendors for the purpose of business matching and vendor discovery.</span>
+            <span>I confirm the information provided is true and accurate. I consent to Partnerschaft (OPC) Private Limited processing our company profile to match and present shortlisted vendors, as described above.</span>
           </label>
         </div>
         <div class="consent-card" style="margin-top:.75rem">
-          <h4>Consent for Vendor Partners</h4>
-          <p>Vendors registered on Partnerschaft will access your company's requirement scope to evaluate fit and respond. By submitting, you agree that your company profile and requirement scope may be shared with verified vendor partners.</p>
+          <h4>Sharing Requirement Scope with Vendor Partners</h4>
+          <p>Shortlisted vendors on the Partnerschaft network will access a limited view of your requirement scope (category, volume, geography) in order to assess fit. Full company contact details are shared only with vendors you approve.</p>
           <label class="consent-check">
             <input type="checkbox" id="c-consent2">
-            <span>I consent to our company's requirement scope and profile being shared with verified vendors on the Partnerschaft network.</span>
+            <span>I consent to our company's requirement scope being shared with verified vendors on the Partnerschaft network for the purpose of vendor matching. I understand I may withdraw this consent at any time.</span>
           </label>
         </div>
         <div class="alert alert-err" id="c-err3"></div>
@@ -828,7 +924,7 @@ textarea{resize:vertical;min-height:90px}
   <div class="footer-bottom">
     <span>© 2026 Partnerschaft (OPC) Private Limited. All rights reserved.</span>
     <span>CIN: U70200OD2026OPC055800 &nbsp;|&nbsp; PAN: AARCP6090P</span>
-    <span>Pan-India Operations</span>
+    <span><a href="/privacy" style="color:rgba(255,255,255,.5);text-decoration:underline">Privacy Policy</a> &nbsp;|&nbsp; <a href="mailto:privacy@partnerschaft.in" style="color:rgba(255,255,255,.5);text-decoration:underline">privacy@partnerschaft.in</a></span>
   </div>
 </footer>
 
@@ -1034,8 +1130,8 @@ function cNext1() {
 }
 
 function cNext2() {
-  const vt = document.querySelectorAll('#panel-company [type="checkbox"]:checked');
-  if (!vt.length) { showErr('c-err2','Select at least one vendor type needed.'); return; }
+  const vt = document.querySelectorAll('#c-vendor-types-cg [type="checkbox"]:checked');
+  if (!vt.length) { showErr('c-err2','Please select at least one vendor or service type needed.'); return; }
   hideErr('c-err2'); cGoTo(3);
 }
 
@@ -1046,7 +1142,8 @@ async function submitCompany() {
   const btn = document.getElementById('c-submit-btn');
   btn.disabled = true; btn.textContent = 'Submitting…';
 
-  const vendorTypes = Array.from(document.querySelectorAll('#panel-company [type="checkbox"]:checked')).map(cb => cb.value).join(', ');
+  const vendorTypes = Array.from(document.querySelectorAll('#c-vendor-types-cg [type="checkbox"]:checked')).map(cb => cb.value).join(', ');
+  const procOps = Array.from(document.querySelectorAll('#c-proc-ops-cg [type="checkbox"]:checked')).map(cb => cb.value).join(', ');
   const payload = {
     action:'registerCompany',
     contactName: CS.name, email: CS.email,
@@ -1055,6 +1152,7 @@ async function submitCompany() {
     region: v('c-region'), website: v('c-web'),
     cin: v('c-cin'), gst: v('c-gst'), pan: v('c-pan'),
     vendorTypesNeeded: vendorTypes,
+    procurementOpsSupport: procOps,
     annualSpend: v('c-spend'), noOfQueries: v('c-queries'),
     description: v('c-desc'), declaration: 'Yes'
   };
