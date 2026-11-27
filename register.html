@@ -46,14 +46,48 @@ nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid va
   .nav-cta-wrap.open{display:flex;flex-direction:column;padding:0 1.5rem 1rem;background:#fff}
 }
 
+/* ── WhatsApp float ── */
+.wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;background:#25D366;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:.2s}
+.wa-float:hover{background:#1ebe5a;transform:scale(1.08)}
+
+/* ── Footer ── */
+.site-footer{background:var(--blue-dark);color:rgba(255,255,255,.65);font-family:var(--fb);font-size:.85rem;margin-top:0}
+.footer-inner{max-width:1280px;margin:auto;padding:3rem clamp(1rem,4vw,2.5rem) 2rem;display:grid;grid-template-columns:1fr 2fr;gap:3rem}
+.footer-logo{height:52px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1)}
+.footer-tagline{color:rgba(255,255,255,.55);font-size:.82rem;line-height:1.6;max-width:280px}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.footer-col h4{font-family:var(--fh);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.75rem}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:.4rem}
+.footer-col a{color:rgba(255,255,255,.65);transition:color .2s}
+.footer-col a:hover{color:#fff}
+.footer-contact address{font-style:normal;color:rgba(255,255,255,.65);line-height:1.6;font-size:.82rem}
+.footer-contact p{margin-bottom:.25rem;font-size:.82rem}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);max-width:1280px;margin:0 auto;padding:1rem clamp(1rem,4vw,2.5rem);display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;font-size:.75rem;color:rgba(255,255,255,.4)}
+@media(max-width:768px){
+  .footer-inner{grid-template-columns:1fr}
+  .footer-cols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .footer-cols{grid-template-columns:1fr}
+}
+
 /* ── Page hero ── */
 .reg-hero{background:var(--blue-dark);color:#fff;padding:3rem clamp(1rem,5vw,3rem) 2.5rem;text-align:center}
 .reg-hero .badge{display:inline-block;background:rgba(255,255,255,.12);color:rgba(255,255,255,.85);font-size:.72rem;font-family:var(--fh);font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border-radius:50px;margin-bottom:1rem}
 .reg-hero h1{font-family:var(--fh);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:.6rem}
 .reg-hero p{color:rgba(255,255,255,.7);font-size:.95rem;max-width:480px;margin:auto}
 
+/* ── Ticker ── */
+.ticker-wrap{background:var(--blue);overflow:hidden;padding:.45rem 0;position:sticky;top:65px;z-index:95}
+.ticker-track{display:flex;gap:0;animation:ticker 40s linear infinite;width:max-content}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{color:rgba(255,255,255,.9);font-family:var(--fh);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:0 2rem;white-space:nowrap}
+.ticker-item::before{content:'◆';margin-right:.6rem;color:rgba(255,255,255,.45)}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
 /* ── Tab switcher ── */
-.tab-bar{background:#fff;border-bottom:1px solid var(--gray-100);position:sticky;top:65px;z-index:90}
+.tab-bar{background:#fff;border-bottom:1px solid var(--gray-100);position:sticky;top:107px;z-index:90}
 .tab-bar-inner{max-width:var(--max-w);margin:auto;display:flex;gap:0;padding:0 clamp(1rem,4vw,2rem)}
 .tab-btn{font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--gray-600);padding:1rem 1.5rem;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;transition:.2s;text-transform:uppercase;letter-spacing:.05em}
 .tab-btn.active{color:var(--blue);border-bottom-color:var(--blue)}
@@ -175,11 +209,37 @@ textarea{resize:vertical;min-height:90px}
       <li><a href="/contact" class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-cta-wrap">
-      <a href="/register" class="nav-cta-register active">Register</a>
+      <a href="/register" class="nav-cta-register active">Register Vendor</a>
       <a href="/contact" class="btn btn-cta btn-sm">Start a Requirement</a>
     </div>
   </div>
 </nav>
+
+<!-- ── Ticker ── -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">19+ States Pan-India Coverage</span>
+    <span class="ticker-item">24-Hour Response Guarantee</span>
+    <span class="ticker-item">Zero Client Overhead</span>
+    <span class="ticker-item">Retail BTL &amp; Activation</span>
+    <span class="ticker-item">Vendor Identification &amp; Coordination</span>
+    <span class="ticker-item">POSM Printing &amp; Retail Fixtures</span>
+    <span class="ticker-item">P2P Process Support</span>
+    <span class="ticker-item">AI-Assisted Procurement Workflows</span>
+    <span class="ticker-item">No Retainer · No Lock-In</span>
+    <span class="ticker-item">Single Point of Accountability</span>
+    <span class="ticker-item">19+ States Pan-India Coverage</span>
+    <span class="ticker-item">24-Hour Response Guarantee</span>
+    <span class="ticker-item">Zero Client Overhead</span>
+    <span class="ticker-item">Retail BTL &amp; Activation</span>
+    <span class="ticker-item">Vendor Identification &amp; Coordination</span>
+    <span class="ticker-item">POSM Printing &amp; Retail Fixtures</span>
+    <span class="ticker-item">P2P Process Support</span>
+    <span class="ticker-item">AI-Assisted Procurement Workflows</span>
+    <span class="ticker-item">No Retainer · No Lock-In</span>
+    <span class="ticker-item">Single Point of Accountability</span>
+  </div>
+</div>
 
 <!-- ── Hero ── -->
 <div class="reg-hero">
@@ -191,8 +251,8 @@ textarea{resize:vertical;min-height:90px}
 <!-- ── Tab bar ── -->
 <div class="tab-bar">
   <div class="tab-bar-inner">
-    <button class="tab-btn active" onclick="switchTab('vendor',this)">🏭 Service Vendor</button>
-    <button class="tab-btn" onclick="switchTab('company',this)">🏢 Brand / Company</button>
+    <button class="tab-btn active" onclick="switchTab('vendor',this)">Service Vendor</button>
+    <button class="tab-btn" onclick="switchTab('company',this)">Brand / Company</button>
   </div>
 </div>
 
@@ -720,8 +780,56 @@ textarea{resize:vertical;min-height:90px}
 </main>
 
 <!-- ── Footer ── -->
-<footer style="background:var(--blue-dark);color:rgba(255,255,255,.65);text-align:center;padding:1.5rem;font-size:.8rem;font-family:var(--fb)">
-  <p>© 2024 Partnerschaft (OPC) Pvt Ltd &nbsp;·&nbsp; <a href="/contact" style="color:rgba(255,255,255,.75)">Contact</a> &nbsp;·&nbsp; <a href="/" style="color:rgba(255,255,255,.75)">Home</a></p>
+<!-- WhatsApp float -->
+<a href="https://wa.me/919113283848" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ── Footer ── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-stacked.png" alt="Partnerschaft India" class="footer-logo">
+      <p class="footer-tagline">Retail Execution · Vendor Operations · Digital Enablement.<br>Your outsourced operations partner across India.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/network">Join Network</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services">Retail &amp; BTL</a></li>
+          <li><a href="/services">Vendor Ops</a></li>
+          <li><a href="/services">Printing &amp; POSM</a></li>
+          <li><a href="/services">Digital / AI</a></li>
+          <li><a href="https://barada.in" target="_blank" rel="noopener">Barada →</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Head Office</h4>
+        <address>D155, DSM Synergy, Agrahara Layout Main Rd,<br>Bengaluru – 560064, Karnataka</address>
+        <h4 style="margin-top:1rem">Registered Office</h4>
+        <address>Satpathy House, At- Ranapur,<br>Via- Binjharpur, Dist- Jajpur – 755012, Odisha</address>
+        <h4 style="margin-top:1rem">Get in Touch</h4>
+        <p>+91 91132 83848 · +91 96068 47272</p>
+        <p><a href="mailto:business@partnerschaft.in">business@partnerschaft.in</a></p>
+        <p><a href="mailto:sandeep@partnerschaft.in">sandeep@partnerschaft.in</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Partnerschaft (OPC) Private Limited. All rights reserved.</span>
+    <span>CIN: U70200OD2026OPC055800 &nbsp;|&nbsp; PAN: AARCP6090P</span>
+    <span>Pan-India Operations</span>
+  </div>
 </footer>
 
 <script>
