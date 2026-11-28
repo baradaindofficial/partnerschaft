@@ -143,9 +143,19 @@ textarea{resize:vertical;min-height:90px}
 .file-preview .fp-remove{color:#dc2626;cursor:pointer;font-size:.85rem;font-weight:700}
 
 /* ── Consent box ── */
-.consent-card{background:var(--light);border:1.5px solid var(--gray-100);border-radius:8px;padding:1.1rem 1.25rem;margin-bottom:1rem}
-.consent-card h4{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--blue-dark);margin-bottom:.5rem}
-.consent-card p{font-size:.8rem;color:var(--gray-600);line-height:1.6;margin-bottom:.75rem}
+.privacy-intro{background:linear-gradient(135deg,#EFF6FF 0%,#F0F9FF 100%);border:1.5px solid #BFDBFE;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.25rem;display:flex;gap:.75rem;align-items:flex-start}
+.privacy-intro-icon{font-size:1.4rem;flex-shrink:0;line-height:1}
+.privacy-intro-text{font-size:.8rem;color:#1E40AF;line-height:1.6}
+.privacy-intro-text strong{color:#1E3A8A}
+.consent-card{background:#fff;border:1.5px solid var(--gray-100);border-radius:10px;padding:1.1rem 1.25rem;margin-bottom:.85rem;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.consent-card-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
+.consent-card-num{width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.consent-card h4{font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--blue-dark);margin:0}
+.consent-card p{font-size:.8rem;color:var(--gray-600);line-height:1.65;margin-bottom:.85rem;padding-left:.1rem}
+.consent-tick{display:flex;align-items:flex-start;gap:.75rem;background:#F0FDF4;border:1.5px solid #BBF7D0;border-radius:8px;padding:.75rem 1rem;cursor:pointer;transition:border-color .2s}
+.consent-tick:has(input:checked){background:#DCFCE7;border-color:#4ADE80}
+.consent-tick input{accent-color:#16A34A;margin-top:2px;flex-shrink:0;width:16px;height:16px}
+.consent-tick span{font-size:.8rem;color:#166534;line-height:1.55;font-weight:500}
 .consent-check{display:flex;align-items:flex-start;gap:.6rem;cursor:pointer}
 .consent-check input{accent-color:var(--blue);margin-top:3px;flex-shrink:0}
 .consent-check span{font-size:.82rem;color:var(--dark);line-height:1.55}
@@ -562,26 +572,38 @@ textarea{resize:vertical;min-height:90px}
     <div id="v-step-3" style="display:none">
       <div class="card">
         <div class="card-title">Data Sharing &amp; Privacy Declaration</div>
-        <div class="consent-card">
-          <h4>Data Controller</h4>
-          <p style="margin-bottom:.5rem">Your personal and business data is processed by <strong>Partnerschaft (OPC) Private Limited</strong> (CIN: U70200OD2026OPC055800), Bengaluru, Karnataka, as the Data Fiduciary under the Digital Personal Data Protection Act, 2023 (DPDP Act). Data is collected solely for the purpose of vendor–brand matching on this platform. Your data will be retained for a period of up to <strong>3 years</strong> from registration, or until you withdraw consent — whichever is earlier.</p>
+
+        <div class="privacy-intro">
+          <div class="privacy-intro-icon">🔒</div>
+          <div class="privacy-intro-text">
+            <strong>Data Controller:</strong> Partnerschaft (OPC) Private Limited (CIN: U70200OD2026OPC055800), Bengaluru — acting as Data Fiduciary under the <strong>DPDP Act, 2023</strong>. Your data is collected solely for vendor–brand matching and retained for up to <strong>3 years</strong> from registration, or until you withdraw consent — whichever is earlier.
+          </div>
         </div>
-        <div class="consent-card" style="margin-top:.75rem">
-          <h4>Purpose &amp; Disclosure of Business Information</h4>
-          <p>Your business profile — including contact details, service categories, credentials, and uploaded documents — will be shared with verified brands and companies registered on this platform for the limited purpose of vendor discovery and shortlisting. Your data will not be sold, rented, or disclosed to any third party outside the Partnerschaft platform. You have the right to access, correct, or erase your data, and to withdraw this consent at any time by writing to <strong>business@partnerschaft.in</strong>.</p>
-          <label class="consent-check">
+
+        <div class="consent-card">
+          <div class="consent-card-header">
+            <div class="consent-card-num">1</div>
+            <h4>Processing &amp; Disclosure of Your Profile</h4>
+          </div>
+          <p>Your vendor profile — contact details, service categories, credentials, and uploaded documents — will be shared with <strong>verified brands and companies</strong> on this platform for vendor discovery and shortlisting only. Your data will <strong>not</strong> be sold, rented, or disclosed to any third party outside the Partnerschaft platform. You may access, correct, or erase your data, or withdraw consent at any time by writing to <a href="mailto:business@partnerschaft.in" style="color:var(--blue)">business@partnerschaft.in</a>.</p>
+          <label class="consent-tick">
             <input type="checkbox" id="v-consent1">
-            <span>I confirm the information provided is true and accurate. I consent to Partnerschaft (OPC) Private Limited processing and sharing my vendor profile with verified brand partners for business matching, as described above.</span>
+            <span>I confirm the information provided is true and accurate. I consent to Partnerschaft (OPC) Private Limited processing and sharing my vendor profile with verified brand partners for business matching.</span>
           </label>
         </div>
-        <div class="consent-card" style="margin-top:.75rem">
-          <h4>Sharing with Brand &amp; Company Partners</h4>
-          <p>Brands and companies registered on Partnerschaft will access your profile to evaluate fit for specific requirements. This disclosure is limited to your professional and business information and does not include sensitive personal data.</p>
-          <label class="consent-check">
+
+        <div class="consent-card">
+          <div class="consent-card-header">
+            <div class="consent-card-num">2</div>
+            <h4>Sharing with Brand &amp; Company Partners</h4>
+          </div>
+          <p>Registered brands and companies will access your profile to evaluate fit for specific sourcing requirements. This disclosure covers only your <strong>professional and business information</strong> — no sensitive personal data is shared.</p>
+          <label class="consent-tick">
             <input type="checkbox" id="v-consent2">
             <span>I consent to my vendor profile being shared with Partnerschaft's registered brand and company partners for procurement matching. I understand I may withdraw this consent at any time.</span>
           </label>
         </div>
+
         <div class="alert alert-err" id="v-err3"></div>
       </div>
       <div class="form-nav">
@@ -833,26 +855,38 @@ textarea{resize:vertical;min-height:90px}
     <div id="c-step-3" style="display:none">
       <div class="card">
         <div class="card-title">Data Sharing &amp; Privacy Declaration</div>
-        <div class="consent-card">
-          <h4>Data Controller</h4>
-          <p style="margin-bottom:.5rem">Your personal and business data is processed by <strong>Partnerschaft (OPC) Private Limited</strong> (CIN: U70200OD2026OPC055800), Bengaluru, Karnataka, as the Data Fiduciary under the Digital Personal Data Protection Act, 2023 (DPDP Act). Data is collected for the limited purpose of vendor–brand matching and procurement support on this platform. Your data will be retained for up to <strong>3 years</strong> from registration, or until you withdraw consent — whichever is earlier. To exercise your rights of access, correction, erasure, or withdrawal of consent, write to <strong>business@partnerschaft.in</strong>.</p>
+
+        <div class="privacy-intro">
+          <div class="privacy-intro-icon">🔒</div>
+          <div class="privacy-intro-text">
+            <strong>Data Controller:</strong> Partnerschaft (OPC) Private Limited (CIN: U70200OD2026OPC055800), Bengaluru — acting as Data Fiduciary under the <strong>DPDP Act, 2023</strong>. Your data is collected for vendor–brand matching and retained for up to <strong>3 years</strong> from registration, or until you withdraw consent — whichever is earlier. To exercise rights of access, correction or erasure, write to <a href="mailto:business@partnerschaft.in" style="color:#1E40AF">business@partnerschaft.in</a>.
+          </div>
         </div>
-        <div class="consent-card" style="margin-top:.75rem">
-          <h4>Purpose &amp; Use of Company Information</h4>
-          <p>Partnerschaft will use your company profile to shortlist and present verified vendors suited to your requirements. Your company name, industry, and requirement scope — but not your individual contact details — may be shared with shortlisted vendor partners so they can evaluate fit and respond appropriately. Your data will not be sold or shared outside the platform.</p>
-          <label class="consent-check">
+
+        <div class="consent-card">
+          <div class="consent-card-header">
+            <div class="consent-card-num">1</div>
+            <h4>Processing &amp; Use of Company Information</h4>
+          </div>
+          <p>Partnerschaft will use your company profile to shortlist and present verified vendors suited to your requirements. Your company name, industry, and requirement scope — but <strong>not</strong> your individual contact details — may be shared with shortlisted vendors so they can evaluate fit. Your data will not be sold or shared outside the platform.</p>
+          <label class="consent-tick">
             <input type="checkbox" id="c-consent1">
             <span>I confirm the information provided is true and accurate. I consent to Partnerschaft (OPC) Private Limited processing our company profile to match and present shortlisted vendors, as described above.</span>
           </label>
         </div>
-        <div class="consent-card" style="margin-top:.75rem">
-          <h4>Sharing Requirement Scope with Vendor Partners</h4>
-          <p>Shortlisted vendors on the Partnerschaft network will access a limited view of your requirement scope (category, volume, geography) in order to assess fit. Full company contact details are shared only with vendors you approve.</p>
-          <label class="consent-check">
+
+        <div class="consent-card">
+          <div class="consent-card-header">
+            <div class="consent-card-num">2</div>
+            <h4>Sharing Requirement Scope with Vendor Partners</h4>
+          </div>
+          <p>Shortlisted vendors will access a <strong>limited view</strong> of your requirement scope (category, volume, geography) to assess fit. Full company contact details are shared only with vendors you approve.</p>
+          <label class="consent-tick">
             <input type="checkbox" id="c-consent2">
-            <span>I consent to our company's requirement scope being shared with verified vendors on the Partnerschaft network for the purpose of vendor matching. I understand I may withdraw this consent at any time.</span>
+            <span>I consent to our company's requirement scope being shared with verified vendors on the Partnerschaft network for procurement matching. I understand I may withdraw this consent at any time.</span>
           </label>
         </div>
+
         <div class="alert alert-err" id="c-err3"></div>
       </div>
       <div class="form-nav">
